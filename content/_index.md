@@ -7,5 +7,5 @@ layout: wide
   {{< card link="/slash/" title="토스SLASH 리뷰" >}}
   {{< card link="/ebpf/" title="eBPF" >}}
   {{< card link="/questions/" title="질문모음" >}}
-  {{< card link="/k8s/" title="쿠버네티스 공부" >}}
+  {{< card link="/k8s/" title="Udemy CKA 강의" >}}
 {{< /cards >}}
