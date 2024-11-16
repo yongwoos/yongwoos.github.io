@@ -1,0 +1,105 @@
+# Hugo configuration file
+title: 박용우's blog
+enableInlineShortcodes: true
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: ELK
+      weight: 3
+      pageRef: /elk
+    - name: Airflow
+      weight: 4
+      pageRef: /airflow
+    - name: 코테
+      weight: 98
+      pageRef: /cote
+    - name: 카프카
+      weight: 2
+      pageRef: /kafka
+    - name: 모빌리티SW스쿨
+      weight: 1
+      pageRef: /mobilityschool
+    - name: Search
+      weight: 99
+      params:
+        type: search
+    - name: GitHub
+      weight: 100
+      url: "https://github.com/dragonhail/"
+      params:
+        icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    logo:
+      path: 
+      dark: 
+      # width: 40
+      # height: 20
+      # link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  editURL:
+    enable: false
+    base: "https://github.com/imfing/hextra/edit/main/exampleSite/content"
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
