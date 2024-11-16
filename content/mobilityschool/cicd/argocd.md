@@ -1,5 +1,5 @@
 ---
-title: ArgoCD
+title: ArgoCD & CICD실습
 weight: 6
 ---
 ## 복습
