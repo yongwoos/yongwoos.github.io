@@ -1,6 +1,6 @@
 ---
 title: CD
-weiwght: 5
+weight: 5
 ---
 ## 1.CD(Continuous Delivery, Deployment)
 - CI(지속적인 통합)에서 중요한 것은 커밋 단계 와 자동 인수 테스트
