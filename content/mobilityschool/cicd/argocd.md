@@ -290,7 +290,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ### 1)Docker Hub에서 레포리토리 생성: cicd
 
 
-### 2)Docker Hub에서 Access Token을 발급: dckr_pat_rFhjg5sC0E5ZIvifGow1iJrmGoE
+### 2)Docker Hub에서 Access Token을 발급
 
 ### 3)Git Hub의 Repository에 Secret Key 생성
 - DOCKERHUB_TOKEN(필수)

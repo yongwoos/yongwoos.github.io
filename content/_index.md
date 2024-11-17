@@ -4,7 +4,7 @@
   {{< card link="/kafka/" title="카프카" >}}
   {{< card link="/slash/" title="토스SLASH 리뷰" >}}
   {{< card link="/ebpf/" title="eBPF" >}}
-  {{< card link="/k8s/" title="Udemy CKA 강의" >}}
+  {{< card link="/udemy_k8s/" title="Udemy CKA 강의" >}}
   {{< card link="/cote/" title="코테" >}}
   {{< card link="/cs/" title="CS 기본" >}}
 {{< /cards >}}
