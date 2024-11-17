@@ -48,13 +48,23 @@ title: 운영체제
     - Page Fault Frequency: Page Fault 상한과 하한을 둬 상한을 넘으면 지급 프레임 개수 늘리고 하한을 넘으면 지급 프레임 개수 줄임
 
 
-## Web Socket
+### Web Socket
 - Polling
   - 클라이언트가 서버로 계속 요청
 - Long Polling
   - 클라이언트가 서버로 요청하고 대기
 - Streaming
   - 클라이언트가 요청 후 서버가 이벤트 있으면 계속 보내는 방식
+
+### apt와 apt-get
+- `apt`는 `apt-get`의 업그레이드 버전
+- `apt-get`이 이전에 출시된 버전으로 범용적
+- 현재는 `apt` 사용 추천
+
+### 리눅스 패키지 저장소
+- apt update: 리눅스 패키지 저장소 목록 업데이트
+- apt upgrade: 실제 패키지 파일 업그레이드
+- 패키지 종류: deb와 dpkg(바이너리와 소스 코드)
 
 # 프로세스
 실행중인 프로그램 인스턴스
