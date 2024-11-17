@@ -1,6 +1,5 @@
 ---
 title: 카프카
-weight: 2
 cascade:
   type: docs
 ---
