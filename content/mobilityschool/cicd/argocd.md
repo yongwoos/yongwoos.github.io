@@ -35,7 +35,11 @@ weight: 6
 ```
 go, c, c++: OSS가 실행가능한 프로그램으로 빌드, go->oss, 실행속도가 더 빠르게 됨
 - 밖에서 빌드 후 도커파일에 복사 시 배포 환경에 실행될지 알 수 없음
-java, .net: jvm이 인식 가능한 형태로 빌드, java->vm->oss, react->nodejs(vm)->oss
+- Test는 빌드 로컬에서
+- 배포는 빌드를 원격에서
+
+java, node, .net: jvm이 인식 가능한 형태로 빌드, java->vm->oss, react->nodejs(vm)->oss
+- 빌드 파일만 Dockerfile에 복사 후 실행
 ```
 ## Kubernetese CD 도구
 ### 1)Argo CD
