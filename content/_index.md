@@ -8,6 +8,7 @@ width: wide
   {{< card link="/ebpf/" title="eBPF 실습" >}}
   {{< card link="/udemy_k8s/" title="Udemy CKA 강의 정리" >}}
   {{< card link="/udemy_istio/" title="Udemy Istio 강의 정리" >}}
+{{< card link="/airflow/" title="Airflow 정리" >}}
 {{< card link="/osscode/" title="OSS 코드" >}}
   {{< card link="/cote/" title="코테" >}}
   {{< card link="/cs/" title="CS 기본" >}}
