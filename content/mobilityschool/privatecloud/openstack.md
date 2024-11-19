@@ -55,7 +55,7 @@ weight: 1
 - 서비스 유형 관련 용어
   - 가상 머신: 물리 서버에 하이퍼바이저를 설치하고 자원을 통합하고 분할시켜 제공하는 가상의 논리적인 서버 자원
   - 컨테이너: 물리 서버에 설치된 컨테이너가 운영체제 커널을 공유하고 리눅스 격리 기술(namespace isolation)을 이용해서 응용 소프트웨어 만을 위한 별도의 공간을 제공하는 서비스
-  - 블록 스토리지: 블록(컴퓨터에서 일반적으로 저장하는 단위) 단위로 데이터를 저장하는 스토리지 서비스로 SAN(Storage Area Network - 가상 네트워크의 분리된 장치에 데이터를 저장하는 방식), NAS(Network Attached Storage: 네트워크에 서버를 두는 형태), DAS(Direct Attached Storage: 연결된 디스크에 데이터를 저장장) 서비스가 있음
+  - 블록 스토리지: 블록(컴퓨터에서 일반적으로 저장하는 단위) 단위로 데이터를 저장하는 스토리지 서비스로 SAN(Storage Area Network - 가상 네트워크의 분리된 장치에 데이터를 저장하는 방식), NAS(Network Attached Storage: 네트워크에 서버를 두는 형태), DAS(Direct Attached Storage: 연결된 디스크에 데이터를 저장, usb같은) 서비스가 있음
   - Object Storage: 객체 단위로 데이터를 저장하는 소티리지 서비스로 시스템 메타데이터와 사용자 메타데이터를 이용해서 비정형 데이터를 저장하는데 많이 사용하는 방식
 - 기술 관련 용어
   - Consolidation: 과거 메인 프레임에서 가능했던 파티셔닝 기술을 이용해서 유닉스 서버나 x86서버에 적용한 것으로 서버를 여러 개로 분할해서 운영할 수 있고 각각 분할된 자원은 isolation을 제공, 이를 이용해서 서버의 이용률을 향상시킬 수 있음
@@ -175,24 +175,212 @@ Storage Node(swift)-Storage Backend
 ```
 ```mermaid
 graph TD
-    %% Network Node가 Controller Node와 Compute Node들을 감싸고 있음
-    subgraph NetworkNode [Network Node]
-        direction TB
-        ControllerNode[Controller Node] -->|Monitors| ComputeNode1[Compute Node 1]
-        ControllerNode -->|Monitors| ComputeNode2[Compute Node 2]
-        ControllerNode -->|Monitors| ComputeNode3[Compute Node 3]
-        
-        %% Compute Node 3개가 각각 Storage Node와 연결됨
-        ComputeNode1 -->|Connects to| StorageNode1[Cinder Storage Node]
-        ComputeNode2 -->|Connects to| StorageNode1
-        ComputeNode3 -->|Connects to| StorageNode1
+    %% External과 DMZ, Network Node 연결
+    External[External] --> DMZ[DMZ]
+    DMZ --> NetworkNode[Network Node]
+    
+    %% Network Node가 Controller Node에 연결됨
+    NetworkNode -->|Connects to| ControllerNode[Controller Node]
+    
+    %% Controller Node가 Compute Node들을 감시
+    ControllerNode -->|Monitors| ComputeNode1[Compute Node 1]
+    ControllerNode -->|Monitors| ComputeNode2[Compute Node 2]
+    ControllerNode -->|Monitors| ComputeNode3[Compute Node 3]
+    
+    %% Compute Node 3개가 각각 Storage Node와 연결됨
+    ComputeNode1 -->|Connects to| StorageNode1[Cinder Storage Node]
+    ComputeNode2 -->|Connects to| StorageNode1
+    ComputeNode3 -->|Connects to| StorageNode1
 
-        %% Storage Node가 Storage Backend와 연결됨
-        StorageNode1 -->|Connects to| StorageBackend[Storage Backend Node]
-    end
+    %% Storage Node가 Storage Backend와 연결됨
+    StorageNode1 -->|Connects to| StorageBackend[Storage Backend Node]
 ```
 - Open Stack을 구성하는 Service Component
   - 6개의 코어 서비스 와 13개의 옵셔널 서비스로 구성
-  - 6개의 코어 서비스는 NOVA(Compute), NEUTRON(Networking), SWIFT(Object Storage), CINDER(Block Storage), KEYSTONE(Identity), GLANCE(가상 머신을 위한 디스크 이미지) 인데 Cinder 와 SWIFT를 제외한 4개의 서비스는 필수
+  - 6개의 코어 서비스는 NOVA(Compute), NEUTRON(Networking), SW
+  - IFT(Object Storage), CINDER(Block Storage), KEYSTONE(Identity), GLANCE(가상 머신을 위한 디스크 이미지) 인데 Cinder 와 SWIFT를 제외한 4개의 서비스는 필수
   - 각각의 서비스는 모두 단위 프로젝트 형태로 개발되며 개별적으로 완성도를 가름할 수 있는 성숙도를 관리
   - 서비스들은 모듈 형태로 구성해서 결합이 가능하고 결합을 할 때는 REST API와 Message Queue를 사용한 약한 결합의 구조
+  - 옵셔널 서비스   
+    Elastic Map Reduce를 위한 Sahara: Hadoop 클러스터를 간단한 방법으로 제공하는 서비스
+  - Bare-Metal을 위한 Ironic: 하이퍼바이저 위에 동작하는 가상 머신을 대신하여 비어있는 컴퓨터를 컴퓨터 인스턴스로 사용할 수 있도록 지원
+  - Messaging 서비스를 위한 Zaqar: 다양한 커뮤니케이션 컴포넌트 들이 메시지를 주고 받을 있는 API를 제공
+  - Shared File System 서비스를 위한 Manila: NFS 나 CIFS를 이용한 공유 파일 시스템을 대체하기 위한 프로젝트인데 가상 머신 간에 공유 가능한 파일을 제공   
+  Cinder는 하나의 가상 머신에서만 접근이 가능한 스토리지
+  - DNS 서비스를 위한 Designate: DNS의 기능을 서비스로 제공
+  - Key Management 서비스를 위한 Barbican: 각종 비밀번호, 암호화 키, 등을 안전하게 보관하기 위한 공간을 제공하기 위한 프로젝트
+  - Containers 서비스를 위한 Magnum: Docker 또는 Kubernetes 같은 컨테이너 서비스를 Open Stack에 통합하기 위한 프로젝트   
+    Docker와 Kubernetes를 포함한 운영체제 이미지를 제공하기 위해서 Heat를 사용하고 그 운영체제 이미지를 가상 머신 또는 베어메탈 서버에서 실행하여 컨테이너 서비스를 제공
+  - Application Catalog 서비스를 위한 Murano: 클라우드에서 구동이 가능한 애플리케이션들을 카테고리 형태로 정리해서 카탈로그를 제공하고 배포를 가능하게 하는 기능을 제공
+  - 클라우드를 구축할 때 모든 오픈 스택 서비스를 사용하는 것은 아니며 구성 방식에 따라 해당 서비스를 어떤 노드에 설치할 것인가도 달라지고 이중화 요구 사항 과 성능 요구 사항에 따라 코어 서비스 와 옵셔널 서비스를 추가할 지 이중화 할 지 결정
+- 노드 배치의 기본
+  - Controller Node: Horizon, Keystone, Nova API, Glance, Neutron, Cinder API, Heat, Ceilometer, HAProxy, Keepalived, Ansible, ElasticSearch + Logstash, Monasca
+  - Compute Node: Nova, Neutron, Hypervisor, Ceilometer Agent
+  - Block Storage Node: Cinder, Ceilometer Agent
+  - Object Storage Node: Swift, Ceilometer Agent
+
+- 기타 서비스 컴포넌트의 역할
+  - HAProxy와 Keepalived는 컨트롤러 노드 클러스터링을 위해서 필요   
+    Controller 노드는 통상적으로 3개의 노드로 구성
+  - Elastic Search와 Log Stash: 다양한 서비스에서 발생하는 로그를 통합하고 가공하기 위해서 사용
+  - Ansible은 반복적으로 발생하는 작업을 스크립트화해서 스크립트의 실행 또는 패키지의 배포와 설정 및 실행 등을 자동화하는 기능
+  - Monasca는 프라이빗 클라우드의 모니터링 기능을 수행
+
+### 4)서비스 컴포넌트의 역할
+- Horizon
+  - 대시보드 서비스
+  - 웹을 통해서 사용자나 관리자가 오픈 스택의 자원과 서비스를 이용할 수 있도록 사용자 인터페이스를 제공하는 서비스
+  - 템플릿과 도구를 이용해서 약간의 커스터마이징이 가능
+  - 기본적인 클라우드 운영이 가능
+  - 통상적으로 Controller 노드에 설치하고 아파치 웹 서버를 이용
+  - 사용자와 관리자는 Horizon을 이용해서 가상 머신을 생성하거나 가상 머신에 네트워크를 구성하고 IP를 지정하거나 보안 규칙을 설정하는 등 다양한 기능을 사용
+  - 사용자 또는 관리자가 VNC Client를 이용해서 가상 머신의 콘솔에 웹 브라우저를 이용해서 접속이 가능
+  - 웹 브라우저는 HTML5의 Canvas 기능과 Web Socket을 지원해야 함
+- Nova
+  - Compute 서비스를 위한 컴포넌트
+  - 컴퓨트 노드에 설치해서 CPU, Memory, Network, Storage를 이용해서 가상 머신 서비스를 제공
+  - Open Stack이 IaaS를 제공할 수 있게 해줌
+  - Nova가 가상화의 기능을 포함하지 않기 때문에 하이퍼바이저 종류를 다르게 하면 드라이버를 변경된 하이퍼바이저의 드라이버로 대체
+  - 다수의 컴퓨트 노드에 독립적으로 설치되고 컴퓨터 노드들은 서로 아무것도 공유하지 않는 구조로 만들어짐: 하나의 노드에 장애가 발생하더라도 다른 노드에는 장애가 전파되지 않음
+- Neutron
+  - Networking 서비스를 위한 컴포넌트
+  - Nova가 관리하는 가상 머신이 사용하는 네트워크, 스위치, 서브넷 및 라우터를 포함해서 가상 네트워크 인프라의 생성과 관리를 처리하는 서비스
+  - 가상 방화벽이나 VPN, 로드밸런서와 같은 고급 서비스도 지원
+- Swift
+  - Object Storage 서비스
+  - 비정형 객체를 저장하는 저장 공간 서비스
+  - 파일 또는 파일의 묶음인 폴더와 같은 컨테이너 형태를 지원하며 HTTP 기반으로 Restful API를 통해서 서비스를 제공
+  - 주로 백업 과 가상 머신 이미지, 사진, 비디오, 음원 등 아카이브 데이터의 저장 공간으로 사용되지만 N 드라이브라 구글 드라이브 와 같은 클라우드 디스크 서비스 형태로 단독 구성하는 것도 가능
+- Cinder
+  - Block Storage 서비스
+  - 컨트롤러 노드 와 컴퓨트 노드에 설치하거나 독립적인 스토리지 노드로 분리하여 구성할 수 있습니다.
+  - 컨트롤러 노드에 설치하는 것은 성능적인 면이나 가용성 측면에서 좋은 구성은 아니지만 테스트 환경을 구성하는 경우에는 충분한 노드 확보가 어렵기 때문에 이런 구성을 사용하기도 합니다.
+- Keystone
+  - Identity 서비스
+  - 이 서비스가 중단되면 오픈 스택의 어떤 서비스에도 접근할 수 없는 상태가 됩니다.
+  - 사용자 관리나 보안 그룹 관리 REST 기반 API를 제공하는 각종 서비스의 Endpoint URL을 관리하는 기능도 제공
+- Glance
+  - 오픈 스택이 제공하는 이미지 서비스
+  - 이미지 종류로는 운영체제를 설치하기 위한 이미지, 설치가 완료되서 서비스가 가능한 이미지, 운영 중인 운영 체제를 복제해서 만든 이미지, P2V(물리 서버를 하나의 가상 머신으로 컨버팅하는 기술)나 V2V(가상 머신을 KVM으로 옮기는 기술) 도구를 이용해서 생성한 이미지, 백업을 위해서 복제한 스냅샷 이미지 등이 있음
+  - 오픈 스택에서는 Flat 이미지 파일인 raw, AMI/AKI/ARI 와 같은 Amazon의 EC2 이미지, qcow2와 같은 KVM 하이퍼바이저가 사용하는 이미지, VDI와 같은 Oracle의 Virtual Box, VMDK와 같은 VMWare의 ESX.ESXi 용 이미지, VHD와 같은 MS의 Hyper-V가 사용하는 이미지 그리고 ISO 파일을 지원
+  - 운영체제를 설치할 때 콘솔을 통해서 운영체제를 설치하는 것은 가능하지만 번거롭기 때문에 운영체제가 설치된 이미지를 Glance에 등록해두고 가상 머신을 생성할 때 이미지를 복제해서 사용
+  - 운영체제 이미지를 생성하고자 하는 경우에는 Diskimage-builder 나 Oz 같은 도구를 이용해서 이미지를 생성하는 것이 가능
+- Ceilometer
+  - Telemetry 서비스
+  - 크라우드에서 발생하는 각종 정보를 측정해서 사용량 조회, 과금, 사용 내역 조회 등을 사용자에게 제공하는 서비스
+  - 정보를 저장하기 위해서 NoSQL 데이터베이스가 필요하며 오픈 스택에서는 Mongo DB를 권장
+- Heat
+  - 통합 관리 서비스를 제공
+  - 텍스트 파일 형태로 제공되는 HOT라는 템플릿 파일을 기반으로 여러 유형의 복합 클라우드 응용 프로그램을 배포할 수 있는 통합 관리 엔진
+  - AWS의 CloudFormation 템플릿과 호환성을 유지하기 위해서 개선
+  - 가상 머신의 자원 할당, 설정 변경, 부하에 따른 머신 오토스케일링 등을 자동화해주는 도구
+  - 애플리케이션 자동 배포를 YAML로 작성
+
+### 5)오픈 스택 서비스 구현 사례
+- IaaS 서비스를 제공하는 퍼블릭 클라우드
+  - Core Service: Cinder, Glance, Keystone, Neutron, Nova, Swift
+  - Optional Service: Designate
+
+- HTC를 위한 오픈 스택 서비스 구성
+  - Core Service: Cinder, Glance, Keystone, Nova
+  - Optional Service: Ceilometer, Heat, Horizon
+
+- Big Data 처리를 위한 서비스 구성
+  - Core Service: Glance, Keystone, Neutron, Nova
+  - Optional Service: Sahara(Hadoop 이나 Spark 때문), Ironic, Horizon
+
+- 오픈 스택 초보자에게 권장하는 구성
+  - Core Service: Glance, Keystone, Neutron, Nova
+  - Optional Service: Horizon
+
+
+### 6)추가 서비스 컴포넌트
+- Elastic Search 와 LogStash
+- Elastic Search   
+  Apache Lucene 프로젝트를 기반으로 탄생한 검색 엔진   
+  클라우드 내에서 수 많은 로그가 빠른 속도로 생산되기 때문에 로그를 찾아보는 데 어려움이 많은데 Elastic Search는 분산 처리 와 클러스터링을 지원해서 빠르게 원하는 정보를 찾을 수 있습니다.
+
+- Logstach   
+  Input -> Filter -> Output 의 단계로 로그를 수집하고 가공하고 저장하는 기능을 제공해서 단순한 로그 통합이 아닌 자동화와 관리 기능을 구현   
+  문자열을 가공할 수 있는 다 다양한 필터도 제공하고 JSON 포맷을 지원하기 때문에 프로그래밍에 이용하기가 좋음   
+  다양한 플러그인을 지원하기 때문에 여러 형태로 사용이 가능   
+  Logstash에서 아웃풋 플러그인을 사용하면 ElasticSearch로 보내 즉시 색인이 가능   
+  Elastic Search 와 Logstach로 처리한 데이터에 보다 쉽게 접근해서 시각적으로 보고자하는 경우 Kibana를 추가로 설치하면 되는데 이 때는 Elasticsearch의 플러그인 형태로 설치   
+  로그 수집만을 원하면 Loghost 나 Splunk를 사용
+- HAProxy
+  - 클러스터링 구성을 위한 오픈 소스 프로젝트
+  - 컨트롤러 노드 이중화로도 사용할 수 있지만 L4 스위치의 기능을 대신할 수 있음
+  - 복수의 노드 간에 Heart Beat를 교환해서 장애를 감지해서 Active-Standby 클러스터링 아키텍쳐를 구현
+- Keepalived
+  - 클러스터링 구성에 사용
+- Ansible
+  - 멀티 노드 환경에서 소프트웨어의 배포, 환경 설정 자동 생성, 관리 자동화 등을 제공
+- Chef
+  - Ansible 과 동일한 기능을 수행
+- Monasca
+  - 오픈 소스 모니터링 도구
+  - MySQL 데이터베이스를 이용해서 알람 과 이벤트를 관리 가능
+
+## 3.Cent OS 설치 및 기본 설정
+### 1)Red Hat Linux
+- Fedora
+  - Red Hat에서 지원하는 페도라 프로젝트가 개발하는 리눅스
+  - 무료로 제공되는 리눅스 버전
+  - Red Hat의 Beta 버전 성격
+- Cent OS
+  - Red Hat Enterprise의 Clone Linux
+  - 8버전 부터 Red Hat이 더 이상 Cent OS를 지원하지 않는다고 해서 Cent OS 초기 개발자가 만든 버전이 Rocky이고 RHEL의 Clone이 아니고 RHEL의 베타 버전 성격의 리눅스를 Cent OS Stream 이라고 이름을 붙임
+- RHEL
+  - Red Hat Enterprise Linux
+  - 상용화된 리눅스로 설치나 문제 해결에 대한 기술 지원을 받을 수 있음
+
+### 2)설치
+- Rocky 의 ISO 파일을 다운로드 받아서 설치
+- Mac의 경우 UTM에서 설치를 한 경우 처음에 부팅이 안될 수 있는데 이 경우는 GRUB으로 들어간 후 exit를 입력해서 빠져나오면 다음 부터는 정상적인 부팅이 이루어집니다.
+- Virtual Box에서 Rocky 리눅스를 포함시켜 VM 생성했을 때 Check Sum 오류 발생
+  - VM 의 전원을 종료
+  - [설정]으로 접속
+  - 저장소 탭에서 기존 저장소의 컨트롤러:IDE를 삭제한 후 하단의 [추가] - [광학드라이브]를 선택해서 ISO 파일을 선택한 후 설치를 진행
+
+## 3.기본 환경 구성
+### 1)hostname 설정
+- `hostnamectl set-hostname <호스트이름>`
+
+### 2)Network 설정
+- NetworkManager
+  - Cent OS 8 이상에서는 NetworkManager 서비스를 이용해서 네트워크 관리를 수행
+  - nmcli 라는 도구를 이용해서 네트워크 설정을 수행하는데 nmtui 나 GNOME 의 설정 모드에서 수행이 가능
+  - 설치 여부 확인: `rpm -q NetworkManager`
+- nmcli 는 NetworkManager의 패키지의 일부로 설치되므로 사용법을 확인   
+  `nmcli --help`
+  - `nmcli connection show`: 연결된 네트워크 확인
+  - `nmcli general status`: 전체 상태 확인
+  - `nmcli device status`: 시스템에 설치된 장치의 상태를 확인
+- 네트워크 인터페이스 설정
+  - IP 설정   
+    `nmcli connection modify 디바이스이름 ipv4.address 아이피/서브넷마스크`
+  - 게이트웨이 설정   
+    `nmcli connection modify 디바이스이름 ipv4.gateway 아이피`
+  - DNS 설정   
+    `nmcli connection modify 디바이스이름 ipv4.dns 아이피`
+  - 네트워크 인터페이스를 재시작   
+    `nmcli connection up 디바이스이름`
+- 스크립트로 수정이 가능:   
+  /etc/sysconfig/network-scripts/ifcfg-디바이스이름   
+  키=값의 형태로 설정
+
+### 3)패키지 관련 명령
+- 형식   
+  `yum [옵션] [명령어] [패키지이름]`
+- 설치: 관리자 권한 필요   
+  `yum install <패키지이름>`   
+  설치 할 때 `-y` 옵션을 추가하면 설치 시 실제 설치를 할 것인지 묻지 않음
+- 패키지 삭제   
+  `yum erase` 또는 `remove <패키지이름>`
+  - 지울 때 의존하는 패키지도 같이 삭제됨
+- 패키지 검색   
+  `yum search <패키지이름>`
+- 패키지 정보 확인   
+  `yum info <패키지이름>`
+- yum 대신에 이전에는 rpm을 사용
+
