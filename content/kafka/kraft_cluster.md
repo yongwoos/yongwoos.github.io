@@ -1,5 +1,5 @@
 ---
-title: Kafka 클러스터 구성하기
+title: Kraft 모드 클러스터 구성
 weight: 2
 ---
 ## Kafka Kraft 클러스터 구성 및 설치
