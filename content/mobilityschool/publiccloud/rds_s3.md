@@ -251,7 +251,9 @@ public class CommonUtils {
         String fileName = originalFileName.substring(0, FileExtensionIndex);
         //현재 시간 추출
         String now = String.valueOf(System.currentTimeMillis());
-
+        
+        // 동일한 파일이름을 만들지 않기 위해서 중간에 현재 시간을 추가
+        // 파일 이름이 키가 되서 저장되기 때문에 중복된 파일 이름이 있으면 뒤의 파일이 업데이트
         return category + CATEGORY_PREFIX + fileName + TIME_SEPARATOR + now + fileExtension;
     }
 }
@@ -272,7 +274,7 @@ public interface AwsS3Service {
 ```
 - 서비스 클래스를 생성
 ```java {filename="AwsS3ServiceImpl.java"}
-package com.adamsoft.fileupload;
+package com.gmail.dragonhailstone.fileupload;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
@@ -296,60 +298,58 @@ import java.io.InputStream;
 @RequiredArgsConstructor
 @Service
 public class AwsS3ServiceImpl implements AwsS3Service {
-   private AmazonS3 amazonS3Client;
+    private AmazonS3 amazonS3Client;
 
-   //properties에서 값을 가지고 와서 설정
-   @Value("${cloud.aws.credentials.access-key}")
-   private String accessKey;
+    //properties에서 값을 가지고 와서 설정
+    @Value("${cloud.aws.credentials.access-key}")
+    private String accessKey;
 
-   @Value("${cloud.aws.credentials.secret-key}")
-   private String secretKey;
+    @Value("${cloud.aws.credentials.secret-key}")
+    private String secretKey;
 
-   @Value("${cloud.aws.s3.bucket}")
-   private String bucketName;
+    @Value("${cloud.aws.s3.bucket}")
+    private String bucketName;
 
-   @Value("${cloud.aws.region.static}")
-   private String region;
+    @Value("${cloud.aws.region.static}")
+    private String region;
 
-   //생성자가 호출된 후에 수행할 메서드
-   @PostConstruct
-   public void setS3Client(){
-       AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
-       amazonS3Client = AmazonS3ClientBuilder.standard()
-               .withCredentials(new AWSStaticCredentialsProvider(credentials))
-               .withRegion(region)
-               .build();
-   }
+    //생성자가 호출된 후에 수행할 메서드
+    @PostConstruct
+    public void setS3Client(){
+        AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
+        amazonS3Client = AmazonS3ClientBuilder.standard()
+                .withCredentials(new AWSStaticCredentialsProvider(credentials))
+                .withRegion(region)
+                .build();
+    }
 
-   //업로드 할 파일 존재 여부를 리턴해주는 메서드
-   private boolean validateFileExists(MultipartFile multipartFile) {
-       boolean result = true;
-       if(multipartFile.isEmpty()){
-           result = false;
-       }
-       return result;
-   }
+    //업로드 할 파일 존재 여부를 리턴해주는 메서드
+    private boolean validateFileExists(MultipartFile multipartFile) {
+        boolean result = true;
+        if(multipartFile.isEmpty()){
+            result = false;
+        }
+        return result;
+    }
 
-   @Override
-   public String uploadFile(String category, MultipartFile multipartFile) {
-       boolean result = validateFileExists(multipartFile);
-       if(result == false){
-           return null;
-       }
-       //파일 경로 생성
-       String fileName = CommonUtils.buildFileName(category, multipartFile.getOriginalFilename());
-       //파일 업로드 준비
-       ObjectMetadata objectMetadata = new ObjectMetadata();
-       objectMetadata.setContentType(multipartFile.getContentType());
-       try(InputStream inputStream = multipartFile.getInputStream()){
-           amazonS3Client.putObject(new PutObjectRequest(bucketName, fileName, inputStream, objectMetadata)
-                   .withCannedAcl(CannedAccessControlList.PublicRead));
-       }catch(IOException e){
-           return null;
-       }
-      
-      
-       return "";
-   }
+    @Override
+    public String uploadFile(String category, MultipartFile multipartFile) {
+        boolean result = validateFileExists(multipartFile);
+        if(result == false){
+            return null;
+        }
+        //파일 경로 생성
+        String fileName = CommonUtils.buildFileName(category, multipartFile.getOriginalFilename());
+        //파일 업로드 준비
+        ObjectMetadata objectMetadata = new ObjectMetadata();
+        objectMetadata.setContentType(multipartFile.getContentType());
+        try(InputStream inputStream = multipartFile.getInputStream()){
+            amazonS3Client.putObject(new PutObjectRequest(bucketName, fileName, inputStream, objectMetadata)
+                    .withCannedAcl(CannedAccessControlList.PublicRead));
+        }catch(IOException e){
+            return null;
+        }
+        return amazonS3Client.getUrl(bucketName, fileName).toString();
+    }
 }
 ```
