@@ -254,7 +254,6 @@ Open ID Connect: Role
 ### 역할 할당 클릭
 
 ### 웹 자격 증명 클릭
-
 조직에는 Git Hub의 유저 이름
 repository에 레포지토리 이름 // 미설정시 모든 repo 해당
 branch에 브랜치 이름을 설정 // 미설정시 모든 branch 해당
