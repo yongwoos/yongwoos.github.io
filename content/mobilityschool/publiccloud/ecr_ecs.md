@@ -250,7 +250,6 @@ Open ID Connect: Role
     공급자 URL: https://token.actions.githubusercontent.com   
     대상: sts.amazonaws.com
   - 생성된 자격 증명 공급자를 선택하고 역할 할당: 자격 증명 공급자가 만들어진 경우 여기서부터 시작
-```
 {{% steps %}}
 ### 역할 할당 클릭
 
@@ -268,7 +267,7 @@ django_image_push 검색 후 추가
 
 ### ARN을 확인
 {{% /steps %}}
-```
+
   - 로그인 되는지 확인: git action의 yaml 파일 최상단 레벨에 추가
 ```yaml
 permissions:
