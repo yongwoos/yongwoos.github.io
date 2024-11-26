@@ -254,12 +254,12 @@ Open ID Connect: Role
 ### 역할 할당 클릭
 
 ### 웹 자격 증명 클릭
-조직에는 Git Hub의 유저 이름
-repository에 레포지토리 이름 // 미설정시 모든 repo 해당
-branch에 브랜치 이름을 설정 // 미설정시 모든 branch 해당
+조직에는 Git Hub의 유저 이름   
+repository에 레포지토리 이름(미설정시 모든 repo 해당)   
+branch에 브랜치 이름을 설정(미설정시 모든 branch 해당)
 
 ### 권한 정책 추가
-앞에서 만든 권한을 선택하고 역할 이름을 생성
+앞에서 만든 권한을 선택하고 역할 이름을 생성   
 django_image_push 검색 후 추가
 
 ### 역할 이름 설정
