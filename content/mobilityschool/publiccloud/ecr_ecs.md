@@ -250,6 +250,7 @@ Open ID Connect: Role
     공급자 URL: https://token.actions.githubusercontent.com   
     대상: sts.amazonaws.com
   - 생성된 자격 증명 공급자를 선택하고 역할 할당: 자격 증명 공급자가 만들어진 경우 여기서부터 시작
+
 {{% steps %}}
 ### 역할 할당 클릭
  
