@@ -184,7 +184,7 @@ public class AwsS3ServiceImpl implements AwsS3Service {
 ```
 
 - Controller 클래스를 생성하고 사용자의 요청을 처리하는 메서드 구현: 
-```java {AwsS3Controller.java"}
+```java {"AwsS3Controller.java"}
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -468,5 +468,4 @@ jobs:
   - route 53에서 레코드 생성 클릭
   - Cloud Front에서 배포 생성 > Origin S3 선택 > 웹사이트 엔드포인트 > Custom SSL Certificate에서 인증서 선택
 
-- 
   - route 53에서 도메인 등록 후 레코드 생성 > 트래픽 라우팅 대상 S3 엔드포인트 선택
