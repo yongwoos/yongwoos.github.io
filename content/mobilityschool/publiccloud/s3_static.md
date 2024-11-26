@@ -287,18 +287,34 @@ public ResponseEntity<ByteArrayResource> downloadFile(
 
 ### 파일 서버 구조
 - 대다수의 경우는 클라이언트에서 서버에게 파일을 업로드하고 다시 서버가 파일 서버에 업로드하는 구조를 만드는데 이 경우 트래픽의 낭비가 발생할 수 있음
+```mermaid
+sequenceDiagram
+    participant Client
+    participant AppServer as Application Server
+    participant FileServer as File Server
 
-Client--(File Upload)---->Application Server---(File Upload)--->File Server
-      <--(File Download)--Application Server<--(File Download)--File Server
+    Client->>AppServer: File Upload
+    AppServer->>FileServer: File Upload
+    FileServer->>AppServer: File Download
+    AppServer->>Client: File Download
+```
+- 위의 경우 파일 이동 두번하므로 비효율적
+- 아래와 같이 클라이언트가 파일 서버에 직업 업로드와 다운로드 하고 DB Server에는 Path만 저장
+```mermaid
+sequenceDiagram
+    participant Client
+    participant AppServer as Application Server
+    participant DBServer as DB Server
+    participant FileServer as File Server
 
-=>파일 이동 두번하므로 비효율적
+    Client->>AppServer: File Path Upload
+    AppServer->>DBServer: File Path Upload
+    DBServer->>AppServer: List of Paths
+    AppServer->>Client: List of Paths
+    Client->>FileServer: File Upload
+    FileServer->>Client: File Download
+```
 
-Client--(File Upload Path)->Application Server --(Path)-->DB Server
-        <--(List)-----------Application Server<--(List)---DB Server
-Client----(File upload)----->File Server
-Client<---(File Download)----File Server
-
-클라이언트가 파일 서버에 직업 업로드와 다운로드 하고 DB Server에는 Path만 저장
 
 ### 3)react 프로젝트에서 파일 업로드
 
