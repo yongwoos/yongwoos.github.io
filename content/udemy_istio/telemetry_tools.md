@@ -35,4 +35,4 @@ weight: 2
 - Upstream Request : Webapp(pod) -> API Gateway(pod) -> Staff Service(pod)
 - Downstream Response: Webap <- API Gateway <- Staff Service
 ### traces
-![](trace_span.jepg)
+![](trace_span.jpeg)
