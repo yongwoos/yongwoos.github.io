@@ -184,7 +184,7 @@ public class AwsS3ServiceImpl implements AwsS3Service {
 ```
 
 - Controller 클래스를 생성하고 사용자의 요청을 처리하는 메서드 구현: 
-```java {"AwsS3Controller.java"}
+```java {filename="AwsS3Controller.java"}
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
