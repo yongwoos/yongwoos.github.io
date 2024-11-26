@@ -2,20 +2,20 @@
 title: S3 정적 웹 업로드 실습
 weight: 3
 ---
-```
-파일 저장 방법 2가지
+### 파일 저장 방법 2가지
 - 파일서버에 파일 저장
 - Database에 파일의 내용(BLOB) 저장
 
-파일 서버에 파일을 저장했을 때 DB 사용 할 것인가?
+- 파일 서버에 파일을 저장했을 때 DB 사용 할 것인가?
+```
 Client -> Application Server -> File Server
-                ||                  |
-            DB Server<-----조회------
-
+                ||                 ||
+            DB Server<-----조회-----|
+```
 1. Client가 Application Server에 File Upload
 2. Application Server에서 DB Server에 File Info 저장(Client는 DB Server에서 목록을 받아서 알 수 있음)
 3. Application Server는 File Server에 File 저장
-```
+
 - Bucket 권한 설정
   - 지금은 DB Server를 사용하지 않기 때문에 List 권한 부여
   - Vanilla Script 사용 시 File Server에서 CORS 열어주지 않으면 Application Server에서 받아와야 함, Get 권한 필요
@@ -285,23 +285,23 @@ public ResponseEntity<ByteArrayResource> downloadFile(
 - 실행 한 후 브라우저나 Postmap API에서 아래처럼 입력해서 확인   
   http://localhost:8080/download?resourcePath=image/Dockerfile_1732498214300.txt
 
-### 3)react 프로젝트에서 파일 업로드
+### 파일 서버 구조
 - 대다수의 경우는 클라이언트에서 서버에게 파일을 업로드하고 다시 서버가 파일 서버에 업로드하는 구조를 만드는데 이 경우 트래픽의 낭비가 발생할 수 있음
 
-```
 Client--(File Upload)---->Application Server---(File Upload)--->File Server
       <--(File Download)--Application Server<--(File Download)--File Server
-파일 이동 두번하므로 비효율적
 
+=>파일 이동 두번하므로 비효율적
 
 Client--(File Upload Path)->Application Server --(Path)-->DB Server
         <--(List)-----------Application Server<--(List)---DB Server
 Client----(File upload)----->File Server
 Client<---(File Download)----File Server
 
-클라이언트가 파일 서버에 직업 업로드와 다운로드 하고
-DB Server에는 Path만 저장
-```
+클라이언트가 파일 서버에 직업 업로드와 다운로드 하고 DB Server에는 Path만 저장
+
+### 3)react 프로젝트에서 파일 업로드
+
 - react 프로젝트 생성   
 `npx create-react-app fileupload`
 
