@@ -1,5 +1,5 @@
 ---
-title:
+title: Istio
 cascade:
   type: docs
 ---
