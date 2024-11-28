@@ -12,3 +12,5 @@ weight: 1
   - Istio는 Envoy를 간단하게 해줌
   - CRD 사용해 envoy 사용 가능
   - Istio 컨트롤은 Istio Daemon이 담당
+- envoy는 L7 Proxy
+  - service discovery, load balancing, traffic routing, observability, and security 등의 기능 제공
