@@ -1,4 +1,4 @@
 ---
-title: Public Cloud
+title: Public Cloud(AWS)
 weight: 13
 ---

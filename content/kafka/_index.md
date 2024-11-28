@@ -2,6 +2,7 @@
 title: 카프카
 cascade:
   type: docs
+weight: 4
 ---
 ### 사용 이유
 
