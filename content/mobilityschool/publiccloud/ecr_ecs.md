@@ -342,3 +342,138 @@ docker에서는 실행 중인 컨테이너를 Image로 생성
 ### 배포 방법
 - 태스크로 배포: 단순하게 배포하는 것으로 오토 스케일링이나 로드 밸런서를 추가할 수 없음
 - 태스크를 만든 후 서비스로 배포
+
+### Github의 Action을 이용해서 ECS에 배포
+- Docker는 기본적으로 docker-hub와 local의 image만 사용가능
+- ECS, EKS의 Docker는 ECR의 이미지도 사용가능
+- Task가 여러 개일 때 로드밸런서 사용해 하나의 IP로 접속가능
+- Task가 하나일때는 퍼블릭IP를 할당해야 함
+
+```mermaid
+graph LR
+    A[Code Push] --> B[Image Build]
+    B --> C[Docker Hub Push]
+    B --> D[ECR Push]
+    C --> E[Task Definition 수행(Image 수정)]
+    D --> E[Task Definition 수행(Image 수정)]
+    E --> F[ECS Service 업데이트]
+```
+
+- ECS 서비스를 생성
+  - 클러스터를 생성(djangoecscluster)
+  - task를 생성(djanagoecs)(GitAction으로는 task definition 생성 불가)
+  - 태스크를 이용해서 서비스를 생성
+  - Load Balancer의 DNS나 서비스 내부의 태스크의 Public IP를 이용해서 접속 확인
+- 생성한 태스크의 json 파일을 다운로드 받아서 프로젝트의 루트 디렉터리에 복사
+  - json의 image 항목 제거: image는 image registry에 배포되는 이미지를 사용할 것이므로
+  - task-definition.json으로 파일 이름 수정
+- gitaction yaml 파일 수정
+```yaml
+name: django
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+permissions:
+    id-token: write
+    contents: read
+
+env:
+  AWS_REGION: ap-northeast-2
+  ECR_REPOSITORY: djangoecs
+  ECS_TASK_DEFINITION: ./task-definition.json
+  CONTAINER_NAME: djangoecs
+  ECS_SERVICE: djangoecs
+  ECS_CLUSTER: djangoecscluster
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            
+            - name: Python Setup
+              uses: actions/setup-python@v4
+              with:
+                python-version: '3.8'
+            - name: Install Dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+            - name: Login to Dockerhub
+              uses: docker/login-action@v1
+              with:
+                username: ${{ secrets.DOCKERHUB_USERNAME }}
+                password: ${{ secrets.DOCKERHUB_TOKEN }}
+                
+            - name: DockerHub Upload
+              env:
+                NAME: ${{ secrets.DOCKERHUB_USERNAME}}
+                REPO: djangoecs
+                IMAGE_TAG: ${{ github.sha }}
+              run: |
+                docker build -t $REPO .
+                docker tag $REPO:latest $NAME/$REPO:$IMAGE_TAG
+                docker push $NAME/$REPO:$IMAGE_TAG
+            
+            - name: AWS Role을 이용한 로그인
+              uses: aws-actions/configure-aws-credentials@v4
+              with:
+                role-to-assume: arn:aws:iam::905418305225:role/django_image_push
+                aws-region: ap-northeast-2
+            
+            # ECR에 로그인
+            - name: ECR에 로그인
+              id: login-ecr
+              uses: aws-action/amazon-ecr-login@62f4f872db3836360b72999f4b87f1ff13310f3a
+            
+            # 이미지를 빌드하고 ECR에 푸시
+            - name: build and push image to Amazon ECR
+              id: build-image
+              env:
+                ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+                IMAGE_TAG: ${{ github.sha }}
+              run: |
+                docker build -t $ECR_REGISTRY/djangoecs:$IMAGE_TAG .
+                docker push $ECR_REGISTRY/djangoecs:$IMAGE_TAG
+                echo "image=$ECR_REGISTRY/djangoecs:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+            #푸시된 이미지를 가지고 ECS 서비스 재시작
+            - name: Fill in the new Image in the ECS task Definition
+              id: task-def
+              uses: aws-actions/amazon-ecs-render-task-definition@c804dfbdd57f713b6c079302a4c01db7017a36fc
+              with:
+                task-definition: ${{ env.ECS_TASK_DEFINITION }}
+                container-name: ${{ env.CONTAINER_NAME }}
+                image: ${{ steps.build-image.outputs.image }}
+
+            - name: Deploy ECS task definigion
+              uses: aws-actions/amazon-ecs-deploy-task-definition@df9643053eda01f169e64a0e60233aacca83799a
+              with:
+                task-definition: ${{ steps.task-def.outputs.task-definition }}
+                service: ${{ env.ECS_SERVICE }}
+                cluster: ${{ env.ECS_CLUSTER }}
+```
+- git hub push를 수행하면 ecs에 대한 권한이 없어서 에러
+  - aws 의 IAM에 접속해서 현재 사용 중인 role에 ecs 사용 권한을 추가하고 git hub에서 action을 rerun
+  - ECSfullaccess 권한 추가
+
+### 이미지 배포 시 태그 문제
+- Amazon의 ECS 나 EKS는 배포를 하게되면 이미지를 무조건 다운로드 받는데 직접 설치한 Docker 나 Kubernetes는 이미지의 태그명까지가 일치하면 다운로드 받지 않음
+- ECS 나 EKS에 이미지를 배포할 때는 고정된 태그를 사용해도 되지만 직접 설치한 Docker 나 Kubernetes를 이용할 때는 고정된 태그를 사용하면 이미지를 업데이트하지 않음
+
+### 도메인 연결
+- Route53에서 호스팅 영역에서 [새 레코드 생성]을 누르고 도메인을 설정하고 Load Balance를 연결해주면 됨
+
+### HTTPS 설정
+- Certificate Manager에서 인증서 요청 > 인증서 발급 후 [Route53에서 레코트 생성] 클릭해서 인증서 검증 > 발급됨
+- Load Balancer에서 리스너 추가를 이용해서 프로토콜과 포트를 설정하고 인증서를 선택해주면 됨
+  - 로드밸런서 > 리스너 규칙 > 리스너 추가 > HTTPS > [라우팅 액션] 대상 그룹으로 전달 > 인증서 선택 > [추가]
+- 주의할 점은 서버가 HTTPS를 사용하면 클라이언트도 HTTPS를 사용해야 함   
+  서버 & 클라이언트 애플리케이션의 경우는 HTTPS 설정은 양쪽 모두에서 수행해야 함   
+  일반적으로 서버에서 먼저하고 테스트를 한 후 클라이언트에 적용
