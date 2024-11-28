@@ -1,5 +1,7 @@
 ---
 width: wide
+cascade:
+  type: docs
 ---
 {{< cards >}}
   {{< card link="/mobilityschool/" title="현대오토에버 모빌리티SW스쿨 1기-클라우드" >}}
