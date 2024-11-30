@@ -1,8 +1,8 @@
 ---
-title: 토스 Slash 리뷰
+title: golang
+weight: 11
 cascade:
   type: docs
-weight: 9
 sidebar:
   open: true
 ---
