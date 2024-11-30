@@ -47,9 +47,6 @@ weight: 2
 ### xrequest 헤더 확산
 - xrequest 헤더를 확산하지 않으면 하나의 span에 대해 여러 trace가 만들어질 수 있음
 
-
-
-
 ### 출처
 https://kdeon.tistory.com/122
 https://www.udemy.com/course/kubernetes-istio-hands-on/learn/lecture/31482912?start=45#content

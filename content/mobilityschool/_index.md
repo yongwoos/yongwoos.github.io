@@ -4,7 +4,5 @@ linkTitle: 모빌리티SW스쿨1기
 weight: 1
 cascade:
   type: docs
-sidebar:
-  open: false
----
+  ---
 2024/08/26 - 2025/02/26

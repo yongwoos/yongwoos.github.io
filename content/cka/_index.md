@@ -3,6 +3,8 @@ title: CKA 요약
 cascade:
   type: docs
 weight: 7
+sidebar:
+  open: true
 ---
 ### Taint, Toleration
 - 특정 노드가 Taint 옵션을 가지고 있으면 파드는 해당 노드에 생성 불가

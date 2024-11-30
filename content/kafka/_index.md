@@ -3,6 +3,8 @@ title: 카프카
 cascade:
   type: docs
 weight: 4
+sidebar:
+  open: true
 ---
 ### 사용 이유
 
