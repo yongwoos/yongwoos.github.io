@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: 박용우의 blog
+title: 박용우의 docs
 enableInlineShortcodes: true
 
 # import hextra as module
@@ -19,9 +19,6 @@ markup:
 
 menu:
   main:
-    - name: 모빌리티SW스쿨
-      weight: 1
-      pageRef: /mobilityschool
     - name: Search
       weight: 99
       params:
