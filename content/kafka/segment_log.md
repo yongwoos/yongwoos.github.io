@@ -1,4 +1,4 @@
 ---
 title: Segment와 log
-weight: 4
+weight: 5
 ---

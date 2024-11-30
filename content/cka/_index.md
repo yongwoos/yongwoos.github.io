@@ -1,5 +1,5 @@
 ---
-title: CKA 요약
+title: 쿠버네티스
 cascade:
   type: docs
 weight: 7

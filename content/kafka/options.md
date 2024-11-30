@@ -48,4 +48,7 @@ log.segments.bytes
 
 # replica.fetch.response.max.bytes
 - 전체 fetch 응답의 최대 바이트 수
+
+#  producer
+linger.ms
 ```

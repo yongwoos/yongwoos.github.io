@@ -2,5 +2,5 @@
 title: CS기본
 cascade:
   type: docs
-weight: 5
+weight: 3
 ---
