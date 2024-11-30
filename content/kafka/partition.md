@@ -15,7 +15,7 @@ weight: 4
 ## 파티션 개수 줄이지 못하는 이유
 파티션 수를 정하고 다시 늘리거나 줄이기가 힘드르모 결정할 때, 1~2년 후의 처리량을 고려해서 결정하는게 좋다. 이러한 이유에는 카프카를 이루는 설계요인이 복합적으로 적용된다. 다수 브로커에 분배되어있는 세그먼트를 다시 재배열하는것에 상당한 리소스가 사용되기 때문이라고 한다.
 
-### 레퍼런스
+#### 레퍼런스
 - https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/
 - https://devidea.tistory.com/90?category=762832
 - https://devidea.tistory.com/95
