@@ -57,3 +57,14 @@ apt upgrade
 ## 방화벽 설치
 
 ## 노드 연결
+
+## NUMA
+
+## VM 삭제하기
+```
+qm stop <vmid>
+
+qm stop <vmid>
+
+qm destroy <vmid>
+```
