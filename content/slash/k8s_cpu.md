@@ -51,6 +51,7 @@ weight: 1
 ### Right Sizing for Cloud
 - EC2 워커 노드 스케일업으로 리소스 사용량 줄이기
 - MAU 20% 증가해
+
 ### Optimization for infra
 - istio
   - 모든 envoy가 자신의 메모리에 메트릭을 올려놓고 서빙을 해야 함
