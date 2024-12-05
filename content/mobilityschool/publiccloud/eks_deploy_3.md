@@ -1,5 +1,5 @@
 ---
-title: EKS 배포4
+title: EKS 배포3
 weight: 9
 ---
 ## 참고지식

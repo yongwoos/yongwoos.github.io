@@ -1,5 +1,5 @@
 ---
-title: EKS에 배포
+title: EKS 배포1
 weight: 7
 ---
 ## 복습
