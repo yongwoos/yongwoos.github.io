@@ -60,6 +60,16 @@ apt upgrade
 
 ## NUMA
 
+## local과 local lvm 합치기
+- SHELL에서 다음 명령어 입력
+```bash
+   81  lvremove /dev/pve/data
+   82  lvresize -l +100%FREE /dev/pve/root
+   83  history
+   84  resize2fs -p /dev/pve/root
+   85  df -h
+```
+- 스토리지로 가서 디스크를 추가한다.
 ## VM 삭제하기
 ```
 qm stop <vmid>
