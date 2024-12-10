@@ -245,7 +245,7 @@ weight: 5
     --nodes-min 워커 노드의 최소개수 \
     --nodes-max 워커노드의 최대 개수
 
-    eksctl create cluster --vpc-public-subnets WorkerSubnets값 --name eks-cluster --region ap-northeast-2 --version 1.30 --nodegroup-name eks-work-nodegroup --node-type t2.small --nodes 2 --nodes-min 2 --nodes-max 5
+    eksctl create cluster --vpc-public-subnets WorkerSubnets값 --name eks-cluster --region ap-northeast-2 --version 1.31 --nodegroup-name eks-work-nodegroup --node-type t2.small --nodes 2 --nodes-min 2 --nodes-max 5
     ```
   - Permission Denied 에러가 발생한 경우   
     IAM에서 사용자에게 권한을 추가한 후 access-key 와 secret access-key 다시 등록

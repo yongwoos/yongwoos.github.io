@@ -191,7 +191,7 @@ eksctl create cluster
 --nodes-max 최대 노드의 개수 
 ```
 ```
-eksctl create cluster --vpc-public-subnets subnet-0f3d3d126db2bee57,subnet-0abea07a4425d377c,subnet-03f06b0e223706343 --name eks-work-cluster --region ap-northeast-2 --version 1.30 --nodegroup-name eks-work-node --node-type t2.micro --nodes 3 --nodes-min 3 --nodes-max 5
+eksctl create cluster --vpc-public-subnets subnet-0f3d3d126db2bee57,subnet-0abea07a4425d377c,subnet-03f06b0e223706343 --name eks-work-cluster --region ap-northeast-2 --version 1.31 --nodegroup-name eks-work-node --node-type t2.micro --nodes 3 --nodes-min 3 --nodes-max 5
 ```
 - 2개의 스택 생성
   - 첫번째 스택은 ControlPlane에 대한 리소스를 설정하는데 이 때 IAM 설정이 같이 이루어짐
