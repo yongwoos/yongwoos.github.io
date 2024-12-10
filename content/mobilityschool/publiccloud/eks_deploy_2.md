@@ -457,7 +457,8 @@ spec:
 - Certificate Manager에서 인증서 삭제
 
 ### 3)클러스터 삭제
-`eksctl delete cluster –-name 클러스터이름`
+`kubectl config get-contexts`로 클러스터 이름 확인   
+`eksctl delete cluster 클러스터이름`
 
 ## 7.CloudFormation 으로 구축한 리소스
 ### 1)base_resources_cfn.yaml: VPC를 생성하기 위한 CloudFormation 파일

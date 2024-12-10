@@ -331,7 +331,7 @@ spec:
 - Load Balancer는 직접 삭제
   - `kubectl get svc --all-namespace` 를 이용해서 External IP 가 설정된 서비스를 조회   
     `kubectl delete svc 서비스이름` 을 이용해서 서비스를 삭제하면 Elastic Load Balancer가 자동으로 삭제됨   
-    `eksctl delete cluster --name 클러스터이름` 을 이용해서 cluster를 삭제하면 이 경우에는 VPC, EC2 인스턴스가 모두 삭제
+    `eksctl delete cluster 클러스터이름` 을 이용해서 cluster를 삭제하면 이 경우에는 VPC, EC2 인스턴스가 모두 삭제
 
 ## 4.데이터베이스 환경 구축
 ### 1)내부에서만 사용할 데이터베이스를 구축
