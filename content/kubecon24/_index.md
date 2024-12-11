@@ -1,4 +1,8 @@
 ---
-title: Kubecon24 리뷰
+title: Kubecon24
 weight: 13
+sidebar:
+  open: true
+cascade:
+  type: docs
 --- 

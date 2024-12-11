@@ -1,5 +1,5 @@
 ---
-title: REDIS
+title: Redis
 weight: 3
 ---
 
