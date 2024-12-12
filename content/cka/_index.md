@@ -1,5 +1,5 @@
 ---
-title: 쿠버네티스
+title: CKA 준비
 cascade:
   type: docs
 weight: 7
