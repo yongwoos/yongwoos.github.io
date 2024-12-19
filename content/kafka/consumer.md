@@ -24,3 +24,4 @@ weight: 1
 
 ### 리밸런싱 문제
 - 한 컨슈머에서 다른 컨슈머로 소유권이 이전
+![](partition_consumer.drawio.svg)
