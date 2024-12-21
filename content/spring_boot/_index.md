@@ -1,6 +1,6 @@
 ---
 title: Spring Boot
 weight: 14
-cacade:
+cascade:
   type: docs
 ---
