@@ -1,5 +1,5 @@
 ---
-title: @KafkaListener
+title: KafkaListener
 weight: 3
 ---
 스프링부트에서 `@KafkaListener`를 사용하여 Kafka 메시지를 자동으로 수신하는 과정은 여러 스프링의 설정과 Kafka 클라이언트를 통해 이루어집니다. 이 과정을 좀 더 구체적으로 설명하면 다음과 같습니다:
