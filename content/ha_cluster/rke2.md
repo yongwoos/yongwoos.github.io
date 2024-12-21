@@ -1,6 +1,6 @@
 ---
 title: RKE2 설치
-weight: 4
+weight: 2
 ---
 ## RKE2 설치하기
 - https://docs.rke2.io/install/quickstart 참조
