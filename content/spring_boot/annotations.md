@@ -4,7 +4,6 @@ weight: 1
 ---
 ## 어노테이션 원리
 스프링 부트에서 `@Controller`, `@Service`, `@Repository`와 같은 애노테이션이 자동으로 실행되는 과정은 **스프링의 컴포넌트 스캔(Component Scan)**과 **의존성 주입(Dependency Injection)** 메커니즘 덕분입니다. 이를 좀 더 구체적으로 설명하면 다음과 같습니다:
-리
 ### 1. **컴포넌트 스캔 (Component Scan)**
 
 스프링 부트는 애플리케이션 시작 시, 기본적으로 클래스 경로에서 `@Component` 또는 그 하위 애노테이션들이 붙은 클래스를 자동으로 찾아 관리합니다. `@Controller`, `@Service`, `@Repository`, `@Component` 등은 모두 **컴포넌트 스캔** 대상이 되는 애노테이션입니다. 
