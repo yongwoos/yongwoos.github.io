@@ -1,6 +1,6 @@
 ---
-title: Nginx-Gitlab-Jenkins 설치
-weight: 15
+title: Nginx-Gitlab-Jenkins-harbor 설치
+weight: 1
 ---
 Gitlab 디스플레이 없이 설정 시 `sudo systemctl get-default` 옵션을 multi-level로 설정해야 함. `sudo systemctl set-default multi-user.target` 으로 변경
 Gitlab-CE 버전 설치 시 기본포트가 80, Jenkins는 기본포트 8080. Jenkins 기본포트와 puma 기본포트 충돌이 일어나므로 Jenkins 포트 변경 필요.
