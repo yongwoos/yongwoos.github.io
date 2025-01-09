@@ -12,17 +12,22 @@ sudo apt update
 sudo apt install openjdk-17-jdk
 
 # kafka 다운로드 및 압축풀기
-wget https://downloads.apache.org/kafka/3.8.1/kafka_2.13-3.8.1.tgz
-sudo tar -xvzf kafka_2.13-3.8.1.tgz -C /usr/local/
+wget https://downloads.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz
+sudo tar -xvzf kafka_2.13-3.9.0.tgz -C /usr/local/
+sudo mv /usr/local/kafka_2.13-3.9.0 /usr/local/kafka
 
 # 방화벽 해제
 sudo ufw disable
 
 # kafka 디렉터리로 이동
-cd /usr/local/kafka_2.13-3.8.1
+cd /usr/local/kafka
 
 # log directory 생성
 sudo mkdir -pv logs/kraft-combined-logs
+
+# log 권한 추가
+sudo chmod -R 755 /usr/local/kafka/logs/
+sudo chown -R $(whoami):$(whoami) /usr/local/kafka/logs/
 
 # kraft config변경
 sudo nano config/kraft/server.properties
@@ -30,7 +35,7 @@ sudo nano config/kraft/server.properties
 
 - 노드1 server.properties(인스턴스 별로 설정)
 
-```bash
+```bash {filename="노드1 server.properties"}
 process.roles=broker,controller
 node.id=1
 controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093,3@노드3내부IP주소:9093
@@ -50,7 +55,7 @@ controller.listener.names=CONTROLLER
 listener.name.plaintext=PLAINTEXT
 ```
 - 노드2 server.properties
-```bash
+```bash {filename="노드2 server.properties"}
 process.roles=broker,controller
 node.id=2
 controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093,3@노드3내부IP주소:9093
@@ -86,7 +91,7 @@ A_D5kj5zTbi2EDTeXHDH3g
 sudo ./bin/kafka-storage.sh format -t uuid_값 -c ./config/kraft/server.properties
 
 # 카프카 시작
-bin/kafka-server-start.sh config/server.properties
+bin/kafka-server-start.sh config/kraft/server.properties
 
 # 메타데이터 퀴럼 상태 확인
 ./bin/kafka-metadata-quorum.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 describe --status
