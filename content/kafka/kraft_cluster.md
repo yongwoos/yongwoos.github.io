@@ -23,7 +23,7 @@ sudo ufw disable
 cd /usr/local/kafka
 
 # log directory 생성
-sudo mkdir -pv logs/kraft-combined-logs
+sudo mkdir -p logs/kraft-combined-logs
 
 # log 권한 추가
 sudo chmod -R 755 /usr/local/kafka/logs/
@@ -88,34 +88,34 @@ ip주소 kafka_2
 A_D5kj5zTbi2EDTeXHDH3g
 
 # 위에서 생성된 cluster uuid로 instance별로 스토리지 포맷
-sudo ./bin/kafka-storage.sh format -t uuid_값 -c ./config/kraft/server.properties
+sudo ./bin/kafka-storage.sh format -t uuid값 -c ./config/kraft/server.properties
 
-# 카프카 시작
-bin/kafka-server-start.sh config/kraft/server.properties
+# 카프카 시작(VM 다시 시작 시 명령 필요)
+bin/kafka-server-start.sh -daemon config/kraft/server.properties
 
 # 메타데이터 퀴럼 상태 확인
-./bin/kafka-metadata-quorum.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 describe --status
+./bin/kafka-metadata-quorum.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 describe --status
 
 # 브로커 상태 확인
 ./bin/kafka-broker-api-versions.sh --bootstrap-server ip주소:9092
 
 # 토픽 생성
-./bin/kafka-topics.sh --create --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 --replication-factor 2 --partitions 2 --topic real_topic
+./bin/kafka-topics.sh --create --bootstrap-server 노드1주소:9092,노드2주소:9092 --replication-factor 2 --partitions 2 --topic real_topic
 
 # 토픽 목록 확인
-./bin/kafka-topics.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 --list
+./bin/kafka-topics.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --list
 
 # 토픽 자세히 확인
-./bin/kafka-topics.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 --describe --topic real_topic
+./bin/kafka-topics.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --describe --topic real_topic
 
 # check log
 tail -f logs/server.log
 
 # produce
-./bin/kafka-console-producer.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 --topic real_topic
+./bin/kafka-console-producer.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --topic real_topic
 
 # consume
-./bin/kafka-console-consumer.sh --bootstrap-server 172.31.11.12:9092,172.31.11.55:9092 --topic real_topic --from-beginning
+./bin/kafka-console-consumer.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --topic real_topic --from-beginning
 ```
 
 ## KafkaUI
