@@ -1,5 +1,5 @@
 ---
-title: HAProxy(gitlab, jenkins)포워딩
+title: HAProxy로 gitlab, jenkins 포워딩 하기
 weight: 3
 ---
 HAproxy가 nginx보다 훨씐 빠름.
