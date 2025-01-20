@@ -10,7 +10,7 @@ haproxy나 nginx를 사용하면 80번 포트를 다른 포트로 포워딩 해�
 
 harbor는 왜인지 9092로 haproxy로 포워딩 하게 되면 http 로그인이 안됨.
 
-다음코드로 haproxy를 설정
+다음코드로 haproxy를 설정 `sudo nano /etc/haproxy/haproxy.cfg`
 ```{filename="/etc/haproxy/haproxy.cfg"}
 # 프론트엔드 설정 (HTTP 요청을 받는 부분)
 frontend http_front
@@ -32,3 +32,5 @@ backend jenkins_backend
 backend gitlab_backend
     server gitlab1 127.0.0.1:9091
 ```
+
+`sudo systemctl restart haproxy`
