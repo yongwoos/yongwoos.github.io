@@ -18,6 +18,8 @@ sudo mv /usr/local/kafka_2.13-3.9.0 /usr/local/kafka
 
 # 방화벽 해제
 sudo ufw disable
+sudo systemctl stop ufw
+sudo systemctl disable ufw
 
 # kafka 디렉터리로 이동
 cd /usr/local/kafka
@@ -43,7 +45,7 @@ controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:90
 listeners=PLAINTEXT://노드1내부IP주소:9092,CONTROLLER://노드1내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드1내부IP주소:9092
 
-log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs
+log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs # 로그디렉터리 수정정
 num.partitions=3
 
 offsets.topic.replication.factor=3
@@ -63,7 +65,7 @@ controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:90
 listeners=PLAINTEXT://노드2내부IP주소:9092,CONTROLLER://노드2내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드2내부IP주소:9092
 
-log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs
+log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs # 로그 디렉터리 수정
 num.partitions=3
 
 offsets.topic.replication.factor=3
