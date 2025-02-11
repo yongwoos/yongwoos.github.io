@@ -8,8 +8,8 @@ weight: 2
 - 카프카 바이너리 파일 다운로드(또는 소스코드 다운 후 빌드)
 ```sh
 # java 설치
-sudo apt update
-sudo apt install openjdk-17-jdk
+sudo apt update -y
+sudo apt install openjdk-17-jdk -y
 
 # kafka 다운로드 및 압축풀기
 wget https://downloads.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz
