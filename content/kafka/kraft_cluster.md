@@ -45,7 +45,7 @@ controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:90
 listeners=PLAINTEXT://노드1내부IP주소:9092,CONTROLLER://노드1내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드1내부IP주소:9092
 
-log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs # 로그디렉터리 수정정
+log.dirs=/usr/local/kafka/logs/kraft-combined-logs # 로그디렉터리 수정정
 num.partitions=3
 
 offsets.topic.replication.factor=3
@@ -65,7 +65,7 @@ controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:90
 listeners=PLAINTEXT://노드2내부IP주소:9092,CONTROLLER://노드2내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드2내부IP주소:9092
 
-log.dirs=/usr/local/kafka_2.13-3.6.0/logs/kraft-combined-logs # 로그 디렉터리 수정
+log.dirs=/usr/local/kafka/logs/kraft-combined-logs # 로그 디렉터리 수정
 num.partitions=3
 
 offsets.topic.replication.factor=3
