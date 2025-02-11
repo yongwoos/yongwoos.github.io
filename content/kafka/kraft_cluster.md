@@ -40,7 +40,7 @@ sudo nano config/kraft/server.properties
 ```bash {filename="노드1 server.properties"}
 process.roles=broker,controller
 node.id=1
-controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093,3@노드3내부IP주소:9093
+controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093
 
 listeners=PLAINTEXT://노드1내부IP주소:9092,CONTROLLER://노드1내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드1내부IP주소:9092
@@ -60,7 +60,7 @@ listener.name.plaintext=PLAINTEXT
 ```bash {filename="노드2 server.properties"}
 process.roles=broker,controller
 node.id=2
-controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093,3@노드3내부IP주소:9093
+controller.quorum.voters=1@노드1내부IP주소:9093,2@노드2내부IP주소:9093
 
 listeners=PLAINTEXT://노드2내부IP주소:9092,CONTROLLER://노드2내부IP주소:9093
 advertised.listeners=PLAINTEXT://노드2내부IP주소:9092
@@ -83,201 +83,66 @@ sudo nano /etc/hosts
 ip주소 kafka_1
 ip주소 kafka_2
 ```
-### 카프카 시작
+### 클러스터 uuid 생성
+- 임의의 한대 서버에서 cluster uuid 생성
 ```bash
-# 임의의 한대 서버에서 cluster uuid 생성
 ./bin/kafka-storage.sh random-uuid
-A_D5kj5zTbi2EDTeXHDH3g
 
-# 위에서 생성된 cluster uuid로 instance별로 스토리지 포맷
+# 위에서 생성된 cluster uuid로 카프카 노드별로 스토리지 포맷
 sudo ./bin/kafka-storage.sh format -t uuid값 -c ./config/kraft/server.properties
+```
 
-# 카프카 시작(VM 다시 시작 시 명령 필요)
+### 카프카 시작
+- VM 다시 시작 시 명령 필요
+```bash
 bin/kafka-server-start.sh -daemon config/kraft/server.properties
+```
 
-# 메타데이터 퀴럼 상태 확인
+### 메타데이터 퀴럼 상태 확인
+```bash
 ./bin/kafka-metadata-quorum.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 describe --status
-
-# 브로커 상태 확인
+```
+### 브로커 상태 확인
+```bash
 ./bin/kafka-broker-api-versions.sh --bootstrap-server ip주소:9092
+```
 
-# 토픽 생성
+### 토픽 생성
+```bash
 ./bin/kafka-topics.sh --create --bootstrap-server 노드1주소:9092,노드2주소:9092 --replication-factor 2 --partitions 2 --topic real_topic
+```
 
-# 토픽 목록 확인
+### 토픽 목록 확인
+```bash
 ./bin/kafka-topics.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --list
+```
 
-# 토픽 자세히 확인
+### 토픽 자세히 확인
+```bash
 ./bin/kafka-topics.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --describe --topic real_topic
+```
 
-# check log
+### check log
+```bash
 tail -f logs/server.log
+```
 
-# produce
+### produce
+```bash
 ./bin/kafka-console-producer.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --topic real_topic
+```
 
-# consume
+### consume
+```bash
 ./bin/kafka-console-consumer.sh --bootstrap-server 노드1주소:9092,노드2주소:9092 --topic real_topic --from-beginning
 ```
 
-## KafkaUI
-- 도커 없이 설치
-```
-wget https://github.com/provectus/kafka-ui/releases/download/v0.7.2/kafka-ui-api-v0.7.2.jar
-```
-- yml 작성
-```yml
-logging:
-  level:
-    root: INFO
-    com.provectus: DEBUG
-    #org.springframework.http.codec.json.Jackson2JsonEncoder: DEBUG
-    #org.springframework.http.codec.json.Jackson2JsonDecoder: DEBUG
-    reactor.netty.http.server.AccessLog: INFO
-    org.springframework.security: DEBUG
-
-#server:
-#  port: 8080 #- Port in which kafka-ui will run.
-
-spring:
-  jmx:
-    enabled: true
-  ldap:
-    urls: ldap://localhost:10389
-    base: "cn={0},ou=people,dc=planetexpress,dc=com"
-    admin-user: "cn=admin,dc=planetexpress,dc=com"
-    admin-password: "GoodNewsEveryone"
-    user-filter-search-base: "dc=planetexpress,dc=com"
-    user-filter-search-filter: "(&(uid={0})(objectClass=inetOrgPerson))"
-    group-filter-search-base: "ou=people,dc=planetexpress,dc=com"
-
-kafka:
-  clusters:
-    - name: local
-      bootstrapServers: localhost:9092
-      schemaRegistry: http://localhost:8085
-      ksqldbServer: http://localhost:8088
-      kafkaConnect:
-        - name: first
-          address: http://localhost:8083
-      metrics:
-        port: 9997
-        type: JMX
-
-dynamic.config.enabled: true
-
-oauth2:
-  ldap:
-    activeDirectory: false
-    aсtiveDirectory.domain: domain.com
-
-auth:
-  type: DISABLED
-  #  type: OAUTH2
-  #  type: LDAP
-  oauth2:
-    client:
-      cognito:
-        clientId: # CLIENT ID
-        clientSecret: # CLIENT SECRET
-        scope: openid
-        client-name: cognito
-        provider: cognito
-        redirect-uri: http://localhost:8080/login/oauth2/code/cognito
-        authorization-grant-type: authorization_code
-        issuer-uri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_M7cIUn1nj
-        jwk-set-uri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_M7cIUn1nj/.well-known/jwks.json
-        user-name-attribute: cognito:username
-        custom-params:
-          type: cognito
-          logoutUrl: https://kafka-ui.auth.eu-central-1.amazoncognito.com/logout
-      google:
-        provider: google
-        clientId: # CLIENT ID
-        clientSecret: # CLIENT SECRET
-        user-name-attribute: email
-        custom-params:
-          type: google
-          allowedDomain: provectus.com
-      github:
-        provider: github
-        clientId: # CLIENT ID
-        clientSecret: # CLIENT SECRET
-        scope:
-          - read:org
-        user-name-attribute: login
-        custom-params:
-          type: github
-
-rbac:
-  roles:
-    - name: "memelords"
-      clusters:
-        - local
-      subjects:
-        - provider: oauth_google
-          type: domain
-          value: "provectus.com"
-        - provider: oauth_google
-          type: user
-          value: "name@provectus.com"
-
-        - provider: oauth_github
-          type: organization
-          value: "provectus"
-        - provider: oauth_github
-          type: user
-          value: "memelord"
-
-        - provider: oauth_cognito
-          type: user
-          value: "username"
-        - provider: oauth_cognito
-          type: group
-          value: "memelords"
-
-        - provider: ldap
-          type: group
-          value: "admin_staff"
-
-        # NOT IMPLEMENTED YET
-      #        - provider: ldap_ad
-      #          type: group
-      #          value: "admin_staff"
-
-      permissions:
-        - resource: applicationconfig
-          actions: all
-
-        - resource: clusterconfig
-          actions: all
-
-        - resource: topic
-          value: ".*"
-          actions: all
-
-        - resource: consumer
-          value: ".*"
-          actions: all
-
-        - resource: schema
-          value: ".*"
-          actions: all
-
-        - resource: connect
-          value: "*"
-          actions: all
-
-        - resource: ksql
-          actions: all
-
-        - resource: acl
-          actions: all
-
-        - resource: audit
-          actions: all
+### 프로듀서 성능테스트
+```bash
+./bin/kafka-producer-perf-test.sh --topic auth --record-size 100 --throughput 1000 --num-records 10000 --producer-props acks=1 bootstrap.servers=192.168.54.7:9092,192.168.55.8:9092
 ```
 
-```
-java -Dspring.config.additional-location=<path-to-application-local.yml> --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED -jar <path-to-kafka-ui-jar>
+### 컨슈머 성능 테스트
+```bash
+
 ```
