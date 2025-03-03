@@ -5,11 +5,6 @@ weight: 1
 layout: wide
 cascade:
   type: docs
-sidebar:
-  open: true
-prev: /mobilityschool/mariadb/
-next: /mobilityschool/mariadb/1주차-정규화제약조건
-
 ---
 
 08/26, 08/27
