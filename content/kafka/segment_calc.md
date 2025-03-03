@@ -1,6 +1,6 @@
 ---
-title: 세그먼트와 파일핸들러 계산
-weight: 7
+title: Segment와 File Handler
+weight: 8
 ---
 Kafka에서 **파티션**과 **파일 핸들(file handle)** 간의 관계는 Kafka의 데이터 저장 및 관리 방식에 뿌리를 둡니다. 다음은 이 관계를 구체적으로 설명한 내용입니다:
 

@@ -1,6 +1,6 @@
 ---
 title: 카프카 클러스터 만들기
-weight: 2
+weight: 3
 ---
 ## Kafka Kraft 클러스터 구성 및 설치
 ### 설치

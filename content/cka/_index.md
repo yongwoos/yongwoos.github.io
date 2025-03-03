@@ -1,7 +1,5 @@
 ---
 title: CKA 준비
-cascade:
-  type: docs
 weight: 7
 ---
 ### Taint, Toleration

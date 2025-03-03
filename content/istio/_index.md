@@ -1,7 +1,5 @@
 ---
 title: Istio
-cascade:
-  type: docs
 weight: 4
 ---
 - minikube 와 eksctl 이 둘 다 깔려있어 충돌이 일어날 경우

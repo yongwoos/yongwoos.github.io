@@ -1,11 +1,6 @@
 ---
 title: 질문목록
-linkTitle: 질문목록
-layout: wide
-cascade:
-  type: docs
-sidebar:
-  open: true
+weight: 3
 ---
 
 # 자료구조

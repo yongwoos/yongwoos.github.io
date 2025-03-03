@@ -1,6 +1,6 @@
 ---
 title: 카프카 옵션
-weight: 3
+weight: 4
 ---
 ```
 buffer.memory : 프로듀서가 버퍼에 사용할 총 메모리의 양

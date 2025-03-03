@@ -1,6 +1,6 @@
 ---
 title: 컨슈머
-weight: 1
+weight: 2
 ---
 ### Consumer Group
 - 사용이유

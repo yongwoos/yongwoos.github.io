@@ -2,9 +2,6 @@
 title: MariaDB
 linkTitle: MariaDB
 weight: 1
-layout: wide
-cascade:
-  type: docs
 ---
 
 08/26, 08/27

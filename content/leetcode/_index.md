@@ -1,7 +1,5 @@
 ---
-cascade:
-  type: docs
-title: 코테
+title: LeetCode
 weight: 2
 ---
 # LeetCode Profile

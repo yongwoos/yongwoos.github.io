@@ -1,6 +1,6 @@
 ---
 title: 카프카 도커 설치
-weight: 8
+weight: 9
 ---
 ## 도커 컴포즈로 카프카 설치
 ```yaml {filename="docker-compose.yaml"}
@@ -33,4 +33,3 @@ services:
 # 토픽 컨슘
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic auth
 ```
-
