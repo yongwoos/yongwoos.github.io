@@ -1,6 +1,6 @@
 ---
 title: 하이브리드 클라우드를 이용한 고가용성 알림 시스템
-weight: -1
+weight: -2
 ---
 
 <object data="https://drive.google.com/file/d/1ZeMCLweUr48PE9SsCQCoJzGfvdy4U0mf/preview" type="application/pdf" width="100%" height="1200px">
