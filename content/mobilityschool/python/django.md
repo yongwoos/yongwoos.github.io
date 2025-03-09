@@ -87,7 +87,7 @@ tr.record {
 ```
 - index.html 파일 수정
 
-```html
+```javascript
 <!doctype html><html lang="en">
 <head>
     <meta charset="UTF-8">
