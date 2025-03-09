@@ -2,6 +2,8 @@
 title: Django에서의 데이터베이스 연동
 linkTitle: Django
 weight: 12
+cascade:
+  type: docs
 ---
 
 ### Model
