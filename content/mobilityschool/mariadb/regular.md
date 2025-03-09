@@ -1,12 +1,6 @@
 ---
 title: 정규화
-linkTitle: 정규화
 weight: 2
-layout: wide
-cascade:
-  type: docs
-sidebar:
-  open: true
 ---
 
 

@@ -1,12 +1,6 @@
 ---
 title: DML
-linkTitle: DML
 weight: 3
-layout: wide
-cascade:
-  type: docs
-sidebar:
-  open: true
 ---
 
 08/29

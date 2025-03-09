@@ -86,7 +86,7 @@ tr.record {
 }
 ```
 - index.html 파일 수정
-```python
+```html
 <% load static %>
 <!DOCTYPE html>
 <html lang="en">
