@@ -89,7 +89,6 @@ tr.record {
 ```
 - index.html 파일 수정
 ```html
-<% load static %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
