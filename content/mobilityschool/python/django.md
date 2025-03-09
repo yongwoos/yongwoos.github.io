@@ -87,7 +87,7 @@ tr.record {
 ```
 - index.html 파일 수정
 
-```html {filename="index.html"}
+```python {filename="index.html"}
 <!doctype html>
 <html lang="en">
 <head>
