@@ -88,7 +88,8 @@ tr.record {
 - index.html 파일 수정
 
 ```html {filename="index.html"}
-<!doctype html><html lang="en">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,7 +98,7 @@ tr.record {
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h3>{{message}}</h3>
+    <h3>{{ message }}</h3>
 </body>
 </html>
 ```
