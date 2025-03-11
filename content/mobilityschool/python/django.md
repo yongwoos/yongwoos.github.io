@@ -87,7 +87,7 @@ tr.record {
 ```
 - index.html 파일 수정
 
-```python {filename="index.html"}
+```html {filename="index.html"}
 <!doctype html>
 <html lang="en">
 <head>
@@ -95,7 +95,7 @@ tr.record {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목록</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
 </head>
 <body>
     <h3>{{ message }}</h3>
