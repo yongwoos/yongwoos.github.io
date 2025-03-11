@@ -1,5 +1,5 @@
 ---
 title: MariaDB
 weight: 1
-url: "/mobilityschool/mariadb/mariadb/"
+url: /mobilityschool/mariadb/mariadb/
 ---

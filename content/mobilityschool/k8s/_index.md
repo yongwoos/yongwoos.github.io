@@ -1,5 +1,5 @@
 ---
 title: Kubernetes
 weight: 9
-url: "/mobilityschool/k8s/k8s/"
+url: /mobilityschool/k8s/k8s/
 ---

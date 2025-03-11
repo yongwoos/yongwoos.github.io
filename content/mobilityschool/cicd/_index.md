@@ -1,5 +1,5 @@
 ---
 title: CI/CD
 weight: 11
-url: "/mobilityschool/cicd/jenkins/"
+url: /mobilityschool/cicd/jenkins/
 ---
