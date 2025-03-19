@@ -1,12 +1,6 @@
 ---
 title: Ubuntu 사용자 관리
-linkTitle: 사용자 관리
-weight: 2
-layout: wide
-cascade:
-  type: docs
-sidebar:
-  open: true
+weight: 4
 ---
 
 ## 사용자 계정 관련 파일

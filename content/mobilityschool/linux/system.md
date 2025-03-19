@@ -1,12 +1,6 @@
 ---
 title: 시스템 관리
-linkTitle: 시스템 관리
-weight: 3
-layout: wide
-cascade:
-  type: docs
-sidebar:
-  open: true
+weight: 5
 ---
 ## 디스크 사용량 설정
 - 리눅스는 기본적으로 여러 사용자가 한꺼번에 사용하는 시스템
