@@ -1,5 +1,5 @@
 ---
-title: 버전 관리 시스템
+title: Git
 weight: 1
 ---
 ## 버전 관리 시스템
