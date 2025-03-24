@@ -1,5 +1,5 @@
 ---
-title: Kubernetes CPU 알뜰하게 사용하기 리뷰
+title: Kubernetes CPU 알뜰하게 사용하기
 weight: 1
 ---
 ## 기본 개념

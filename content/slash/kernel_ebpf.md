@@ -1,5 +1,5 @@
 ---
-title: 미쳐 알지 못했던 Kernel까지 Observability 향상시키기 리뷰
+title: Kernel까지 Observability 향상시키기
 weight: 2
 ---
 ### CPU 사용률
