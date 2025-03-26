@@ -1,0 +1,16 @@
+/* sidebar-active-item */
+.sidebar-active-item {
+    background-color: #1abc9c;  /* 활성화된 아이템의 배경색 */
+    color: white;  /* 활성화된 아이템의 글자 색 */
+    font-weight: bold;  /* 글씨를 굵게 */
+}
+
+/* 사이드바 아이템 기본 상태 */
+.sidebar-container .sidebar-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar-container .sidebar-item:hover {
+    background-color: #34495e;  /* 마우스를 올렸을 때 배경색 변경 */
+}
