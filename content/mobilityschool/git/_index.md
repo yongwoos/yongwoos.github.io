@@ -1,5 +1,5 @@
 ---
 title: Git
 weight: 10
-url: /mobilityschool/git/git/
+url: mobilityschool/git/git
 ---

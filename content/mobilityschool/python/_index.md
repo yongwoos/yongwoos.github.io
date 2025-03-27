@@ -1,4 +1,4 @@
 ---
 weight: 6
-url: /mobilityschool/python/python/
+url: mobilityschool/python/python
 ---
