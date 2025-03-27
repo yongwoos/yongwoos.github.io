@@ -1,6 +1,5 @@
 ---
 title: MariaDB
-linkTitle: MariaDB
 weight: 1
 ---
 
