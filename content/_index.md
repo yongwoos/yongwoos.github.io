@@ -3,14 +3,13 @@ cascade:
   type: docs
 toc: false
 ---
-# 🧑‍💻 PARK YONGWOO
 
-## 📌 SUMMARY
+##  SUMMARY
 ---
 Passionate cloud engineer with hands-on experience in setting up and managing Kubernetes clusters, Kafka, and VirtualBox-based virtualized environments. Enthusiastic about AWS and cloud technologies, drawn by the opportunity to work with a wide range of cutting-edge tools and architectures. Seeking to grow into a platform engineering role, ultimately aiming to become a solutions architect specializing in scalable and resilient cloud infrastructure.
 
 
-## 💼 EXPERIENCE
+##  EXPERIENCE
 ---
 ### Hyundai Autoever Mobility SW School - Cloud _(2024/08 - 2025/02)_
 #### [Active-Active HA Alarm System using Hybrid Cloud]
@@ -28,17 +27,17 @@ Passionate cloud engineer with hands-on experience in setting up and managing Ku
 
 
 
-## 🎓 EDUCATION
+##  EDUCATION
 ---
 ### Pukyong National University _(2017/03 - 2023/08)_
 - **Bachelor of Science in Information & Communication Engineering**
 - **GPA**: 3.34/4.5
 
-### 🎖 MILITARY SERVICE _(2020/10 - 2022/07)_
+###  MILITARY SERVICE _(2020/10 - 2022/07)_
 - Completed mandatory military service in South Korea.
 
 
-## 🛠 SKILLS
+##  SKILLS
 ---
 - **Container Orchestration**: Kubernetes (K8s), EKS, Docker  
 - **CI/CD**: GitLab, Jenkins, Harbor, Terraform, Helm, ArgoCD  
