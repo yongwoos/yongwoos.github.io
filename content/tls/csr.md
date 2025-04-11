@@ -5,7 +5,7 @@ weight: 3
 ## **CSR (Certificate Signing Request, 인증서 서명 요청)**  
 
 CSR은 **인증서를 발급받기 위한 요청 파일**입니다.  
-서버(또는 클라이언트)가 **공개 키(Public Key)**와 함께 자신의 정보를 포함하여 CA(인증 기관)에 제출하는 문서입니다.  
+서버(또는 클라이언트)가 공개 키(Public Key)와 함께 자신의 정보를 포함하여 CA(인증 기관)에 제출하는 문서입니다.  
 
 ---
 
@@ -63,7 +63,7 @@ Email Address []: admin@example.com
 ---
 
 ## **3. CA에 CSR 제출 및 인증서 발급**
-서버에서 생성한 `request.csr` 파일을 **CA에 제출**하면, CA는 검증 후 **디지털 인증서(Certificate)**를 발급해줍니다.
+서버에서 생성한 `request.csr` 파일을 **CA에 제출**하면, CA는 검증 후 <b>디지털 인증서(Certificate)</b>를 발급해줍니다.
 
 🔹 **무료 CA**: Let's Encrypt  
 🔹 **유료 CA**: DigiCert, GlobalSign, Verisign 등  
@@ -111,7 +111,7 @@ openssl req -text -noout -verify -in request.csr
 ---
 
 ## **6. 요약**
-✅ **CSR (Certificate Signing Request)**은 **CA에게 인증서를 요청할 때 사용하는 파일**  
+✅ <b>CSR (Certificate Signing Request)</b>은 **CA에게 인증서를 요청할 때 사용하는 파일**  
 ✅ CSR에는 **서버의 공개 키 & 조직 정보 & 도메인 이름**이 포함됨  
 ✅ CSR을 CA에 제출하면, **검증 후 인증서(server.crt)가 발급됨**  
 ✅ CSR은 **TLS 과정에서 직접 사용되지 않으며, 인증서를 발급받는 데만 사용됨**  
@@ -145,7 +145,7 @@ CSR 및 인증서 발급 과정에 대해 더 궁금한 점 있으면 질문 주
    - 복호화한 내용이 인증서의 해시값과 일치하면, 인증서가 위변조되지 않았음을 확인할 수 있습니다.  
 
 3️⃣ **서버의 도메인과 인증서 정보 확인**  
-   - `server.crt`에 포함된 **CN(Common Name, 도메인)**이 요청한 서버 도메인과 일치하는지 확인합니다.  
+   - `server.crt`에 포함된 <b>CN(Common Name, 도메인)</b>이 요청한 서버 도메인과 일치하는지 확인합니다.  
 
 4️⃣ **검증이 완료되면 TLS 핸드셰이크 진행**  
    - 클라이언트는 서버를 신뢰하고 **TLS 암호화 통신**을 시작합니다.  
