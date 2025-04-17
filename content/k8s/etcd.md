@@ -29,7 +29,7 @@ Kubernetes는 클러스터 상태를 유지하기 위해 etcd를 사용한다.
 
 ##  **2. etcd 작동 방식 (예제)**  
 
-### ** `kubectl apply`로 리소스 생성 → etcd 저장**  
+### **`kubectl apply`로 리소스 생성 → etcd 저장**  
 ```sh
 kubectl apply -f nginx-pod.yaml
 ```
@@ -39,7 +39,7 @@ kubectl apply -f nginx-pod.yaml
 
 ---
 
-### ** etcd에 직접 데이터 저장 및 조회 (실제 데이터 확인하기)**  
+### **etcd에 직접 데이터 저장 및 조회 (실제 데이터 확인하기)**  
 
 #### **1) etcd 데이터 확인**  
 **etcdctl**을 사용하여 저장된 데이터를 확인할 수 있음.  
@@ -64,21 +64,21 @@ ETCDCTL_API=3 etcdctl snapshot save backup.db
 
 ## **3. etcd 장애 발생 시 영향 및 복구 방법**  
 
-### ** etcd 장애 발생 시 영향**  
+### **etcd 장애 발생 시 영향**  
 - `kube-apiserver`가 etcd에 접근할 수 없으면 클러스터 상태를 저장/조회할 수 없음.  
 - 클러스터는 **기존 Pod을 실행할 수 있지만, 새로운 Pod을 생성하거나 변경할 수 없음.**  
 - etcd 장애 복구 없이 클러스터를 유지하려면 `kubelet`이 실행 중이어야 함.  
 
 ---
 
-### ** etcd 장애 복구 방법**  
+### **etcd 장애 복구 방법**  
 
-#### ** (1) etcd 백업에서 복구**  
+#### **(1) etcd 백업에서 복구**  
 ```sh
 ETCDCTL_API=3 etcdctl snapshot restore backup.db
 ```
 
-#### ** (2) etcd 클러스터 재구성 (다중 노드 etcd 사용 시)**  
+#### **(2) etcd 클러스터 재구성 (다중 노드 etcd 사용 시)**  
 ```sh
 ETCDCTL_API=3 etcdctl member list
 ```

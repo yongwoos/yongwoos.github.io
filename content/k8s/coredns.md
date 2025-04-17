@@ -9,7 +9,7 @@ CoreDNS는 **쿠버네티스 클러스터 내부에서 DNS 서비스를 제공�
 
 ---
 
-## **📌 CoreDNS가 하는 일**
+## **CoreDNS가 하는 일**
 **1. 서비스 이름을 클러스터 IP로 변환**  
 **2. 외부 도메인 네임 해석 (예: google.com)**  
 **3. 쿠버네티스 내부 도메인 관리 (`svc.cluster.local` 등)**  
@@ -18,7 +18,7 @@ CoreDNS는 **쿠버네티스 클러스터 내부에서 DNS 서비스를 제공�
 ---
 
 ## **1. CoreDNS가 서비스 이름을 클러스터 IP로 변환하는 과정**  
-### **🔹 예제: `curl my-service:80` 요청 시**  
+### **예제: `curl my-service:80` 요청 시**  
 1. Pod가 `my-service`로 요청 → **DNS 쿼리 전송 (`my-service.default.svc.cluster.local`)**  
 2. `kube-dns`(CoreDNS)가 `etcd`에서 `Service` 정보 조회  
 3. `my-service`의 클러스터 IP (`10.96.0.50`)를 반환  
