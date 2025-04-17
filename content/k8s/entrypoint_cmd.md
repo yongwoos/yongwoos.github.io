@@ -6,7 +6,7 @@ weight: -2
 
 ---
 
-## ✅ ENTRYPOINT vs CMD
+## ENTRYPOINT vs CMD
 
 | 항목 | `ENTRYPOINT` | `CMD` |
 |------|--------------|-------|
@@ -18,7 +18,7 @@ weight: -2
 
 ---
 
-### 🔍 예제 1: CMD만 사용하는 경우
+### 예제 1: CMD만 사용하는 경우
 
 ```Dockerfile
 FROM ubuntu
@@ -35,7 +35,7 @@ docker run my-image echo Bye
 
 ---
 
-### 🔍 예제 2: ENTRYPOINT만 사용하는 경우
+### 예제 2: ENTRYPOINT만 사용하는 경우
 
 ```Dockerfile
 FROM ubuntu
@@ -52,7 +52,7 @@ docker run my-image World
 
 ---
 
-### 🔍 예제 3: ENTRYPOINT + CMD 조합
+### 예제 3: ENTRYPOINT + CMD 조합
 
 ```Dockerfile
 FROM ubuntu
@@ -70,7 +70,7 @@ docker run my-image Bye
 
 ---
 
-## 🧠 Kubernetes에서의 관계
+## Kubernetes에서의 관계
 
 Kubernetes의 `command`와 `args`는 Docker의 `ENTRYPOINT`와 `CMD`를 오버라이드할 수 있어요:
 
@@ -97,7 +97,7 @@ args: ["server.py"]
 
 ---
 
-## 🔚 요약
+## 요약
 
 - `ENTRYPOINT`: 항상 실행할 명령어 (덮어쓰기 어려움)
 - `CMD`: 기본 인자 (필요하면 덮어쓰기 가능)

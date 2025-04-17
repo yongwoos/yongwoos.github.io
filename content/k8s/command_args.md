@@ -6,7 +6,7 @@ weight: -1
 
 ---
 
-### ✅ 1. `command`와 `args`를 분리한 형태
+### 1. `command`와 `args`를 분리한 형태
 ```yaml
 command: ["/bin/sh"]
 args: ["-c", "while true; do echo hello; sleep 10;done"]
@@ -21,7 +21,7 @@ args: ["-c", "while true; do echo hello; sleep 10;done"]
 
 ---
 
-### ✅ 2. command에서 한 번에 정의한 형태
+### 2. command에서 한 번에 정의한 형태
 ```yaml
 command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 ```
@@ -33,7 +33,7 @@ command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 
 ---
 
-### 🎯 어떤 차이가 있을까?
+### 어떤 차이가 있을까?
 실제로 **컨테이너 런타임에서 실행되는 명령어는 똑같습니다**. 하지만:
 
 | 구분 | `command + args` 분리 | `command`만 사용 |
@@ -44,7 +44,7 @@ command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 
 ---
 
-### 💡 요약
+### 요약
 - 둘 다 **같은 명령을 실행**한다.
 - 첫 번째 방식은 `command`와 `args`를 명확하게 나눠서 가독성과 구조적 명확성에서 유리.
 - 두 번째 방식은 간결하지만, `command`가 길어질 경우 디버깅이 어렵고 실수할 여지가 있음.
@@ -60,7 +60,7 @@ command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 
 ---
 
-## 🧱 Dockerfile
+## Dockerfile
 
 ```Dockerfile
 ENTRYPOINT ["python"]
@@ -72,7 +72,7 @@ CMD ["app.py"]
 
 ---
 
-## 🚢 Kubernetes에서는
+## Kubernetes에서는
 
 ```yaml
 command: ["python"]
@@ -95,11 +95,11 @@ CMD ["main.py"]
 
 ---
 
-## ✅ 그래서 정답:
+## 그래서 정답:
 
-### `args`는 Dockerfile의 `CMD`처럼 오버라이드된다!
+### `args`는 Dockerfile의 `CMD`처럼 오버라이드된다
 
-### 🎯 예시
+### 예시
 
 **Dockerfile:**
 ```Dockerfile
@@ -120,7 +120,7 @@ containers:
 
 ---
 
-## 🔄 반대로도 가능
+## 반대로도 가능
 
 **Dockerfile에 ENTRYPOINT만 있고 CMD 없음:**
 ```Dockerfile
@@ -133,7 +133,3 @@ args: ["script.py"]
 ```
 
 → 실행 결과: `python script.py`
-
----
-
-필요하면 내가 예제까지 실행할 수 있는 YAML이나 Dockerfile 만들어줄게. 언제든지 말만 해줘 😎
