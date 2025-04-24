@@ -4,7 +4,7 @@ weight: 14
 ---
 ![](/images/pod_workflows.png)
 **Kubernetes에서 Deployment 리소스를 생성할 때 전체 동작 과정**을 설명
-여기서도 **API Server, etcd, Controller, Scheduler, Kubelet** 등이 어떻게 협력하는지 단계별로
+**API Server, etcd, Controller, Scheduler, Kubelet** 등이 어떻게 협력하는지 단계별 과정
 
 
 ## 예시 상황: `kubectl apply -f deployment.yaml` 실행

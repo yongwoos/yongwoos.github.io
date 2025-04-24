@@ -5,7 +5,7 @@ weight: 16
 Kubernetes에서 `etcd`는 **클러스터의 모든 상태(state)**를 저장하는 **단일 소스의 진실(Single Source of Truth)** 이기 때문에,  
 리소스가 생성되거나 변경될 때마다 적절한 시점에 **etcd에 기록(persist)**
 
-## etcd 기록이 발생하는 핵심 원리
+## etcd 기록이 발생하는 원리
 
 - **모든 기록은 `kube-apiserver`를 통해서만 발생**
 - 리소스가 생성, 수정, 삭제될 때 → `kube-apiserver`는 etcd에 저장 (PUT/DELETE)
@@ -62,8 +62,5 @@ Kubernetes에서 `etcd`는 **클러스터의 모든 상태(state)**를 저장하
 | 4. 스케줄링 | Pod (nodeName 업데이트) | ✅ 저장됨 |
 | 5. 실행 후 상태 보고 | PodStatus | ✅ 저장됨 (주기적으로 갱신) |
 
----
-
-### 한마디 요약:
 
 > **"모든 객체 상태 변화는 kube-apiserver를 통해 etcd에 저장된다."**

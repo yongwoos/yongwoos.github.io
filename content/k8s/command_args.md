@@ -2,9 +2,7 @@
 title: COMMAND vs ARGS
 weight: -1
 ---
-두 방식 모두 **Kubernetes Pod 혹은 Docker 컨테이너의 `command`와 `args` 설정**에서 사용되는 형식인데, 실제로는 **동일한 쉘 명령어를 실행**하지만 **구문적으로 차이**가 있습니다. 차이를 정리해 볼게요:
-
----
+두 방식 모두 **Kubernetes Pod 혹은 Docker 컨테이너의 `command`와 `args` 설정**에서 사용되는 형식인데, 실제로는 **동일한 쉘 명령어를 실행**하지만 **구문적으로 차이**
 
 ### 1. `command`와 `args`를 분리한 형태
 ```yaml
@@ -34,7 +32,7 @@ command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 ---
 
 ### 어떤 차이가 있을까?
-실제로 **컨테이너 런타임에서 실행되는 명령어는 똑같습니다**. 하지만:
+실제로 **컨테이너 런타임에서 실행되는 명령어는 똑같음**. 하지만:
 
 | 구분 | `command + args` 분리 | `command`만 사용 |
 |------|------------------------|-------------------|
@@ -51,7 +49,7 @@ command: ["/bin/sh", "-c", "while true; do echo hello; sleep 10;done"]
 
 ---
 
-실제로 쿠버네티스에서 뭔가 복잡한 명령어를 실행할 땐 **첫 번째 방식(`command`와 `args`를 나누는)** 형식이 **더 권장**됩니다.
+실제로 쿠버네티스에서 뭔가 복잡한 명령어를 실행할 땐 **첫 번째 방식(`command`와 `args`를 나누는)** 형식이 **더 권장**
 
 
 `args`는 Dockerfile의 `CMD`처럼 오버라이드 가능.
@@ -67,7 +65,7 @@ ENTRYPOINT ["python"]
 CMD ["app.py"]
 ```
 
-- 이 이미지를 컨테이너로 실행하면 기본적으로 `python app.py`가 실행돼.
+- 이 이미지를 컨테이너로 실행하면 기본적으로 `python app.py`가 실행됨.
 - `CMD`는 기본 인자이기 때문에 `docker run myimage something.py`처럼 실행하면 **`app.py` 대신 `something.py`로 덮어씌워짐**.
 
 ---

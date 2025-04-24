@@ -102,4 +102,4 @@ ETCDCTL_API=3 etcdctl member add new-node --peer-urls=http://new-node-ip:2380
 ✔ etcd 장애 발생 시 **클러스터 관리는 중단되며, 복구하지 않으면 새로운 리소스 생성 및 변경 불가능**  
 ✔ etcd 백업과 복구 전략이 중요하며, 정기적인 스냅샷을 유지해야 함.  
 
-> **결론:** etcd는 Kubernetes의 **심장부**이며, 안정적인 etcd 운영이 Kubernetes 클러스터의 가용성을 좌우한다!
+> **결론:** etcd는 Kubernetes의 **심장부**이며, 안정적인 etcd 운영이 Kubernetes 클러스터의 가용성을 좌우

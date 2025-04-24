@@ -3,21 +3,19 @@ title: kube-proxy
 weight: 1
 ---
 ## kube-proxy가 하는일
-`kube-proxy`는 Kubernetes에서 각 노드에서 실행되는 네트워크 프록시로, **Service의 가상 IP(ClusterIP)를 실제 Pod의 IP로 연결하는 역할**을 합니다. Kubernetes의 네트워킹 모델을 지원하는 핵심 구성 요소 중 하나이며, 다음과 같은 기능을 수행합니다.  
-
----
+`kube-proxy`는 Kubernetes에서 각 노드에서 실행되는 네트워크 프록시로, **Service의 가상 IP(ClusterIP)를 실제 Pod의 IP로 연결하는 역할**. Kubernetes의 네트워킹 모델을 지원하는 핵심 구성 요소 중 하나이며, 다음과 같은 기능을 수행
 
 ## 주요 역할
 ### 1. **서비스 로드 밸런싱**
-  - Kubernetes의 `Service`는 여러 개의 `Pod`을 하나의 엔드포인트로 제공하는데, `kube-proxy`는 `iptables` 또는 `IPVS`를 이용해 **트래픽을 적절한 Pod으로 라우팅**합니다.
-  - 클라이언트가 `ClusterIP`(가상 IP)로 요청을 보내면, `kube-proxy`가 이를 적절한 `Pod IP`로 전달합니다.
+  - Kubernetes의 `Service`는 여러 개의 `Pod`을 하나의 엔드포인트로 제공하는데, `kube-proxy`는 `iptables` 또는 `IPVS`를 이용해 **트래픽을 적절한 Pod으로 라우팅**
+  - 클라이언트가 `ClusterIP`(가상 IP)로 요청을 보내면, `kube-proxy`가 이를 적절한 `Pod IP`로 전달
 
 ### 2. **트래픽 포워딩**
   - 노드에 도착한 패킷을 적절한 **Pod으로 전달**합니다.
-  - `kube-proxy`는 `iptables`, `IPVS`, `user-space` 모드를 사용하여 패킷을 포워딩합니다.
+  - `kube-proxy`는 `iptables`, `IPVS`, `user-space` 모드를 사용하여 패킷을 포워딩
 
 ### 3. **서비스 정책 적용**
-  - Kubernetes `Service`의 **SessionAffinity**(고정 연결) 등의 정책을 지원합니다.
+  - Kubernetes `Service`의 **SessionAffinity**(고정 연결) 등의 정책을 지원
   - 특정 클라이언트 요청이 항상 같은 Pod으로 가도록 설정 가능.
 
 ---
@@ -25,7 +23,7 @@ weight: 1
 ## 작동 방식 (모드별 차이)
 ### iptables 모드 (기본)
   - **iptables 규칙을 설정하여 트래픽을 라우팅**합니다.
-  - 각 `Service`에 대해 `iptables` 체인을 생성하고, 요청이 들어오면 해당 체인에 따라 적절한 `Pod`으로 전달됩니다.
+  - 각 `Service`에 대해 `iptables` 체인을 생성하고, 요청이 들어오면 해당 체인에 따라 적절한 `Pod`으로 전달
   - 성능이 우수하며, 기본적으로 많이 사용됨.
 
 ### IPVS (IP Virtual Server) 모드
@@ -57,7 +55,7 @@ weight: 1
 
 ## 예제 구성  
 ### Deployment & Service 생성
-아래와 같이 `nginx`를 실행하는 Pod 3개를 포함한 Deployment와 이를 노출하는 Service를 생성한다고 가정하자.
+아래와 같이 `nginx`를 실행하는 Pod 3개를 포함한 Deployment와 이를 노출하는 Service를 생성한다고 가정.
 
 ```yaml
 apiVersion: apps/v1

@@ -2,7 +2,7 @@
 title: Pod 생성 흐름
 weight: 14
 ---
-쿠버네티스에서 **파드 생성 요청**이 들어왔을 때 **Master Node와 Worker Node의 구성 요소들(kubelet, apiserver, etcd, controller, scheduler)**이 어떻게 동작하는지
+쿠버네티스에서 **파드 생성 요청**이 들어왔을 때 **Master Node와 Worker Node의 구성 요소들(kubelet, apiserver, etcd, controller, scheduler)** 동작 과정
 
 
 ### 예시 상황: 사용자가 `kubectl apply -f pod.yaml` 명령어로 파드 생성 요청

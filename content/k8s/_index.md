@@ -1,5 +1,5 @@
 ---
 title: K8s
-weight: -5
+weight: -100
 url: k8s/entrypoint_cmd
 ---

@@ -2,9 +2,7 @@
 title: ENTRYPOINT vs CMD
 weight: -2
 ---
-좋아요! `Dockerfile`의 `ENTRYPOINT`와 `CMD`는 컨테이너가 **시작할 때 실행할 명령어**를 정의하는데 사용하는 두 가지 지시어예요. 둘의 차이를 알면 Docker 이미지 구성과 Kubernetes에서의 오버라이딩도 훨씬 이해하기 쉬워져요.
-
----
+`Dockerfile`의 `ENTRYPOINT`와 `CMD`는 컨테이너가 **시작할 때 실행할 명령어**를 정의하는데 사용하는 두 가지 지시어
 
 ## ENTRYPOINT vs CMD
 
@@ -72,7 +70,7 @@ docker run my-image Bye
 
 ## Kubernetes에서의 관계
 
-Kubernetes의 `command`와 `args`는 Docker의 `ENTRYPOINT`와 `CMD`를 오버라이드할 수 있어요:
+Kubernetes의 `command`와 `args`는 Docker의 `ENTRYPOINT`와 `CMD`를 오버라이드할 수 있음:
 
 | Dockerfile 지시어 | Kubernetes 필드 |
 |------------------|-----------------|
@@ -93,7 +91,7 @@ command: ["python3"]
 args: ["server.py"]
 ```
 
-→ 컨테이너는 `python3 server.py`를 실행합니다.
+→ 컨테이너는 `python3 server.py`를 실행
 
 ---
 
@@ -102,7 +100,3 @@ args: ["server.py"]
 - `ENTRYPOINT`: 항상 실행할 명령어 (덮어쓰기 어려움)
 - `CMD`: 기본 인자 (필요하면 덮어쓰기 가능)
 - Kubernetes에서는 `command` → ENTRYPOINT, `args` → CMD 오버라이드
-
----
-
-필요하면 실제 사용 사례나 Dockerfile + Kubernetes YAML 예시로 같이 정리해줄게요!

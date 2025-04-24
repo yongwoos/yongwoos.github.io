@@ -6,12 +6,11 @@ weight: 2
 ## kube-scheduler가 하는 일
 ### kube-scheduler 역할 및 작동 방식
 
-`kube-scheduler`는 새로 생성된 Pod을 클러스터 내 적절한 노드에 배치하는 역할을 담당하는 Kubernetes의 핵심 컴포넌트입니다.
+`kube-scheduler`는 새로 생성된 Pod을 클러스터 내 적절한 노드에 배치하는 역할을 담당하는 Kubernetes의 핵심 컴포넌트
 
 > **한마디로:**
-> "Pod을 실행할 최적의 노드를 결정하는 Kubernetes의 '심판' 같은 존재"
+> "Pod을 실행할 최적의 노드를 결정하는 역할"
 
----
 
 ## kube-scheduler의 주요 역할
 1. **새로운 Pod 감지**
@@ -145,5 +144,5 @@ spec:
 - 필터링 단계(불가능한 노드 제외) → 점수 계산 단계(최적 노드 선택)를 거쳐 결정됨.
 - NodeSelector, Node Affinity, Taints & Tolerations 등의 다양한 정책을 지원.
 
-> **즉, kube-scheduler는 클러스터의 리소스를 효율적으로 활용하고 Pod을 최적의 위치에 배치하는 두뇌 역할을 한다!**
+> **즉, kube-scheduler는 클러스터의 리소스를 효율적으로 활용하고 Pod을 최적의 위치에 배치하는 두뇌 역할을 한다**
 ```

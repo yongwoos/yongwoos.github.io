@@ -93,4 +93,4 @@ DNAT       tcp  --  0.0.0.0/0   192.168.56.101  tcp dpt:30080 -> 10.244.1.10:808
 ✔ **NodePort 서비스는 모든 노드의 특정 포트를 통해 접근 가능**  
 ✔ **iptables NAT을 활용하여 패킷의 목적지를 Pod로 변경**  
 
->  **iptables는 Kubernetes 서비스 라우팅의 핵심 역할을 수행!**
+>  **iptables는 Kubernetes 서비스 라우팅의 핵심 역할을 수행**

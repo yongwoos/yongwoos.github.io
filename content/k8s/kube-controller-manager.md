@@ -93,4 +93,4 @@ kubectl rollout undo deployment/nginx-deployment
 3. 다양한 컨트롤러가 존재하며, 각 컨트롤러는 특정 Kubernetes 리소스를 책임지고 관리함.  
 4. `kube-controller-manager`가 없으면 Kubernetes 리소스가 자동 복구되지 않고, 사용자가 직접 모든 변경을 관리해야 함.  
 
-> **결론:** `kube-controller-manager`는 Kubernetes 클러스터의 **자율 조정(Self-Healing)** 기능을 담당하는 핵심 컴포넌트!
+> **결론:** `kube-controller-manager`는 Kubernetes 클러스터의 **자율 조정(Self-Healing)** 기능을 담당하는 핵심 컴포넌트

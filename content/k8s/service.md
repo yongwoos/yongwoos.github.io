@@ -6,8 +6,6 @@ weight: 6
 
 Kubernetes에서 새로운 **Service**가 생성되면 다음과 같은 변화가 일어난다.  
 
----
-
 ## **1. 서비스 생성 요청 → etcd 저장**  
 ```sh
 kubectl apply -f my-service.yaml
@@ -91,4 +89,4 @@ DNAT       tcp  --  0.0.0.0/0   10.96.0.50  tcp dpt:80 -> 10.244.2.15:8080
 **3. `kube-proxy` 감지** → `iptables/ipvs` 규칙 업데이트  
 **4. 클라이언트 요청 시** → `kube-proxy`가 트래픽을 적절한 Pod로 전달  
 
-**결론:** Kubernetes의 Service는 `etcd`, `kube-controller-manager`, `kube-proxy`가 협력하여 동적으로 라우팅을 설정하고 관리한다!
+**결론:** Kubernetes의 Service는 `etcd`, `kube-controller-manager`, `kube-proxy`가 협력하여 동적으로 라우팅을 설정하고 관리
