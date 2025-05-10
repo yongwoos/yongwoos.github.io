@@ -21,11 +21,11 @@ markup:
 menu:
   main:
     - name: Search
-      weight: 99
+      weight: 1
       params:
         type: search
     - name: GitHub
-      weight: 100
+      weight: 2
       url: "https://github.com/yongwoos/"
       params:
         icon: github

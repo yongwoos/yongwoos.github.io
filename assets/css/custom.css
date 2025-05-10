@@ -1,6 +1,6 @@
 /* sidebar-active-item */
 .sidebar-active-item {
-    background-color: #1abc9c;  /* 활성화된 아이템의 배경색 */
+    background-color: #0ea5e9;  /* 활성화된 아이템의 배경색 */
     color: white;  /* 활성화된 아이템의 글자 색 */
     font-weight: bold;  /* 글씨를 굵게 */
 }
