@@ -1,5 +1,5 @@
 ---
 title: inode
-weight: -97
+weight: -10
 url: inode/inode
 ---

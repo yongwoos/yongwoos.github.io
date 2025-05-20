@@ -1,5 +1,5 @@
 ---
 title: Storage
-weight: -98
+weight: -10
 url: storage/storages
 ---
