@@ -88,3 +88,7 @@ params:
       enable: true
       # hover | always
       display: hover
+
+services:
+  googleAnalytics:
+    ID: G-M2KMRBDS6T
