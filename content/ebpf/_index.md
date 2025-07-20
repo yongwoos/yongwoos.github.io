@@ -1,5 +1,5 @@
 ---
 title: eBPF
-weight: 5
-url: ebpf/basic
 ---
+1. [kprobe](basic)
+2. [bcc](bcc)

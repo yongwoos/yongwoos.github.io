@@ -1,5 +1,5 @@
 ---
-title: 하이브리드 클라우드를 이용한 고가용성 알림 시스템
+title: 고가용성 알림 시스템
 weight: -2
 ---
 [Google Drive PDF 링크](https://drive.google.com/file/d/1ZeMCLweUr48PE9SsCQCoJzGfvdy4U0mf/)

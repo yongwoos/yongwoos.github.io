@@ -1,5 +1,5 @@
 ---
-title: CKA 준비
+title: CKA
 weight: 7
 ---
 ### Taint, Toleration
