@@ -1,11 +1,7 @@
 ---
 title: EFS
 ---
-좋아, EFS를 기술 블로그 스타일로 정리해볼게. 구분과 강조를 중심으로 깔끔하게 작성할게.
-
----
-
-# AWS EFS(Amazon Elastic File System)
+## AWS EFS(Amazon Elastic File System)
 
 Amazon Elastic File System(EFS)은 **클라우드에서 확장 가능하고, 고가용성을 갖춘 네트워크 파일 시스템**이다.
 EFS는 여러 EC2 인스턴스 또는 컨테이너에서 동시에 접근할 수 있는 **공유 파일 스토리지**를 제공하며, 전통적인 온프레미스 NFS(Network File System) 환경과 유사하게 동작한다.

@@ -1,7 +1,7 @@
 ---
 title: Global Accelerator
 ---
-# AWS Global Accelerator: 전 세계 트래픽 최적화 가속기
+## AWS Global Accelerator: 전 세계 트래픽 최적화 가속기
 
 AWS Global Accelerator는 **글로벌 사용자에게 애플리케이션 트래픽을 더 빠르고 안정적으로 전달**하기 위해 설계된 서비스다.
 전 세계 어디서 접속하든 사용자는 **고정 Anycast IP**를 통해 애플리케이션에 접속하고, AWS **글로벌 네트워크 백본**을 통해 가장 가까운 리전과 최적 엔드포인트로 트래픽이 라우팅된다.
