@@ -6,5 +6,4 @@ AWS 리소스 및 애플리케이션에 대한 모니터링 서비스("AWS에서
 Amazon CloudWatch를 사용하여 지표를 수집 및 추적하고, 로그 파일을 수집 및 모니터링하고, 경보를 설정하고, AWS 리소스의 변경 사항에 자동으로 대응할 수 있음
 
 ## 참고링크
-- [CloudWatch 공식문서](https://aws.amazon.com/ko/cloudwatch/)
-- [CloudWatch 블로그](https://peterica.tistory.com/346)
+[피터의 개발이야기](https://peterica.tistory.com/346)
