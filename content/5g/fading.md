@@ -1,6 +1,5 @@
 ---
-title: 페이딩
-weight: 2
+title: Fading
 ---
 ## Rayleigh
 
