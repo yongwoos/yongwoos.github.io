@@ -8,6 +8,7 @@ title: Shield
     * 네트워크 및 전송 계층 공격(L3/L4) 자동 완화.
     * CloudFront, Route 53, ELB 등 AWS 서비스와 통합.
 * **예시**: SYN Flood, UDP Reflection 공격 방어.
+
 ## 2. **AWS Shield Advanced**
 * **목적**: 고급 DDoS 공격 방어 및 추가 보호 기능 제공
 * **특징**
