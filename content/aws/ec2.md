@@ -23,7 +23,6 @@ AWS가 제공하는 IaaS 가상 서버
 ## Reserved Instances(RI)
 일정 기간(보통 1년 또는 3년) 동안 특정 인스턴스 유형과 리전을 예약하고, 온디맨드 요금보다 **할인된 요금**으로 사용하는 방식
 
-### 종류
 - **Standard RI**: 가장 큰 할인율, 인스턴스 유형, AZ, 리전 고정
 - **Convertible RI**: 인스턴스 유형 변경 가능, 할인율은 조금 낮음
 
@@ -39,14 +38,15 @@ EC2를 사용하다 Fargate로 자유롭게 전환 가능(시간당 약정 금�
 1년 또는 3년 약정(시간당 금액으로 계산), 선불 옵션 선택 가능(전액 선불, 부분 선불, 후불)
 
 
-### 종류
-- Compute Savings Plans: EC2, Fargate, Lambda에 제공
+### Compute Savings Plans
+EC2, Fargate, Lambda에 제공
 
 인스턴스 패밀리, 크기, AZ, 리전, OS, 테넌시 관계 없이 적용
 
 최대 66% 절감
 
-- EC2 Instance Savings Plans: EC2에만 적용
+### EC2 Instance Savings Plans
+EC2에만 적용
 
 리전과 인스턴스 패밀리 고정
 
