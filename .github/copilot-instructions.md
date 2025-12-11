@@ -60,7 +60,9 @@ Located in `params` section of `hugo.yaml`:
    title: Your Page Title
    ---
    ```
-3. Use KaTeX math: `%%\LaTeX equations%%` for inline or `$$block$$` for block format
+3. Use KaTeX math consistently:
+   - **Inline math**: `%%equation%%` (use `%%` markers)
+   - **Block math**: `$$equation$$` (use `$$` markers)
 4. Can include raw HTML (unsafe rendering enabled in markup config)
 
 ## Critical Workflow Commands
@@ -96,7 +98,9 @@ Located in `params` section of `hugo.yaml`:
 
 1. **Weight-based navigation**: Lower `weight` values appear first in sidebars/menus
 2. **Topic isolation**: Each topic folder is self-contained with its own `_index.md`
-3. **Math rendering**: Uses KaTeX via Goldmark passthrough - inline: `%%...%%`, block: `$$...$$`
+3. **Math rendering - IMPORTANT**: 
+   - **Block equations**: Always use `$$...$$` markers
+   - **Inline equations**: Always use `%%...%%` markers
 4. **No edit URLs**: `editURL.enable: false` - not configured for direct GitHub editing from site
 5. **Content indexing**: Blog list sorting is date-based (descending), not alphabetical
 
