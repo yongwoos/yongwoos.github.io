@@ -60,3 +60,96 @@ $$\left(\frac{4\pi d}{\lambda}\right)^2 \quad \text{또는} \quad 20\log\left(\f
   $$\text{수신전력} = \text{송신전력} \times \text{안테나 효율}$$
 * **직류전류 → 동작이득(Directivity)**
   $$\text{이득} = \text{효율} \times \text{지향성}$$
+
+---
+아래는 **네가 올린 두 번째 사진의 내용을 기반으로**, 누락된 부분은 보완하고, 틀린 부분은 수정해서 **가장 깔끔한 KaTeX 버전 요약본**으로 정리한 것이다.
+(AM/FM 정리와 이어지는 **주파수대역, Shannon, 안테나, 전송손실, 반사계수, EIRP** 등 전체 무선통신 핵심 요약)
+
+---
+
+# 📘 **무선통신 핵심 공식 정리 (KaTeX 버전)**
+
+---
+
+## 1. **주파수 대역 (Frequency Bands)**
+
+| Band | 이름                       | 특징 / 사용              |
+| ---- | ------------------------ | -------------------- |
+| LF   | Low Frequency            | 항해 통신                |
+| MF   | Medium Frequency         | AM 방송                |
+| HF   | High Frequency           | 3–30 MHz, 단파 통신      |
+| VHF  | Very High Frequency      | FM 라디오, TV           |
+| UHF  | Ultra High Frequency     | TV, LTE, WiFi 일부     |
+| SHF  | Super High Frequency     | 마이크로파(레이다), 3–30 GHz |
+| EHF  | Extremely High Frequency | 밀리미터파, 30–300 GHz    |
+
+---
+
+## 2. **Shannon 용량 (잡음 존재)**
+
+$$C = B \log_2(1 + \text{SNR})$$
+
+---
+
+## 3. **Nyquist 용량 (잡음 없고, 레벨 L개)**
+
+$$C = 2B \log_2 L$$
+
+---
+
+## 4. **파장 λ, 주파수 f 관계**
+
+$$\lambda = \frac{c}{f}, \quad f = \frac{c}{\lambda}$$
+
+예: $$f = \frac{3 \times 10^8}{1\text{ m}} = 300\text{ MHz}$$
+
+---
+
+## 5. **전계 E, 자계 H 관계 (임피던스)**
+
+전파의 파동 임피던스:
+
+$$\eta = \frac{E}{H} = \sqrt{\frac{\mu}{\epsilon}} \approx 120\pi \, \Omega \approx 377 \, \Omega$$
+
+---
+
+## 6. **자유공간 감쇄 (FSPL, Free Space Path Loss)**
+
+$$\left(\frac{4\pi d}{\lambda}\right)^2$$
+
+dB로는: $$L_{fs} = 20\log \left(\frac{4\pi d}{\lambda}\right)$$
+
+---
+
+## 7. **전력 전달 반사계수 Γ**
+
+부하 임피던스 (Z_L), 특성임피던스 (Z_0):
+
+$$\Gamma = \frac{Z_L - Z_0}{Z_L + Z_0}$$
+
+반사 전력 비율: $$|\Gamma|^2$$
+
+---
+
+## 8. **안테나 이득 (Gain)**
+
+전계 세기로 나타낼 때:
+
+$$G = \frac{P_0}{P} \left(\frac{E}{E_0}\right)^2$$
+
+또는 일반적 표현: $$G = D \times \eta$$ (지향성 × 효율)
+
+---
+
+## 9. **EIRP (Effective Isotropic Radiated Power)**
+
+$$\text{EIRP} = P_t \cdot G_t$$
+
+(송신 전력 × 안테나 이득)
+
+---
+
+## 10. **안테나 종류**
+
+* **전반사 이득**: 트럼펫(혼) 안테나가 큼
+* **참조안테나**: 반파장 다이폴(dipole) 기준
