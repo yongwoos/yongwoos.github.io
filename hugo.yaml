@@ -11,14 +11,14 @@ module:
   # allow raw html
 markup:
   goldmark:
-    renderer:
-      unsafe: true
     extensions:
       passthrough:
         delimiters:
           block: [['\[', '\]'], ["$$", "$$"]]
           inline: [['\(', '\)']]
         enable: true
+    renderer:
+      unsafe: true
   # enable hextra syntax highlight
   highlight:
     noClasses: false
