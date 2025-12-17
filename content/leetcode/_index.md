@@ -1,6 +1,5 @@
 ---
 title: LeetCode
-weight: 2
 ---
 # LeetCode Profile
 https://leetcode.com/u/yvvpark/
