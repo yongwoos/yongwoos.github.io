@@ -13,3 +13,16 @@ $$\text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}$$
 3. **주기성**: Sinc 함수는 주기적이지 않지만, 주기적인 신호의 스펙트럼을 나타내는 데 사용됩니다.
 4. **적분**: Sinc 함수의 적분은 다음과 같습니다.
 $$\int_{-\infty}^{\infty} \text{sinc}(t) dt = 1$$
+
+## ✅ 최종 요약 (시험 직전 암기)
+
+$$
+\boxed{
+\begin{aligned}
+\operatorname{rect}\left(\frac{t}{a}\right) &\leftrightarrow |a|\,\operatorname{sinc}(af) \\
+\operatorname{rect}(at) &\leftrightarrow \frac{1}{|a|}\,\operatorname{sinc}\left(\frac{f}{a}\right) \\
+\operatorname{sinc}\left(\frac{f}{a}\right) &\leftrightarrow |a|\,\operatorname{rect}(at) \\
+\operatorname{sinc}(af) &\leftrightarrow \frac{1}{|a|}\,\operatorname{rect}\left(\frac{t}{a}\right)
+\end{aligned}
+}
+$$
