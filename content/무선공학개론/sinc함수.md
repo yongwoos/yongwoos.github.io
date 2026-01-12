@@ -1,7 +1,6 @@
 ---
 title: Sinc 함수
 ---
-# Sinc 함수
 Sinc 함수는 신호처리 및 통신 이론에서 중요한 역할을 하는 함수로, 주로 이상적인 저역통과 필터의 임펄스 응답으로 사용됩니다. Sinc 함수는 다음과 같이 정의됩니다.
 
 $$\text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}$$
@@ -14,7 +13,6 @@ $$\text{sinc}(t) = \frac{\sin(\pi t)}{\pi t}$$
 4. **적분**: Sinc 함수의 적분은 다음과 같습니다.
 $$\int_{-\infty}^{\infty} \text{sinc}(t) dt = 1$$
 
-## ✅ 최종 요약 (시험 직전 암기)
 
 $$
 \boxed{
@@ -26,3 +24,47 @@ $$
 \end{aligned}
 }
 $$
+
+## 응용
+시간 영역에서 연속인 신호
+$$
+g(t) = \operatorname{sinc}(2t)
+$$
+의 **에너지**는?
+
+### 1️⃣ 신호 에너지의 정의
+
+연속 신호 ( g(t) )의 에너지 (E)는
+
+$$
+E = \int_{-\infty}^{\infty} |g(t)|^2 \, dt
+$$
+
+
+### 2️⃣ 기본 성질
+
+
+$$
+\int_{-\infty}^{\infty} \operatorname{sinc}^2(t)\,dt = 1
+$$
+
+그리고 **시간 스케일링 성질**:
+
+$$
+g(t) = \operatorname{sinc}(at) \quad\Rightarrow\quad E = \frac{1}{|a|}
+$$
+여기서는
+$$
+g(t) = \operatorname{sinc}(2t)
+$$
+
+따라서 에너지는
+
+$$
+E = \frac{1}{2}
+$$
+
+* sinc² 적분값 = **1**
+* sinc(at) → 에너지 = **1/|a|**
+* **주파수 늘어나면(시간 압축) → 에너지 감소**
+
