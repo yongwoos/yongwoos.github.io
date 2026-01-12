@@ -1,5 +1,5 @@
 ---
-title: AM / FM 정리
+title: AM FM 변조
 ---
 
 ## DSB-LC (AM, Double SideBand – Large Carrier)
