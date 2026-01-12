@@ -10,19 +10,19 @@ $$\text{캐리어: } f_c,\quad \text{측파대: } f_c \pm f_m$$
 
 ### **AM 신호전력**
 
-$$P_m = \left(1 + \frac{\mu^2}{2}\right) P_c$$
+$$P_{LC} = \left(1 + \frac{\text{a}^2}{2}\right) P_c$$
 
 ### **상·하측파대 전력**
 
-$$P_{\text{side}} = \frac{\mu^2}{4} P_c$$
+$$P_{\text{side}} = \frac{\text{a}^2}{4} P_c$$
 
 ### **변조도**
 
-$$\mu = \frac{A_m}{A_c}$$
+$$\text{a} = \frac{A_m}{A_c}$$
 
 ### **효율 (측파대 전력이 총 전력에서 차지하는 비율)**
 
-$$\eta = \frac{P_{\text{side}}}{P_m} = \frac{\mu^2/2}{2+\mu^2}$$
+$$\eta = \frac{P_{\text{side}}}{P_m} = \frac{\text{a}^2/2}{2+\text{a}^2}$$
 
 
 # **FM (Frequency Modulation)**
