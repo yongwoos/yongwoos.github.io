@@ -1,13 +1,11 @@
 <div class="section-card-grid">
-    {{ range .Page.Sections }}
-    {{ if ne .Params.sidebar.exclude true }}
+    {{ range .Page.RegularPages }}
     <a href="{{ .RelPermalink }}" class="section-card">
         <h3 class="card-title">{{ .Title }}</h3>
         {{ if .Params.description }}
         <p class="card-desc">{{ .Params.description }}</p>
         {{ end }}
     </a>
-    {{ end }}
     {{ end }}
 </div>
 

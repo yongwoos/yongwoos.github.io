@@ -1,3 +1,4 @@
 ---
 title: Kubernetes
 ---
+{{< page-cards >}}

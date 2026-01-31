@@ -1,3 +1,4 @@
 ---
 title: Kafka
 ---
+{{< page-cards >}}
