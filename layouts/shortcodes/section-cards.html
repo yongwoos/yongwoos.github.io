@@ -1,0 +1,71 @@
+<div class="section-card-grid">
+    {{ range .Site.Home.Sections }}
+    {{ if ne .Params.sidebar.exclude true }}
+    <a href="{{ .RelPermalink }}" class="section-card">
+        <h3 class="card-title">{{ .Title }}</h3>
+        {{ if .Params.description }}
+        <p class="card-desc">{{ .Params.description }}</p>
+        {{ end }}
+    </a>
+    {{ end }}
+    {{ end }}
+</div>
+
+<style>
+    .section-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .section-card {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        text-decoration: none !important;
+        background-color: white;
+        color: #111827;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-color: #0070f3;
+    }
+
+    .card-title {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: inherit;
+    }
+
+    .card-desc {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #6b7280;
+    }
+
+    /* Dark mode support */
+    html.dark .section-card {
+        background-color: transparent;
+        /* Match background */
+        border-color: #374151;
+        color: #f3f4f6;
+    }
+
+    html.dark .section-card:hover {
+        border-color: #3b82f6;
+        background-color: rgba(255, 255, 255, 0.05);
+        /* Slight highlight on hover */
+    }
+
+    html.dark .card-desc {
+        color: #9ca3af;
+    }
+</style>
