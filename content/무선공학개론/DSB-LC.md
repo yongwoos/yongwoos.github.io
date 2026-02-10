@@ -6,7 +6,7 @@ title: DSB-LC
 > **반송파 포함 AM**
 
 
-$$s(t) = A_c[1 + a m(t)]\cos(2\pi f_c t)$$
+$$s(t) = [1 + a m(t)] A_c \cos(2\pi f_c t)$$
 
 ### 평균전력 공식
 
