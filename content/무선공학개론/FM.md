@@ -2,8 +2,9 @@
 title: FM
 ---
 ## FM 평균 전력
-    $$P_{FM} = \frac{A_c^2}{2}$$
-    * 특징: FM은 포락선(Envelope)이 일정하므로 **전력은 변조도와 무관하게 일정**합니다.
+$$P_{FM} = \frac{A_c^2}{2}$$
+
+FM은 포락선(Envelope)이 일정하므로 **전력은 변조도와 무관하게 일정**
 
 ## FM 주요 현상
 * 포획 효과 (Capture Effect)
@@ -11,6 +12,9 @@ title: FM
 * 임계 현상 (Threshold Effect)
     * 수신 입력 SNR이 특정 임계값 이하로 떨어지면 출력 SNR이 급격히 나빠지는 현상.
 
+## 프리엠페시스와 디엠페시스
+* **프리엠페시스 (Pre-emphasis):** 송신기에서 고주파 성분을 강조하여 잡음 영향을 줄이는 기법.   
+* **디엠페시스 (De-emphasis):** 수신기에서 프리엠페시스된 신호를 원래대로 복원하는 기법.
 
 ## 수신기 주파수 계획 (Superheterodyne)
 * **국부 발진 주파수 (Local Oscillator, %%f_{LO}%%):**
