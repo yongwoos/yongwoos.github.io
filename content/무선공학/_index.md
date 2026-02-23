@@ -1,4 +1,4 @@
 ---
-title: 무선공학개론
+title: 무선공학
 ---
 {{< page-cards >}}

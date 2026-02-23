@@ -1,6 +1,15 @@
 ---
 title: FM
 ---
+송신신호가 %%cos(2\pi f_m t)%%, 반송파신호가 %%A_c \cos(2\pi f_c t)%%인 경우
+
+$$
+s(t) = A_c \cos(2\pi f_c t + \beta_f \int_0^t \cos(2\pi f_m \tau) d\tau)
+$$
+$$
+=
+A_c \cos(2\pi f_c t + \beta_f \sin(2\pi f_m t))
+$$
 ## FM 평균 전력
 $$P_{FM} = \frac{A_c^2}{2}$$
 
