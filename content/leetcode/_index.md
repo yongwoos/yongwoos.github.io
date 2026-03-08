@@ -1,5 +1,5 @@
 ---
-title: LeetCode
+title: LeetCode Profile
 ---
 # LeetCode Profile
 https://leetcode.com/u/yvvpark/

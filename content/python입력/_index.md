@@ -1,4 +1,4 @@
 ---
-title: 전자공학
+title: Python 입력
 ---
 {{< page-cards >}}
