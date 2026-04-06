@@ -3,6 +3,8 @@ title: 박용우의 docs
 author:
   name: 박용우
   email: yongwoos@example.com
+disableKinds:
+  - RSS
 enableInlineShortcodes: true
 #enableGitInfo: true
 

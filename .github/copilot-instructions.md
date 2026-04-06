@@ -103,6 +103,7 @@ Located in `params` section of `hugo.yaml`:
    - **Inline equations**: Always use `%%...%%` markers
 4. **No edit URLs**: `editURL.enable: false` - not configured for direct GitHub editing from site
 5. **Content indexing**: Blog list sorting is date-based (descending), not alphabetical
+6. **Emphasis**: Use `<br>` tags instead of `**` for emphasis
 
 ## Common Patterns in Codebase
 

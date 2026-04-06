@@ -10,11 +10,16 @@ $$s(t) = [1 + a m(t)] A_c \cos(2\pi f_c t)$$
 
 ### 평균전력 공식
 
-$$\boxed{P_{LC} = P_c\left(1 + a^2 P_m\right)}$$
+$${P_{LC} = P_c\left(1 + a^2 P_m\right)}$$
 
-또는 분해해서 쓰면:
+또는 %%P_m%%이 cos 이면 %%P_m%%은 %%\frac{1}{2}%%이므로,
 
-$$\boxed{P_{LC} = P_c + P_{SB}}$$
+
+$$
+P_{LC} = P_c\left(1 + \frac{a^2}{2}\right)
+$$
+
+
 
 $$P_c = \frac{A_c^2}{2}, \quad P_{SB} = \frac{A_c^2 a^2}{2} P_m$$
 
