@@ -1,1 +1,0 @@
-su-mimo,mu-mimo
