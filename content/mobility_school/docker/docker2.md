@@ -4,9 +4,10 @@ weight: 2
 ---
 ## Image 관련 명령
 ### 컨테이너 삭제
+```
 모든 컨테이너 중지: docker stop $(docker ps -a -q)
 모든 컨테이너 삭제: docker rm $(docker ps -a -q)
-
+```
 - 이미지 삭제
 `docker rmi $(docker images -q)`
 
