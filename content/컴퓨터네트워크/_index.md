@@ -1,6 +1,4 @@
 ---
-title: Computer Network
-sidebar:
-  exclude: true
+title: 컴퓨터네트워크
 ---
 {{< page-cards >}}
