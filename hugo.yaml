@@ -1,7 +1,7 @@
 # Hugo configuration file
-title: 박용우의 docs
+title: dh
 author:
-  name: 박용우
+  name: dh
   email: yongwoos@example.com
 disableKinds:
   - RSS
@@ -84,7 +84,7 @@ params:
 
   editURL:
     enable: false
-    base: "https://github.com/imfing/hextra/edit/main/exampleSite/content"
+    base: ""
 
   blog:
     list:
