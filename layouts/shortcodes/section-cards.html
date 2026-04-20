@@ -9,6 +9,17 @@
     </a>
     {{ end }}
     {{ end }}
+    
+    {{ range .Page.RegularPages }}
+    {{ if ne .Params.sidebar.exclude true }}
+    <a href="{{ .RelPermalink }}" class="section-card">
+        <h3 class="card-title">{{ .Title }}</h3>
+        {{ if .Params.description }}
+        <p class="card-desc">{{ .Params.description }}</p>
+        {{ end }}
+    </a>
+    {{ end }}
+    {{ end }}
 </div>
 
 <style>
