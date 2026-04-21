@@ -64,3 +64,45 @@ ode 송가, 찬가
 go down as ~로 기록되다, ~로 남다
 
 unleash 풀어놓다, 발산하다
+
+haste 서두름, 급함
+
+palpable 체감할 수 있는
+
+reimburse 환급하다, 상환하다
+
+procurement 조달
+
+spin doctor 홍보인
+
+spin a yarn 이야기를 꾸며내다
+
+quixotic 공상적인, 비현실적인
+
+backdrop 배경
+
+mired 곤경에 빠진, 진흙탕에 빠진
+
+inherent 내재된, 타고난, 본질적인
+
+miserly 인색한, 비참한
+
+forebear 조상, 선조
+
+levy 부과하다, 징수하다
+
+in retrospect 돌이켜보면
+
+stifle 억누르다, 억제하다
+
+seemingly 겉보기에는, 외견상으로는
+
+unfettered 자유로운, 구속받지 않는
+
+fetter 족쇄, 구속
+
+passe 시대에 뒤떨어진, 구식의
+
+flip the langauge around 말을 바꿔 말하다
+
+in the same breath 동시에, 같은 말로
