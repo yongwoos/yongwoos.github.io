@@ -1,5 +1,5 @@
 ---
-title: inode
+title: Inode
 weight: 1
 ---
 ### **리눅스 Inode란?**  

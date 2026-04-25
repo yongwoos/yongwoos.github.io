@@ -1,5 +1,5 @@
 ---
-title: inode table
+title: Inode 테이블
 weight: 3
 ---
 # **inode들은 어디에 저장될까? (리눅스 파일 시스템 구조)**  
