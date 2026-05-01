@@ -1,6 +1,8 @@
 ---
 title: Phrasal Verbs
 ---
+pass the hat around to 사람들한테서 돈 모으다
+
 not least 특히
 
 so much so that ~할 정도로
