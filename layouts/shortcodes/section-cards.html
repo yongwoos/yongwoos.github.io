@@ -1,5 +1,5 @@
 <div class="section-card-grid">
-    {{ range .Page.Pages.ByTitle }}
+    {{ range .Page.Pages.ByWeight }}
     {{ if ne .Params.sidebar.exclude true }}
     <a href="{{ .RelPermalink }}" class="section-card">
         <h3 class="card-title">{{ .Title }}</h3>

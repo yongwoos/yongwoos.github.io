@@ -1,5 +1,5 @@
 <div class="section-card-grid">
-    {{ range .Page.RegularPages }}
+    {{ range .Page.RegularPages.ByWeight }}
     <a href="{{ .RelPermalink }}" class="section-card">
         <h3 class="card-title">{{ .Title }}</h3>
         {{ if .Params.description }}
