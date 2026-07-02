@@ -1,8 +1,8 @@
 ---
-title: 리서치
+title: Research & Insights
 weight: 1
 ---
-# 블록체인 리서치
+# 블록체인
 {{< cards >}}
   {{< card link="https://reports.tiger-research.com/s/korean/archive?sort=new" title="Tiger Research" >}}
   {{< card link="https://research.4pillars.io/ko" title="4Pillars Research" >}}
@@ -12,6 +12,7 @@ weight: 1
   {{< card link="https://insights.korbit.co.kr/market/research" title="코빗 리서치" >}}
   {{< card link="https://medium.com/decipher-media" title="Decipher Medium" >}}
   {{< card link="https://members.delphidigital.io/search?type=report" title="Delphi Digital" >}}
+  {{< card link="https://www.fidelitydigitalassets.com/research-and-insights/all" title="Fidelity Digital Assets" >}}
   {{< card link="https://blockworks.com/insights" title="Blockworks Insights" >}}
   {{< card link="https://www.galaxy.com/insights" title="Galaxy Research" >}}
   {{< card link="https://www.theblock.co/research" title="The Block Research" >}}
@@ -23,9 +24,14 @@ weight: 1
   {{< card link="https://messari.io/research/research-reports?tiers=none,basic" title="Messari" >}}
   {{< card link="https://www.talos.com/insights" title="Talos Insights" >}}
 {{< /cards >}}
+
 ---
-# 금융 리서치
+
+# 금융
 {{< cards >}}
+  {{< card link="https://www.blackrock.com/us/individual/insights#" title="BlackRock Insights" >}}
+  {{< card link="https://www.bny.com/corporate/global/en/insights.html" title="BNY Insights" >}}
+  {{< card link="https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/" title="JPMorgan Market Insights" >}}
   {{< card link="https://economist.com" title="Economist" >}}
   {{< card link="https://libertystreeteconomics.newyorkfed.org/" title="Liberty Street Economics" >}}
   {{< card link="https://www.apolloacademy.com/investment-knowledge/" title="Apollo" >}}
@@ -40,4 +46,3 @@ weight: 1
   {{< card link="https://www.bcaresearch.com/marketing/insights?type=marketing_insight" title="BCA Research" >}}
   {{< card link="https://www.capitaleconomics.com/resources?f%5B0%5D=marketing_content_type%3Aarticle" title="Capital Economics" >}}
 {{< /cards >}}
----
