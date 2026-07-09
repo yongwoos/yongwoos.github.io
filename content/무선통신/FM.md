@@ -17,6 +17,23 @@ $$
 = A_c \cos(2\pi f_c t + \beta_f \sin(2\pi f_m t))
 $$
 
+\[
+s(t)=A_c\cos\left(2\pi f_ct+2\pi k_f\int_0^tm(\tau)d\tau\right)
+\]
+
+순시 주파수
+
+\[
+f_i(t)=f_c+k_fm(t)
+\]
+
+최대 주파수 편이
+
+\[
+\Delta f=k_fA_m
+\]
+
+
 ## FM 평균 전력
 $$P_{FM} = \frac{A_c^2}{2}$$
 

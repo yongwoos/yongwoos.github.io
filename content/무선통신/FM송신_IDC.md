@@ -1,7 +1,7 @@
 ---
 title: FM 송신 IDC
 ---
-**Instantaneous Deviation Control (순시 편이 제어)**
+IDC(Instantaneous Deviation Control): 순시 편이 제어
 
 > FM 송신 시 주파수 편이가 **규정된 최대값을 넘지 않도록** 자동으로 제어하는 회로
 
