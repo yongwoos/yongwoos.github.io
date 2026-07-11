@@ -1,7 +1,7 @@
 ---
 title: IQ 변조
 ---
-> **In-phase(I)와 Quadrature(Q) 두 개의 직교 성분을 이용해 하나의 반송파(carrier)를 변조하는 방식**
+> **In-phase(I)와 Quadrature(Q) 두 개의 직교 성분을 이용해 하나의 반송파를 변조하는 방식**
 
 IQ 변조: 서로 직교하는 똑같은 주파수의 반송파 cos, sin을 합쳐서 보내는 방식
 

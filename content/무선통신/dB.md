@@ -1,14 +1,14 @@
 ---
 title: dB
 ---
-## dB는 절대값이 아님
-> 반드시 **무엇을 기준으로 했는지**가 있어야
+dB는 절대값이 아님
 
-[
-\boxed{\mathrm{dB}=20\log_{10}\left(\frac{V}{V_{\mathrm{ref}}}\right)}
-]
+반드시 **무엇을 기준으로 했는지**가 있어야
 
-여기서 (V_{\mathrm{ref}})가 반드시 있어야 합니다.
+$$\mathrm{dB}=20\log_{10}\left(\frac{V}{V_{\mathrm{ref}}}\right)
+$$
+
+여기서 $V_{\mathrm{ref}}$가 반드시 있어야 합니다.
 
 예를 들어
 
@@ -19,19 +19,18 @@ title: dB
 
 **그냥 dB는 기준이 없습니다.**
 
-dB는 **'비(ratio)'를 나타내는 단위**입니다.
+dB는 **'비'를 나타내는 단위**입니다.
 
 전압이라면
 
-[
-\mathrm{dB}=20\log_{10}\left(\frac{V_1}{V_2}\right)
-]
+
+$$\mathrm{dB}=20\log_{10}\left(\frac{V_1}{V_2}\right)
+$$
 
 전력이라면
 
-[
-\mathrm{dB}=10\log_{10}\left(\frac{P_1}{P_2}\right)
-]
+$$\mathrm{dB}=10\log_{10}\left(\frac{P_1}{P_2}\right)
+$$
 
 여기서 (V_2)나 (P_2)가 **기준값**입니다. 이 기준값이 무엇인지는 dB만 보고는 알 수 없습니다.
 
@@ -60,22 +59,22 @@ dB는 **'비(ratio)'를 나타내는 단위**입니다.
 
 안테나 빔패턴은 보통
 
-[
-\boxed{20\log_{10}\left(\frac{E(\theta)}{E_{\max}}\right)}
-]
+
+$$20\log_{10}\left(\frac{E(\theta)}{E_{\max}}\right)
+$$
 
 또는
 
-[
-\boxed{10\log_{10}\left(\frac{P(\theta)}{P_{\max}}\right)}
-]
+
+$$10\log_{10}\left(\frac{P(\theta)}{P_{\max}}\right)
+$$
 
 으로 표현합니다.
 
 여기서 기준은
 
-* **최대 전계강도 (E_{\max})**
-* 또는 **최대 방사전력 (P_{\max})**
+* **최대 전계강도 $E_{\max}$**
+* 또는 **최대 방사전력 $P_{\max}$**
 
 입니다.
 
@@ -95,7 +94,7 @@ dB는 **'비(ratio)'를 나타내는 단위**입니다.
 
 이라는 뜻입니다.
 
-그래서 빔패턴에서의 dB는 **절대값이 아니라 상대값(normalized pattern)** 입니다.
+그래서 빔패턴에서의 dB는 **절대값이 아니라 상대값** 입니다.
 
 반면,
 
