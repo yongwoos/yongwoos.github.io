@@ -1,5 +1,5 @@
 ---
-title: 스테이블 코인
+title: CBDC
 ---
 ## 예금 토큰(Deposit Token)
 

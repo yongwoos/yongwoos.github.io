@@ -1,7 +1,7 @@
 ---
-title: EIRP/ERP
+title: EIRP
 ---
-> Equivalent Isotropically Radiated Power, 등방성 복사 전력
+Equivalent Isotropically Radiated Power, 등방성 복사 전력
 
 > 등방성 안테나가 방사한다고 가정했을 때, 같은 최대 전력 밀도를 만들기 위해 필요한 방사 전력
 
@@ -49,7 +49,7 @@ $$
 | 풀네임       | Equivalent **Isotropic** Radiated Power | Effective Radiated Power |
 | 기준 안테나    | **등방성 안테나**                             | **반파장 다이폴 안테나**          |
 | 안테나 이득 기준 | dBi                                     | dBd                      |
-| 국제 표준     | ✅ (대부분 국가/규격)                           | 일부 방송·레거시 규격             |
+| 국제 표준     | (대부분 국가/규격)                           | 일부 방송·레거시 규격             |
 | 값의 크기     | ERP + **2.15 dB**                       | EIRP − **2.15 dB**       |
 
 
