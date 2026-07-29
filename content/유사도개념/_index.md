@@ -1,6 +1,6 @@
 ---
 title: 유사도
 sidebar:
-  exclude: false
+  exclude: true
 ---
-{{< page-cards >}}
+{{< section-cards >}}
