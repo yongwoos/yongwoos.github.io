@@ -1,4 +1,4 @@
 ---
-title: 전자기학
+title: 전자기
 ---
 {{< page-cards >}}
