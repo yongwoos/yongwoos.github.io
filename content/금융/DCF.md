@@ -1,5 +1,5 @@
 ---
-title: DCF
+title: 할인현금흐름(DCF)
 ---
 DCF = **할인된 현금흐름(Discounted Cash Flow)**
 * 미래 현금흐름을 현재 가치로 할인해서 평가하는 방법
