@@ -1,5 +1,5 @@
 ---
-title: 금융 뉴스/인사이트
+title: Finance
 weight: 1
 ---
 {{< cards >}}

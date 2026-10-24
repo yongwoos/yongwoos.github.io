@@ -1,5 +1,5 @@
 ---
-title: 블록체인 뉴스/인사이트
+title: Blockchain
 weight: 2
 ---
 {{< cards >}}

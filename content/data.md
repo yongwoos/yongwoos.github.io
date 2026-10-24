@@ -1,5 +1,5 @@
 ---
-title: 데이터&거래소
+title: Data
 weight: 4
 ---
 {{< cards >}}
