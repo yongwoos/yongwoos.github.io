@@ -25,6 +25,7 @@ weight: 1
 {{< cards >}}
   {{< card link="https://www.bis.org/publications" title="BIS Publications" >}}
   {{< card link="https://www.kdi.re.kr/" title="한국개발연구원" >}}
+  {{< card link="https://dl.bok.or.kr/" title="한국은행 전자도서관" >}}
   {{< card link="https://www.kcmi.re.kr/" title="자본시장연구원" >}}
   {{< card link="https://www.kif.re.kr/kif4/main/" title="한국금융연구원" >}}
   {{< card link="https://tossinsight.im/reports?category=all" title="토스 인사이트" >}}
