@@ -1,5 +1,5 @@
 ---
-title: 정보및블로그
+title: info
 weight: 3
 ---
 {{< cards >}}
