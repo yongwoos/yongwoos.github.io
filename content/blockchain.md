@@ -5,10 +5,9 @@ weight: 2
 {{< cards >}}
   {{< card link="https://coindesk.com" title="CoinDesk" >}}
   {{< card link="https://blockmedia.co.kr" title="블록미디어" >}}
-  {{< card link="https://blockchaintoday.co.kr/" title="블록체인투데이" >}}
   {{< card link="https://www.digitalasset.works/" title="디지털 애셋" >}}
-  {{< card link="https://www.tokenpost.kr/" title="토큰포스트" >}}
   {{< card link="https://bloomingbit.io/" title="블루밍비트" >}}
+  {{< card link="https://blockchaintoday.co.kr/" title="블록체인투데이" >}}
   {{< card link="https://theblock.co" title="The Block" >}}
   {{< card link="https://www.dlnews.com/" title="DLNews" >}}
   {{< card link="https://decrypt.co" title="Decrypt" >}}
@@ -29,6 +28,7 @@ weight: 2
   {{< card link="https://medium.com/decipher-media/all" title="디사이퍼 미디어" >}}
   {{< card link="https://research.bit-planet.kr/" title="비트플래닛 리서치" >}}
   {{< card link="https://sto-research.com/research/" title="STO 리서치" >}}
+  {{< card link="https://www.digitalasset.works/news/articleList.html?sc_section_code=S1N7&view_type=sm" title="디지털애셋-오피니언" >}}
   {{< card link="https://www.coindesk.com/research" title="CoinDesk Research" >}}
   {{< card link="https://app.blockworks.com/research?tiers=none%2Cbasic" title="Blockworks Research" >}}
   {{< card link="https://www.theblock.co/research" title="The Block Research" >}}
@@ -38,7 +38,6 @@ weight: 2
   {{< card link="https://a16zcrypto.com/posts/" title="a16z Crypto" >}}
   {{< card link="https://decrypt.co/deep-dives" title="Decrypt Deep Dives" >}}
   {{< card link="https://research.grayscale.com/" title="Grayscale Research" >}}
-  {{< card link="https://www.binance.com/en/research/analysis" title="Binance Research" >}}
   {{< card link="https://kitchen.steakhouse.financial/" title="Steakhouse Financial Insights" >}}
   {{< card link="https://www.talos.com/insights?insight-category=Knowledge%2CAnalysis%2CResearch" title="Talos Insights" >}}
 {{< /cards >}}
