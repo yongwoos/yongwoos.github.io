@@ -21,6 +21,8 @@ weight: 3
   {{< card link="https://kwfixedincome.co.kr/" title="kwFI" >}}
   {{< card link="https://www.kcie.or.kr/" title="전국투자자교육협의회" >}}
   {{< card link="https://www.kofia.or.kr/index.do" title="금융투자협회" >}}
+  {{< card link="https://www.easylaw.go.kr/" title="생활법령정보" >}}
+  {{< card link="https://job.alio.go.kr/recruit.do" title="잡알리오" >}}
 {{< /cards >}}
 
 ---

@@ -4,6 +4,8 @@ weight: 2
 ---
 {{< cards >}}
   {{< card link="https://coindesk.com" title="CoinDesk" >}}
+  {{< card link="https://news.bitcoin.com/ko/" title="Bitcoin.com" >}}
+  {{< card link="https://cointelegraph-kr.com/" title="Cointelegraph" >}}
   {{< card link="https://blockmedia.co.kr" title="블록미디어" >}}
   {{< card link="https://www.digitalasset.works/" title="디지털 애셋" >}}
   {{< card link="https://bloomingbit.io/" title="블루밍비트" >}}
