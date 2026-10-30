@@ -85,6 +85,10 @@ weight: 3
   {{< card link="https://lookingforfreedom.tistory.com/category/자격증" title="방랑청년의 일기장-자격증" >}}
   {{< card link="https://fromonetoten.tistory.com/" title="하나부터열까지 지식창고" >}}
   {{< card link="https://contents.premium.naver.com/joosikstudy/coinschool/contents" title="코인경제" >}}
+  {{< card link="https://www.jaenung.net/iForest/finance/zg01?page=1" title="재능넷" >}}
+  {{< card link="https://m.blog.naver.com/zero_family?categoryNo=0&listStyle=post&tab=1" title="배당사냥꾼 정성태" >}}
+  {{< card link="https://m.blog.naver.com/saycouple?categoryNo=60&listStyle=photo&tab=1" title="Tyrion-주식" >}}
+  {{< card link="https://jini-insight.tistory.com/category/글로벌%20이슈🌐" title="건축사의 부동산 금융 이야기-글로벌이슈" >}}
 {{< /cards >}}
 
 ---
