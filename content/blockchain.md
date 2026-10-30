@@ -24,13 +24,13 @@ weight: 2
   {{< card link="https://reports.tiger-research.com/sitemap" title="타이거 리서치" >}}
   {{< card link="https://research.4pillars.io/ko/research" title="포필러스" >}}
   {{< card link="https://xangle.io/research?content_type=all&sub_category=all&nowPeriod=insight_page.filter.all_time&order=desc&view=LIST" title="쟁글 리서치" >}}
+  {{< card link="https://www.digitalasset.works/news/articleList.html?sc_section_code=S1N7&view_type=sm" title="디지털애셋-오피니언" >}}
   {{< card link="https://www.blockmedia.co.kr/archives/tag/기획" title="블록미디어 기획" >}}
   {{< card link="https://hashedopenresearch.com/research" title="HOR 리서치" >}}
   {{< card link="https://insights.korbit.co.kr/market/research" title="디지털X 리서치" >}}
   {{< card link="https://medium.com/decipher-media/all" title="디사이퍼 미디어" >}}
   {{< card link="https://research.bit-planet.kr/" title="비트플래닛 리서치" >}}
   {{< card link="https://sto-research.com/research/" title="STO 리서치" >}}
-  {{< card link="https://www.digitalasset.works/news/articleList.html?sc_section_code=S1N7&view_type=sm" title="디지털애셋-오피니언" >}}
   {{< card link="https://www.coindesk.com/research" title="CoinDesk Research" >}}
   {{< card link="https://app.blockworks.com/research?tiers=none%2Cbasic" title="Blockworks Research" >}}
   {{< card link="https://www.theblock.co/research" title="The Block Research" >}}
