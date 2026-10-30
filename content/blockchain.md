@@ -42,4 +42,5 @@ weight: 2
   {{< card link="https://research.grayscale.com/" title="Grayscale Research" >}}
   {{< card link="https://kitchen.steakhouse.financial/" title="Steakhouse Financial Insights" >}}
   {{< card link="https://www.talos.com/insights?insight-category=Knowledge%2CAnalysis%2CResearch" title="Talos Insights" >}}
+  {{< card link="https://1kx.capital/writing" title="1kx writing" >}}
 {{< /cards >}}
