@@ -45,3 +45,11 @@ weight: 1
   {{< card link="https://www.bcaresearch.com/marketing/insights?type=marketing_insight" title="BCA Research" >}}
   {{< card link="https://www.capitaleconomics.com/resources?f%5B0%5D=marketing_content_type%3Aarticle" title="Capital Economics" >}}
 {{< /cards >}}
+
+---
+
+{{< cards >}}
+  {{< card link="https://www.travie.com/" title="트래비 매거진" >}}
+  {{< card link="https://www.hotelrestaurant.co.kr/" title="호텔앤레스토랑" >}}
+  {{< card link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
+{{< /cards >}}
