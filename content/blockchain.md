@@ -45,3 +45,13 @@ weight: 2
   {{< card link="https://1kx.capital/writing" title="1kx writing" >}}
   {{< card link="https://www.chainalysis.com/reports/" title="Chainanalysis Insights" >}}
 {{< /cards >}}
+
+{{< cards >}}
+  {{< card link="https://www.ledger.com/ko/academy" title="Ledger Academy" >}}
+  {{< card link="https://ercs.ethereum.org/" title="Ethereum Improvement Proposals" >}}
+  {{< card link="https://ethereum.org/ko/" title="ethereum.org" >}}
+  {{< card link="https://solana.com/ko" title="Solana" >}}
+  {{< card link="https://ripple.com/" title="Ripple" >}}
+  {{< card link="https://z.cash/" title="ZCash" >}}
+  {{< card link="https://www.getmonero.org/" title="Monero" >}}
+{{< /cards >}}
