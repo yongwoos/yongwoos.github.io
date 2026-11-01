@@ -49,7 +49,24 @@ weight: 1
 ---
 
 {{< cards >}}
-  {{< card link="https://www.travie.com/" title="트래비 매거진" >}}
-  {{< card link="https://www.hotelrestaurant.co.kr/" title="호텔앤레스토랑" >}}
-  {{< card link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
+  {{< card link="https://www.cmegroup.com/" title="CME Group" >}}
+  {{< card link="https://www.cboe.com/" title="CBOE" >}}
+  {{< card link="https://www.nasdaq.com/" title="NASDAQ" >}}
+  {{< card link="https://www.ice.com/" title="ICE" >}}
+  {{< card link="https://www.nyse.com/" title="NYSE" >}}
+  {{< card link="https://www.opinionnews.co.kr/news/articleList.html?sc_serial_code=SRN4" title="증시 흑역사 시리즈" >}}
+  {{< card link="https://story.pay.naver.com/popular" title="네이버페이 머니스토리" >}}
+  {{< card link="https://www.tossbank.com/" title="토스뱅크" >}}
+  {{< card link="https://toss.im/tossfeed" title="토스피드" >}}
+  {{< card link="https://kbthink.com/main.html" title="KB의 생각" >}}
+  {{< card link="https://www.technologyreview.com/" title="MIT Tech Review" >}}
+  {{< card link="https://www.cmegroup.com/ko/education/courses.html" title="CME Group 학습" >}}
+  {{< card link="https://main.krxverse.co.kr/" title="한국거래소 아카데미" >}}
+  {{< card link="https://www.bok.or.kr/portal/singl/multiCont/list.do?pageIndex=&targetDepth=&menuNo=201151&searchOptn8=&type=&syncMenuChekKey=1&searchCnd=1&searchKwd=&date=&sdate=&edate=&sort=1&pageUnit=12" title="한국은행-멀티콘텐츠" >}}
+  {{< card link="https://eiec.kdi.re.kr/" title="KDI 경제교육·정보센터" >}}
+  {{< card link="https://kwfixedincome.co.kr/" title="kwFI" >}}
+  {{< card link="https://www.kcie.or.kr/" title="전국투자자교육협의회" >}}
+  {{< card link="https://www.kofia.or.kr/index.do" title="금융투자협회" >}}
+  {{< card link="https://www.easylaw.go.kr/" title="생활법령정보" >}}
+  {{< card link="https://job.alio.go.kr/recruit.do" title="잡알리오" >}}
 {{< /cards >}}

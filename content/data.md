@@ -1,5 +1,5 @@
 ---
-title: 데이터/거래소
+title: Data
 weight: 4
 ---
 {{< cards >}}
@@ -30,21 +30,4 @@ weight: 4
   {{< card link="https://www.indexergo.com/" title="인덱서고" >}}
   {{< card link="https://www.kofr.kr/" title="KOFR" >}}
   {{< card link="https://spectrummap.kr/" title="전파누리" >}}
-{{< /cards >}}
-
----
-
-{{< cards >}}
-  {{< card link="https://www.cmegroup.com/" title="CME Group" >}}
-  {{< card link="https://www.cboe.com/" title="CBOE" >}}
-  {{< card link="https://www.nasdaq.com/" title="NASDAQ" >}}
-  {{< card link="https://www.ice.com/" title="ICE" >}}
-  {{< card link="https://www.nyse.com/" title="NYSE" >}}
-  {{< card lilnk="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
-  {{< card link="https://www.binance.com/en/markets" title="Binance" >}}
-  {{< card link="https://www.okx.com/markets" title="OKX" >}}
-  {{< card link="https://www.kraken.com/" title="Kraken" >}}
-  {{< card link="https://www.coinbase.com/" title="Coinbase" >}}
-  {{< card link="https://morpho.org/" title="Morpho" >}}
-  {{< card link="https://aave.com/" title="Aave" >}}
 {{< /cards >}}
