@@ -44,39 +44,3 @@ weight: 2
   {{< card link="https://1kx.capital/writing" title="1kx writing" >}}
   {{< card link="https://www.chainalysis.com/reports/" title="Chainanalysis Insights" >}}
 {{< /cards >}}
-
----
-
-{{< cards >}}
-  {{< card link="https://decrypt.co/explainers" title="Decrypt-Learn" >}}
-  {{< card link="https://www.theblock.co/learn" title="The Block-Learn" >}}
-  {{< card link="https://upbitcare.com/academy/education/coin" title="업비트 교육" >}}
-  {{< card link="https://upbitcare.com/academy/advice" title="업비트 셀럽의조언" >}}
-  {{< card link="https://academy.dcentwallet.com/ko/" title="디센트 아카데미" >}}
-  {{< card link="https://www.ledger.com/ko/academy" title="Ledger Academy" >}}
-  {{< card link="https://ercs.ethereum.org/" title="Ethereum Improvement Proposals" >}}
-  {{< card link="https://ethereum.org/ko/" title="Ethereum" >}}
-  {{< card link="https://tron.network/" title="Tron" >}}
-  {{< card link="https://solana.com/ko" title="Solana" >}}
-  {{< card link="https://ripple.com/" title="Ripple" >}}
-  {{< card link="https://z.cash/" title="ZCash" >}}
-  {{< card link="https://www.getmonero.org/" title="Monero" >}}
-  {{< card link="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
-  {{< card link="https://www.binance.com/en/markets" title="Binance" >}}
-  {{< card link="https://www.okx.com/markets" title="OKX" >}}
-  {{< card link="https://www.kraken.com/" title="Kraken" >}}
-  {{< card link="https://www.coinbase.com/" title="Coinbase" >}}
-  {{< card link="https://morpho.org/" title="Morpho" >}}
-  {{< card link="https://aave.com/" title="Aave" >}}
-  {{< card link="https://ethena.fi/" title="Ethena" >}}
-  {{< card link="https://ondo.finance/" title="Ondo" >}}
-  {{< card link="https://pendle.finance/" title="Pendle" >}}
-  {{< card link="https://www.compound.xyz/" title="Compound" >}}
-  {{< card link="https://app.sky.money/earn" title="Sky" >}}
-  {{< card link="https://uniswap.org/" title="Uniswap" >}}
-  {{< card link="https://curve.fi/" title="Curve Finance" >}}
-  {{< card link="https://yearn.fi/" title="Yearn Finance" >}}
-  {{< card link="https://1inch.com/" title="1inch" >}}
-  {{< card link="https://www.dydx.xyz/" title="dYdX" >}}
-  {{< card link="https://perp.com/" title="Perpetual Protocol" >}}
-{{< /cards >}}
