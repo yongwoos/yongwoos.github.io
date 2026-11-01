@@ -36,7 +36,7 @@ weight: 6
   {{< card link="https://base.org/" title="Base" >}}
   {{< card link="https://www.polygon.technology/" title="Polygon" >}}
   {{< card link="https://cosmos.network/" title="Cosmos" >}}
-{{ /cards >}}
+{{< /cards >}}
 
 ---
 

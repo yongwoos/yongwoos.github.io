@@ -2,6 +2,7 @@
 title: Finance
 weight: 1
 ---
+
 {{< cards >}}
   {{< card link="https://news.einfomax.co.kr" title="연합인포맥스" >}}
   {{< card link="http://economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21" >}}

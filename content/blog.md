@@ -2,6 +2,7 @@
 title: Blog
 weight: 3
 ---
+
 {{< cards >}}
   {{< card link="https://www.bok.or.kr/portal/singl/newsData/list.do?pageIndex=1&targetDepth=2&menuNo=201106&syncMenuChekKey=3&depthSubMain=&subMainAt=&searchCnd=1&searchKwd=&depth2=201106&date=&sdate=&edate=&sort=1&pageUnit=10" title="한은-블로그" >}}
   {{< card link="https://brunch.co.kr/@jaceshim" title="심준규 Jace Shim" >}}

@@ -2,6 +2,7 @@
 title: Blockchain
 weight: 2
 ---
+
 {{< cards >}}
   {{< card link="https://coindesk.com" title="CoinDesk" >}}
   {{< card link="https://cointelegraph-kr.com/" title="Cointelegraph" >}}

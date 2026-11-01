@@ -2,6 +2,7 @@
 title: Data
 weight: 4
 ---
+
 {{< cards >}}
   {{< card link="https://coinmarketcap.com/" title="CoinMarketCap" >}}
   {{< card link="https://defillama.com/" title="DeFiLlama" >}}

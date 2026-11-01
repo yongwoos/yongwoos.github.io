@@ -3,7 +3,7 @@ title: Learn
 weight: 5
 ---
 
-{{ < cards >}}
+{{< cards >}}
   {{< card link="https://www.opinionnews.co.kr/news/articleList.html?sc_serial_code=SRN4" title="증시 흑역사 시리즈" >}}
   {{< card link="https://story.pay.naver.com/popular" title="네이버페이 머니스토리" >}}
   {{< card link="https://www.tossbank.com/" title="토스뱅크" >}}
@@ -21,4 +21,4 @@ weight: 5
   {{< card link="https://upbitcare.com/academy/advice" title="업비트 셀럽의조언" >}}
   {{< card link="https://academy.dcentwallet.com/ko/" title="디센트 아카데미" >}}
   {{< card link="https://www.ledger.com/ko/academy" title="Ledger Academy" >}}
-{{ /cards >}}
+{{< /cards >}}
