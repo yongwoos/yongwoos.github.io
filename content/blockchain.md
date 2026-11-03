@@ -16,11 +16,6 @@ weight: 2
   {{< section-tag link="https://www.dlnews.com/" title="DLNews" >}}
   {{< section-tag link="http://www.opinionnews.co.kr/news/articleList.html?sc_section_code=S1N22&view_type=sm" title="오피니언뉴스-블록체인" >}}
   {{< section-tag link="https://hyper-liquid.co.kr/news/" title="하이퍼리퀴드 뉴스" >}}
-</div>
-
----
-
-<div class="section-tags">
   {{< section-tag link="https://www.blockmedia.co.kr/archives/category/research" title="블록미디어 리서치" >}}
   {{< section-tag link="https://reports.tiger-research.com/sitemap" title="타이거 리서치" >}}
   {{< section-tag link="https://research.4pillars.io/ko/research" title="포필러스" >}}
