@@ -1,4 +1,4 @@
 ---
 title: CS기본
 ---
-{{< page-cards >}}
+{{< section-tags >}}

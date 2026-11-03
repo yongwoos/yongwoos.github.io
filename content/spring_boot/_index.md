@@ -1,4 +1,4 @@
 ---
 title: Spring Boot
 ---
-{{< page-cards >}}
+{{< section-tags >}}

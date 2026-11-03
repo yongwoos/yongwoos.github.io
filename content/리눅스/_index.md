@@ -1,4 +1,4 @@
 ---
 title: 리눅스
 ---
-{{< page-cards >}}
+{{< section-tags >}}

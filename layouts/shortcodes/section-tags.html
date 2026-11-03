@@ -1,0 +1,7 @@
+<nav class="section-tags" aria-label="문서 주제">
+    {{ range .Page.Pages.ByWeight }}
+    {{ if ne .Params.sidebar.exclude true }}
+    <a href="{{ .RelPermalink }}" class="section-tag">#{{ .Title }}</a>
+    {{ end }}
+    {{ end }}
+</nav>

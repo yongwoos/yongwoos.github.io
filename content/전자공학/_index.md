@@ -1,4 +1,4 @@
 ---
 title: 전자공학
 ---
-{{< page-cards >}}
+{{< section-tags >}}

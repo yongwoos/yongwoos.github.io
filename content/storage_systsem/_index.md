@@ -1,4 +1,4 @@
 ---
 title: Storage
 ---
-{{< page-cards >}}
+{{< section-tags >}}

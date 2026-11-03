@@ -1,4 +1,4 @@
 ---
 title: AWS
 ---
-{{< page-cards >}}
+{{< section-tags >}}

@@ -1,4 +1,4 @@
 ---
 title: TLS
 ---
-{{< page-cards >}}
+{{< section-tags >}}

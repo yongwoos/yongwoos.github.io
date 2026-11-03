@@ -1,4 +1,4 @@
 ---
 title: 안테나
 ---
-{{< page-cards >}}
+{{< section-tags >}}

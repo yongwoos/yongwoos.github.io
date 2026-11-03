@@ -1,4 +1,4 @@
 ---
 title: 통계
 ---
-{{< section-cards >}}
+{{< section-tags >}}
