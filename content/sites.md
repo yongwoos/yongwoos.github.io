@@ -9,6 +9,10 @@ weight: 6
   {{< card link="https://www.nasdaq.com/" title="NASDAQ" >}}
   {{< card link="https://www.ice.com/" title="ICE" >}}
   {{< card link="https://www.nyse.com/" title="NYSE" >}}
+  {{< card link="https://www.dtcc.com/" title="DTCC" >}}
+  {{< card link="https://www.sec.gov/" title="SEC" >}}
+  {{< card link="https://www.cftc.gov/" title="CFTC" >}}
+  {{< card link="https://www.ksd.or.kr/ko/" title="예탁결제원" >}}
   {{< card link="https://www.kofia.or.kr/index.do" title="금융투자협회" >}}
   {{< card link="https://www.easylaw.go.kr/" title="생활법령정보" >}}
   {{< card link="https://job.alio.go.kr/recruit.do" title="잡알리오" >}}
@@ -28,6 +32,7 @@ weight: 6
   {{< card link="https://www.arc.io/" title="Arc" >}}
   {{< card link="https://www.cardano.org/" title="Cardano" >}}
   {{< card link="https://www.avax.network/" title="Avalanche" >}}
+  {{< card link="https://canton.network/" title="Canton Network" >}}
   {{< card link="https://z.cash/" title="ZCash" >}}
   {{< card link="https://www.getmonero.org/" title="Monero" >}}
   {{< card link="https://www.near.org/" title="NEAR" >}}
@@ -46,10 +51,15 @@ weight: 6
   {{< card link="https://www.okx.com/markets" title="OKX" >}}
   {{< card link="https://www.kraken.com/" title="Kraken" >}}
   {{< card link="https://www.coinbase.com/" title="Coinbase" >}}
+  {{< card link="https://strive.com/" title="Strive" >}}
+  {{< card link="https://www.strategy.com/" title="Strategy" >}}
   {{< card link="https://circle.com/" title="Circle" >}}
   {{< card link="https://tether.to/" title="Tether" >}}
   {{< card link="https://www.fireblocks.com/" title="Fireblocks" >}}
+  {{< card link="https://www.bitgo.com/" title="Bitgo" >}}
+  {{< card link="https://chain.link/" title="Chainlink" >}}
   {{< card link="https://securitize.io/" title="Securitize" >}}
+  {{< card link="https://superstate.com/" title="Superstate" >}}
   {{< card link="https://ondo.finance/" title="Ondo" >}}
   {{< card link="https://centrifuge.io/" title="Centrifuge" >}}
   {{< card link="https://www.maple.finance/" title="Maple Finance" >}}

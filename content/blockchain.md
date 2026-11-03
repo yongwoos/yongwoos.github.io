@@ -6,11 +6,12 @@ weight: 2
 {{< cards >}}
   {{< card link="https://coindesk.com" title="CoinDesk" >}}
   {{< card link="https://cointelegraph-kr.com/" title="Cointelegraph" >}}
+  {{< card link="https://theblock.co" title="The Block" >}}
+  {{< card link="https://www.theblock.co/newsletters" title="The Block Newsletter" >}}
   {{< card link="https://news.bitcoin.com/ko/" title="Bitcoin.com" >}}
   {{< card link="https://blockmedia.co.kr" title="블록미디어" >}}
   {{< card link="https://www.digitalasset.works/" title="디지털 애셋" >}}
   {{< card link="https://bloomingbit.io/" title="블루밍비트" >}}
-  {{< card link="https://theblock.co" title="The Block" >}}
   {{< card link="https://decrypt.co" title="Decrypt" >}}
   {{< card link="https://www.dlnews.com/" title="DLNews" >}}
   {{< card link="http://www.opinionnews.co.kr/news/articleList.html?sc_section_code=S1N22&view_type=sm" title="오피니언뉴스-블록체인" >}}

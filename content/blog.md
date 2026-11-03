@@ -65,4 +65,5 @@ weight: 3
   {{< card link="https://m.blog.naver.com/zero_family?categoryNo=0&listStyle=post&tab=1" title="배당사냥꾼 정성태" >}}
   {{< card link="https://m.blog.naver.com/saycouple?categoryNo=60&listStyle=photo&tab=1" title="Tyrion-주식" >}}
   {{< card link="https://jini-insight.tistory.com/category/글로벌%20이슈🌐" title="건축사의 부동산 금융 이야기-글로벌이슈" >}}
+  {{< card link="https://blog.hakhub.net/categories/blockchain/" title="HakHubNet" >}}
 {{< /cards >}}
