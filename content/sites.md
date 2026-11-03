@@ -12,7 +12,10 @@ weight: 6
   {{< card link="https://www.dtcc.com/" title="DTCC" >}}
   {{< card link="https://www.sec.gov/" title="SEC" >}}
   {{< card link="https://www.cftc.gov/" title="CFTC" >}}
+  {{< card link="https://www.bok.or.kr/portal/main/main.do" title="한국은행" >}}
+  {{< card link="https://www.fsc.go.kr/index" title="금융위원회" >}}
   {{< card link="https://www.ksd.or.kr/ko/" title="예탁결제원" >}}
+  {{< card link="https://www.krx.co.kr/" title="한국거래소" >}}
   {{< card link="https://www.kofia.or.kr/index.do" title="금융투자협회" >}}
   {{< card link="https://www.easylaw.go.kr/" title="생활법령정보" >}}
   {{< card link="https://job.alio.go.kr/recruit.do" title="잡알리오" >}}
@@ -46,13 +49,13 @@ weight: 6
 ---
 
 {{< cards >}}
-  {{< card link="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
   {{< card link="https://www.binance.com/en/markets" title="Binance" >}}
   {{< card link="https://www.okx.com/markets" title="OKX" >}}
   {{< card link="https://www.kraken.com/" title="Kraken" >}}
   {{< card link="https://www.coinbase.com/" title="Coinbase" >}}
   {{< card link="https://strive.com/" title="Strive" >}}
   {{< card link="https://www.strategy.com/" title="Strategy" >}}
+  {{< card link="https://metaplanet.jp/en" title="Metaplanet" >}}
   {{< card link="https://circle.com/" title="Circle" >}}
   {{< card link="https://tether.to/" title="Tether" >}}
   {{< card link="https://www.fireblocks.com/" title="Fireblocks" >}}
@@ -71,6 +74,8 @@ weight: 6
 ---
 
 {{< cards >}}
+  {{< card link="https://app.derive.xyz/" title="Derive" >}}
+  {{< card link="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
   {{< card link="https://morpho.org/" title="Morpho" >}}
   {{< card link="https://aave.com/" title="Aave" >}}
   {{< card link="https://ethena.fi/" title="Ethena" >}}

@@ -12,8 +12,6 @@ weight: 1
   {{< card link="https://www.breakingviews.com/" title="Breakingviews" >}}
   {{< card link="https://ft.com/" title="FT" >}}
   {{< card link="https://bloomberg.com/" title="Bloomberg" >}}
-  {{< card link="https://www.bok.or.kr/portal/main/main.do" title="한국은행" >}}
-  {{< card link="https://www.fsc.go.kr/index" title="금융위원회" >}}
   {{< card link="https://kcgf.kr/" title="한국기업거버넌스포럼" >}}
   {{< card link="https://www.newswatch.kr/" title="뉴스워치" >}}
   {{< card link="https://marketin.edaily.co.kr/" title="마켓인" >}}
