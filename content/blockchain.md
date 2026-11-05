@@ -40,4 +40,5 @@ weight: 2
   {{< section-tag link="https://www.talos.com/insights?insight-category=Knowledge%2CAnalysis%2CResearch" title="Talos Insights" >}}
   {{< section-tag link="https://1kx.capital/writing" title="1kx writing" >}}
   {{< section-tag link="https://www.chainalysis.com/reports/" title="Chainanalysis Insights" >}}
+  {{< section-tag link="https://bitwiseinvestments.com/crypto-market-insights" title="Bitwise Insights" >}}
 </div>

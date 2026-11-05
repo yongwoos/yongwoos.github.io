@@ -53,14 +53,18 @@ weight: 6
   {{< section-tag link="https://www.okx.com/markets" title="OKX" >}}
   {{< section-tag link="https://www.kraken.com/" title="Kraken" >}}
   {{< section-tag link="https://www.coinbase.com/" title="Coinbase" >}}
+  {{< section-tag link="https://www.anchorage.com/" title="Anchorage Digital" >}}
   {{< section-tag link="https://strive.com/" title="Strive" >}}
   {{< section-tag link="https://www.strategy.com/" title="Strategy" >}}
   {{< section-tag link="https://metaplanet.jp/en" title="Metaplanet" >}}
+  {{< section-tag link="https://www.bitminetech.io/" title="Bitmine" >}}
   {{< section-tag link="https://circle.com/" title="Circle" >}}
   {{< section-tag link="https://tether.to/" title="Tether" >}}
+  {{< section-tag link="https://www.ankr.com/" title="Ankr" >}}
   {{< section-tag link="https://www.fireblocks.com/" title="Fireblocks" >}}
   {{< section-tag link="https://www.bitgo.com/" title="Bitgo" >}}
   {{< section-tag link="https://chain.link/" title="Chainlink" >}}
+  {{< section-tag link="https://consensys.com/" title="Consensys" >}}
   {{< section-tag link="https://securitize.io/" title="Securitize" >}}
   {{< section-tag link="https://superstate.com/" title="Superstate" >}}
   {{< section-tag link="https://ondo.finance/" title="Ondo" >}}

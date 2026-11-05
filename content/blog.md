@@ -67,4 +67,5 @@ weight: 3
   {{< section-tag link="https://m.blog.naver.com/saycouple?categoryNo=60&listStyle=photo&tab=1" title="Tyrion-주식" >}}
   {{< section-tag link="https://jini-insight.tistory.com/category/글로벌%20이슈🌐" title="건축사의 부동산 금융 이야기-글로벌이슈" >}}
   {{< section-tag link="https://blog.hakhub.net/categories/blockchain/" title="HakHubNet" >}}
+  {{< section-tag link="https://medium.com/@Karinnovation" title="Karinnovation" >}}
 </div>

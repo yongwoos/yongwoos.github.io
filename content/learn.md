@@ -5,6 +5,7 @@ weight: 5
 
 <div class="section-tags">
   {{< section-tag link="https://www.opinionnews.co.kr/news/articleList.html?sc_serial_code=SRN4" title="증시 흑역사 시리즈" >}}
+  {{< section-tag link="https://namu.wiki/w/틀:한국의%20경제%20사건%20사고" title="한국의 경제 사건 사고" >}}
   {{< section-tag link="https://story.pay.naver.com/popular" title="네이버페이 머니스토리" >}}
   {{< section-tag link="https://www.tossbank.com/" title="토스뱅크" >}}
   {{< section-tag link="https://toss.im/tossfeed" title="토스피드" >}}
