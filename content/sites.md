@@ -26,6 +26,7 @@ weight: 6
 <div class="section-tags">
   {{< section-tag link="https://ercs.ethereum.org/" title="Ethereum Improvement Proposals" >}}
   {{< section-tag link="https://ethereum.org/ko/" title="Ethereum" >}}
+  {{< section-tag link="https://www.soliditylang.org/" title="Solidity" >}}
   {{< section-tag link="https://tron.network/" title="Tron" >}}
   {{< section-tag link="https://solana.com/ko" title="Solana" >}}
   {{< section-tag link="https://ripple.com/" title="Ripple" >}}
