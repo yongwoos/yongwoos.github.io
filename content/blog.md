@@ -68,4 +68,8 @@ weight: 3
   {{< section-tag link="https://jini-insight.tistory.com/category/글로벌%20이슈🌐" title="건축사의 부동산 금융 이야기-글로벌이슈" >}}
   {{< section-tag link="https://blog.hakhub.net/categories/blockchain/" title="HakHubNet" >}}
   {{< section-tag link="https://medium.com/@Karinnovation" title="Karinnovation" >}}
+  {{< section-tag link="https://m.blog.naver.com/PostList.naver?blogId=blueraun2005&categoryNo=16" title="한중사업관리 파트너 JST-외환실무" >}}
+  {{< section-tag link="https://blog.naver.com/leespider/150143012782" title="이광중회게사-기업지배구조와 M&A" >}}
+  {{< section-tag link="http://m.blog.naver.com/PostList.naver?blogId=steview88&categoryNo=0&listStyle=photo&logCode=&tab=1" title="모리의 재무회계 다이어리" >}}
+  {{< section-tag link="https://valuefactory.tistory.com/" title="가치관제작소" >}}
 </div>
