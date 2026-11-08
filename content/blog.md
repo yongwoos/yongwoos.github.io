@@ -72,4 +72,5 @@ weight: 3
   {{< section-tag link="https://blog.naver.com/leespider/150143012782" title="이광중회게사-기업지배구조와 M&A" >}}
   {{< section-tag link="http://m.blog.naver.com/PostList.naver?blogId=steview88&categoryNo=0&listStyle=photo&logCode=&tab=1" title="모리의 재무회계 다이어리" >}}
   {{< section-tag link="https://valuefactory.tistory.com/" title="가치관제작소" >}}
+  {{< section-tag link="https://m.blog.naver.com/PostList.naver?blogId=blogcha&categoryNo=0&listStyle=photo&logCode=&tab=1" title="차근차근 부동산" >}}
 </div>

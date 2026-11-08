@@ -17,6 +17,8 @@ weight: 1
   {{< section-tag link="https://marketin.edaily.co.kr/" title="마켓인" >}}
   {{< section-tag link="https://www.thebell.co.kr/front/index.asp" title="더 벨" >}}
   {{< section-tag link="https://www.newsvalue.kr/" title="뉴스밸류" >}}
+  {{< section-tag link="https://www.arunews.com/" title="한국주택경제신문" >}}
+  {{< section-tag link="https://www.housingherald.co.kr/" title="하우징헤럴드" >}}
   {{< section-tag link="https://www.hotelrestaurant.co.kr/" title="호텔앤레스토랑" >}}
   {{< section-tag link="https://www.travie.com/" title="트래비 매거진" >}}
   {{< section-tag link="https://www.bis.org/publications" title="BIS Publications" >}}
