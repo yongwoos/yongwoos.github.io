@@ -30,7 +30,7 @@ weight: 6
   {{< section-tag link="https://tron.network/" title="Tron" >}}
   {{< section-tag link="https://solana.com/ko" title="Solana" >}}
   {{< section-tag link="https://ripple.com/" title="Ripple" >}}
-  {{< section-tag link="https://www.stellar.org/" title="Stellar Lumen" >}}
+  {{< section-tag link="https://www.stellar.org/" title="Stellar" >}}
   {{< section-tag link="https://monad.xyz/" title="Monad" >}}
   {{< section-tag link="https://sui.io/" title="Sui" >}}
   {{< section-tag link="https://www.arc.io/" title="Arc" >}}
