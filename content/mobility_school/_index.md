@@ -1,5 +1,5 @@
 ---
-title: Mobility School
+title: 모빌리티 SW스쿨
 sidebar:
   open: false
 ---
