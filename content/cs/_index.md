@@ -1,4 +1,4 @@
 ---
-title: CS기본
+title: CS
 ---
 {{< section-tags >}}

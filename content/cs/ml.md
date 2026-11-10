@@ -1,6 +1,5 @@
 ---
 title: 머신러닝
-weight: 2
 ---
 
 # RNN

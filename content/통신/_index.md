@@ -1,4 +1,4 @@
 ---
-title: 무선통신
+title: 통신
 ---
 {{< section-tags >}}
