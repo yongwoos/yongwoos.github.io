@@ -22,4 +22,8 @@ weight: 5
   {{< section-tag link="https://upbitcare.com/academy/advice" title="업비트 셀럽의조언" >}}
   {{< section-tag link="https://academy.dcentwallet.com/ko/" title="디센트 아카데미" >}}
   {{< section-tag link="https://www.ledger.com/ko/academy" title="Ledger Academy" >}}
+  {{< section-tag link="https://kauri.io/#" title="kauri.io" >}}
+  {{< section-tag link="https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/video_galleries/video-lectures/" title="MIT OCW-Blockchain" >}}
+  {{< section-tag link="https://masteringethereum.xyz/" title="Mastering Ethereum" >}}
+  {{< section-tag link="https://github.com/bitcoinbook/bitcoinbook" title="Mastering Bitcoin" >}}
 </div>

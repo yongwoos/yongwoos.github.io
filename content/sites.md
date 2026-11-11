@@ -71,7 +71,7 @@ weight: 6
   {{< section-tag link="https://ondo.finance/" title="Ondo" >}}
   {{< section-tag link="https://centrifuge.io/" title="Centrifuge" >}}
   {{< section-tag link="https://www.maple.finance/" title="Maple Finance" >}}
-  {{< section-tag link="https://www.backed.finance/" title="Backed Finance" >}}
+  {{< section-tag link="https://www.backed.fi/" title="Backed Finance" >}}
   {{< section-tag link="https://www.alchemy.com/" title="Alchemy" >}}
   {{< section-tag link="https://www.infura.io/" title="Infura" >}}
 </div>

@@ -11,6 +11,7 @@ weight: 4
   {{< section-tag link="https://www.coingecko.com/" title="CoinGecko" >}}
   {{< section-tag link="https://coinglass.com/" title="CoinGlass" >}}
   {{< section-tag link="https://etherscan.io/" title="Etherscan" >}}
+  {{< section-tag link="https://ultrasound.money/" title="Ultrasound Money" >}}
   {{< section-tag link="https://www.sec.gov/edgar/search/" title="EDGAR" >}}
   {{< section-tag link="https://finviz.com/" title="finviz" >}}
   {{< section-tag link="https://www.etf.com/" title="etf.com" >}}
@@ -31,4 +32,8 @@ weight: 4
   {{< section-tag link="https://www.indexergo.com/" title="인덱서고" >}}
   {{< section-tag link="https://www.kofr.kr/" title="KOFR" >}}
   {{< section-tag link="https://spectrummap.kr/" title="전파누리" >}}
+  {{< section-tag link="https://mods.go.kr/cpi/" title="소비자물가지수" >}}
+  {{< section-tag link="https://mods.go.kr/income/" title="소득" >}}
+  {{< section-tag link="https://kosis.kr/visual/nsportalStats/main.do?sso=ok" title="100대 지표" >}}
+  {{< section-tag link="https://www.reb.or.kr/r-one/portal/main/indexPage.do" title="부동산통계정보시스템" >}}
 </div>
