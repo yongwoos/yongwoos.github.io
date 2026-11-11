@@ -30,6 +30,7 @@ weight: 6
   {{< section-tag link="https://tron.network/" title="Tron" >}}
   {{< section-tag link="https://solana.com/ko" title="Solana" >}}
   {{< section-tag link="https://ripple.com/" title="Ripple" >}}
+  {{< section-tag link="https://litecoin.org/ko" title="Litecoin" >}}
   {{< section-tag link="https://www.stellar.org/" title="Stellar" >}}
   {{< section-tag link="https://monad.xyz/" title="Monad" >}}
   {{< section-tag link="https://sui.io/" title="Sui" >}}
@@ -45,6 +46,7 @@ weight: 6
   {{< section-tag link="https://base.org/" title="Base" >}}
   {{< section-tag link="https://www.polygon.technology/" title="Polygon" >}}
   {{< section-tag link="https://cosmos.network/" title="Cosmos" >}}
+  {{< section-tag link="https://www.mantle.xyz/" title="Mantle" >}}
 </div>
 
 ---
@@ -81,6 +83,7 @@ weight: 6
 <div class="section-tags">
   {{< section-tag link="https://app.derive.xyz/" title="Derive" >}}
   {{< section-tag link="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
+  {{< section-tag link="https://thorchain.org/" title="Thorchain" >}}
   {{< section-tag link="https://polymarket.com/" title="Polymarket" >}}
   {{< section-tag link="https://kalshi.com/" title="Kalshi" >}}
   {{< section-tag link="https://morpho.org/" title="Morpho" >}}
@@ -90,6 +93,7 @@ weight: 6
   {{< section-tag link="https://www.compound.xyz/" title="Compound" >}}
   {{< section-tag link="https://app.sky.money/earn" title="Sky" >}}
   {{< section-tag link="https://uniswap.org/" title="Uniswap" >}}
+  {{< section-tag link="https://lido.fi/" title="Lido" >}}
   {{< section-tag link="https://curve.fi/" title="Curve Finance" >}}
   {{< section-tag link="https://yearn.fi/" title="Yearn Finance" >}}
   {{< section-tag link="https://1inch.com/" title="1inch" >}}
