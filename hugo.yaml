@@ -19,8 +19,8 @@ markup:
     extensions:
       passthrough:
         delimiters:
-          block: [['\[', '\]'], ["$$", "$$"]]
-          inline: [['\(', '\)'], ["%%", "%%"], ["$", "$"]]
+          block: [['\[', '\]'], ["$$", "$$"], ['\\[', '\\]']]
+          inline: [['\(', '\)'], ["%%", "%%"], ["$", "$"], ['\\(', '\\)']]
         enable: true
     renderer:
       unsafe: true
