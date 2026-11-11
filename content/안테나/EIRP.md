@@ -1,8 +1,7 @@
 ---
-title: EIRP
+title: EIRP/등방성 복사 전력
 ---
-Equivalent Isotropically Radiated Power, 등방성 복사 전력
-
+Equivalent Isotropically Radiated Power
 > 등방성 안테나가 방사한다고 가정했을 때, 같은 최대 전력 밀도를 만들기 위해 필요한 방사 전력
 
 $$

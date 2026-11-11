@@ -1,5 +1,5 @@
 ---
-title: 안테나 이득
+title: Gain/Beam Pattern
 ---
 > 특정 방향으로 기준 안테나보다 전력을 얼마나 더 집중해서 보내는지 나타내는 지표
 
@@ -69,7 +69,7 @@ $$
 **특징**
 
 * 실제 물리적으로 제작 가능한 안테나
-* 도넛(🍩) 모양 방사 패턴
+* 도넛 모양 방사 패턴
 * 등방성 안테나보다 **최대 방향에서 2.15 dB 더 큼**
 
 ## dBi-dBd 변환
@@ -81,7 +81,7 @@ $$
 \boxed{x\ \text{dBi} = (x-2.15)\ \text{dBd}}
 $$
 
-> ⚠️ **항상 “최대 방사 방향 기준” 변환**이라는 점이 핵심
+항상 **최대 방사 방향 기준 변환**이라는 점이 핵심
 
 ## 예시
 
@@ -97,12 +97,12 @@ $$
 
 ## 왜 다이폴이 더 큰가?
 
-### 🔹 등방성 안테나
+### 등방성 안테나
 
 * 모든 방향으로 동일하게 방사
 * 최대값 = 평균값
 
-### 🔹 반파장 다이폴 안테나
+### 반파장 다이폴 안테나
 
 * 위·아래(안테나 축 방향)는 거의 방사하지 않음
 * 전력을 **수평 방향으로 집중**
@@ -123,7 +123,7 @@ $$
   $$
 
 ## 중요 포인트
-❌ 모든 방향에서 2.15 dB 증가 ❌
+모든 방향에서 2.15 dB 증가가 아닌
 
 **최대 방사 방향에서만** 2.15 dB 증가
 
@@ -137,3 +137,28 @@ $$
 $$
 \boxed{0\ \text{dBd} = 2.15\ \text{dBi}}
 $$
+
+# 빔패턴(Beam Pattern)
+빔 패턴은 안테나가 방향별로 전파를 얼마나 강하게 방사하거나 수신하는지를 나타낸 그림이다.
+
+일반적으로 방사 패턴은 최대 방사 방향의 전력밀도를 기준으로 정규화해서 표시한다.
+
+$$P\_{\text{normalized}}(\theta,\phi) = \frac{S(\theta,\phi)}{S\_{\max}}$$
+
+- $(S(\theta,\phi))$: 해당 방향의 전력밀도
+- $(S\_{\max}\\)$: 최대 방향의 전력밀도
+
+[Antenna Radiation Pattern at Cheryl Franklin blog](https://images.openai.com/static-rsc-4/79OjfTJffwK7i_vB-g6hIvUxvdfEJvlMZfK-kD2Z3CXKI8siJOMN11d0wpCKgV_up5DHQmGYKXyNwLDXzdT9Nym8bT9tLwOQkMKbe9U1GMxTc6_Ai-zhaEEZXomC_CXjhC37TzasF0qeGzI7Nwvyfnitm2s3BfRxfnOBBcQOzdM?purpose=inline)
+
+[storage.googleapis.com](https://storage.googleapis.com/dsnavjzsqbjtse/antenna-radiation-pattern.html?utm_source=chatgpt.com)
+
+1. 등방성 안테나 기준: 안테나 이득(Gain)을 dBi로 표현할 때 사용하는 기준
+2. 최대 전력밀도 기준: 빔 패턴을 정규화해서 방향별 상대적인 방사 강도를 표시할 때 사용하는 기준
+
+예를 들어 최대 방향을 0 dB로 놓으면 다른 방향은 다음처럼 표현할 수 있다.
+
+| 방향       | 상대 전력  |
+| -------- | ------ |
+| 최대 방사 방향 | 0 dB   |
+| 측면 방향    | -10 dB |
+| 후방 방향    | -20 dB |
