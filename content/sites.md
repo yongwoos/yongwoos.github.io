@@ -81,6 +81,8 @@ weight: 6
 <div class="section-tags">
   {{< section-tag link="https://app.derive.xyz/" title="Derive" >}}
   {{< section-tag link="https://app.hyperliquid.xyz/" title="Hyperliquid" >}}
+  {{< section-tag link="https://polymarket.com/" title="Polymarket" >}}
+  {{< section-tag link="https://kalshi.com/" title="Kalshi" >}}
   {{< section-tag link="https://morpho.org/" title="Morpho" >}}
   {{< section-tag link="https://aave.com/" title="Aave" >}}
   {{< section-tag link="https://ethena.fi/" title="Ethena" >}}
