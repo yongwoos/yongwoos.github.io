@@ -22,6 +22,8 @@ weight: 1
   {{< section-tag link="https://www.hotelrestaurant.co.kr/" title="호텔앤레스토랑" >}}
   {{< section-tag link="https://www.travie.com/" title="트래비 매거진" >}}
   {{< section-tag link="https://www.global-autonews.com/" title="글로벌오토뉴스" >}}
+  {{< section-tag link="https://www.insidevina.com/" title="인사이드비나" >}}
+  {{< section-tag link="https://www.aseandaily.co.kr/" title="아세안데일리" >}}
   {{< section-tag link="https://www.bis.org/publications" title="BIS Publications" >}}
   {{< section-tag link="https://www.kdi.re.kr/" title="한국개발연구원" >}}
   {{< section-tag link="https://dl.bok.or.kr/" title="한국은행 전자도서관" >}}
