@@ -4,14 +4,11 @@ weight: 2
 ---
 
 <div class="section-tags">
-  {{< section-tag link="https://cointelegraph-kr.com/" title="Cointelegraph" >}}
-  {{< section-tag link="https://coindesk.com" title="CoinDesk" >}}
-  {{< section-tag link="https://theblock.co" title="The Block" >}}
+  {{< section-tag link="https://cointelegraph-kr.com/all-articles/editorial" title="Cointelegraph" >}}
+  {{< section-tag link="https://www.coindesk.com/latest-crypto-news" title="CoinDesk" >}}
   {{< section-tag link="https://news.bitcoin.com/ko/" title="Bitcoin.com" >}}
-  {{< section-tag link="https://blockmedia.co.kr" title="블록미디어" >}}
+  {{< section-tag link="https://www.theblock.co/news" title="The Block" >}}
   {{< section-tag link="https://www.digitalasset.works/" title="디지털 애셋" >}}
-  {{< section-tag link="https://bloomingbit.io/" title="블루밍비트" >}}
-  {{< section-tag link="https://decrypt.co" title="Decrypt" >}}
   {{< section-tag link="https://www.dlnews.com/" title="DLNews" >}}
   {{< section-tag link="http://www.opinionnews.co.kr/news/articleList.html?sc_section_code=S1N22&view_type=sm" title="오피니언뉴스-블록체인" >}}
   {{< section-tag link="https://hyper-liquid.co.kr/news/" title="하이퍼리퀴드 뉴스" >}}
