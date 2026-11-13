@@ -1,1 +1,7 @@
-<a href="{{ .Get "link" }}" class="section-tag" target="_blank" rel="noreferrer">#{{ .Get "title" }}</a>
+{{- $title := .Get "title" -}}
+{{- $link := .Get "link" -}}
+{{- with .Get "query" -}}
+  {{- $title = . -}}
+  {{- $link = printf "https://www.google.com/search?q=%s" (urlquery .) -}}
+{{- end -}}
+<a href="{{ $link }}" class="section-tag" target="_blank" rel="noreferrer">#{{ $title }}</a>
