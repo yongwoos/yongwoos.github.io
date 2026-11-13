@@ -18,8 +18,6 @@ title: ITU 주파수 대역
 | **SHF** | Super High Frequency (고단파) | **3 ~ 30 GHz** | 1 ~ 10 cm | 위성, 레이더, 5G(28GHz) |
 | **EHF** | **Extremely High Frequency (밀리미터파)** | 30 ~ 300 GHz | 1 ~ 10 mm | 초정밀 레이더, 차세대 이동통신 |
 
----
-
 - VLF/LF처럼 주파수가 낮을수록 장애물을 타고 넘는 **회절성**이 강해 멀리 전달
 - VHF는 직진성이 강해 전리층을 뚫고 나감
 - HF는 전리층에 의해 굴절됨

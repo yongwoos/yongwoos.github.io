@@ -16,10 +16,9 @@ OFDMA와 달리 서브캐리어 간 간섭이 없고, PAPR이 낮아 배터리 �
 - LTE-M: 해상무선통신망 (Maritime)
 - LTE-R: 철도통신망 (Railway)
 
-## PRB(Physical Resource Block)
-> 5G, LTE에서 주파수와 시간 도메인에서 할당되는 자원의 최소 단위
+### PRB(Physical Resource Block)
+#5G, LTE에서 주파수와 시간 도메인에서 할당되는 자원의 최소 단위
 
-### PRB의 구성
 PRB는 주파수 도메인에서 12개의 서브캐리어로 구성되며, 각 서브캐리어는 15 kHz의 대역폭
 
 하나의 PRB는 총 180 kHz의 대역폭
