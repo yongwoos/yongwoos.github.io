@@ -25,8 +25,6 @@ OFDM은 시간축과 주파수축으로 자원을 나눈다.
 
 ![5G basic understanding for RB, PRB, RE - 5G NR - telecomHall Forum](https://images.openai.com/static-rsc-4/cWmJM4d_jaVfMDUXR7rIcg65SQGp-WYEcWjh4ckI1lQ5EsQDY1E_DohjLWdijq_P2XVLu_EJLrrnTsC8xQhmq5z0LhOdEEGfw8kyV_r58bDK3HF1LjKrVU4Er9BECeX6QItO3q_-o49iHP605TKavGzyasKkWzq4shvwKdBzKbM?purpose=inline)
 
-![telecomhall.net](https://www.telecomhall.net/t/5g-basic-understanding-for-rb-prb-re/9323?utm_source=chatgpt.com)
-
 - 주파수축: 부반송파 단위로 분할
 - 시간축: OFDM 심볼 단위로 분할
 - RE: 두 축이 교차하는 한 칸
