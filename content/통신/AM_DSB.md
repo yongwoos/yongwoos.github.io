@@ -1,5 +1,5 @@
 ---
-title: AM DSB
+title: AM(DSB)
 ---
 # DSB-LC
 **반송파 포함** AM 변조 방식
