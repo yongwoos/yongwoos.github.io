@@ -8,6 +8,7 @@ weight: 1
   {{< section-tag link="https://bloter.net" title="블로터" >}}
   {{< section-tag link="https://investchosun.com/" title="인베스트조선" >}}
   {{< section-tag link="http://economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21" >}}
+  {{< section-tag link="https://dealsite.co.kr/" title="딜사이트" >}}
   {{< section-tag link="https://www.wsj.com/" title="WSJ" >}}
   {{< section-tag link="https://bloomberg.com/" title="Bloomberg" >}}
   {{< section-tag link="https://ft.com/" title="FT" >}}
