@@ -14,7 +14,7 @@ weight: 7
   {{< section-tag query="의무공개매수" >}}
   {{< section-tag query="자본시장법" >}}
   {{< section-tag query="전자증권법" >}}
-  {{< section-tag query=토큰증권법" >}}
+  {{< section-tag query="토큰증권법" >}}
   {{< section-tag query="주가누르기" >}}
   {{< section-tag query="한국벤처투자" >}}
   {{< section-tag query="한국성장금융" >}}
