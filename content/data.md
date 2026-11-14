@@ -25,6 +25,7 @@ weight: 4
   {{< section-tag link="https://freesis.kofia.or.kr/stat/FreeSIS.do" title="금융투자협회 종합통계" >}}
   {{< section-tag link="https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd" title="KRX 마켓데이터" >}}
   {{< section-tag link="https://dart.fss.or.kr/" title="DART 전자공시" >}}
+  {{< section-tag link="https://www.smes.go.kr/venturein/pbntc/searchVntrCmp" title="벤처확인기업공시" >}}
   {{< section-tag link="https://fisis.fss.or.kr/" title="금융감독원 금융통계정보시스템" >}}
   {{< section-tag link="https://finlife.fss.or.kr/" title="금융감독원 금융상품한눈에" >}}
   {{< section-tag link="https://fine.fss.or.kr/" title="금융감독원 소비자 정보포털 파인" >}}
