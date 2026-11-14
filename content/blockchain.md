@@ -41,6 +41,4 @@ weight: 2
   {{< section-tag link="https://1kx.capital/writing" title="1kx writing" >}}
   {{< section-tag link="https://www.chainalysis.com/reports/" title="Chainanalysis Insights" >}}
   {{< section-tag link="https://bitwiseinvestments.com/crypto-market-insights" title="Bitwise Insights" >}}
-  {{< section-tag link="https://onekey.so/blog/ko/archive/" title="Onekey Blog" >}}
-  {{< section-tag link="https://steemit.com/@yahweh87/blog" title="스티밋 어미새" >}}
 </div>
