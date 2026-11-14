@@ -7,8 +7,10 @@ weight: 1
   {{< section-tag link="https://news.einfomax.co.kr" title="연합인포맥스" >}}
   {{< section-tag link="https://bloter.net" title="블로터" >}}
   {{< section-tag link="https://investchosun.com/" title="인베스트조선" >}}
-  {{< section-tag link="http://economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21" >}}
+  {{< section-tag link="https://www.thebell.co.kr/" title="더 벨" >}}
+  {{< section-tag link="https://www.numbers.co.kr/" title="넘버스" >}}
   {{< section-tag link="https://dealsite.co.kr/" title="딜사이트" >}}
+  {{< section-tag link="http://economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21" >}}
   {{< section-tag link="https://www.wsj.com/" title="WSJ" >}}
   {{< section-tag link="https://bloomberg.com/" title="Bloomberg" >}}
   {{< section-tag link="https://ft.com/" title="FT" >}}
@@ -16,7 +18,6 @@ weight: 1
   {{< section-tag link="https://kcgf.kr/" title="한국기업거버넌스포럼" >}}
   {{< section-tag link="https://www.newswatch.kr/" title="뉴스워치" >}}
   {{< section-tag link="https://marketin.edaily.co.kr/" title="마켓인" >}}
-  {{< section-tag link="https://www.thebell.co.kr/front/index.asp" title="더 벨" >}}
   {{< section-tag link="https://www.newsvalue.kr/" title="뉴스밸류" >}}
   {{< section-tag link="https://www.arunews.com/" title="한국주택경제신문" >}}
   {{< section-tag link="https://www.housingherald.co.kr/" title="하우징헤럴드" >}}
