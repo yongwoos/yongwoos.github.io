@@ -119,3 +119,30 @@ Yearn Finance
 dYdX
 Perpetual Protocol
 </div>
+
+---
+
+<div class="section-tags">
+블랙스톤
+브룩필드
+Fidelity
+Blue Owl
+Pimco
+Federated Hermes
+Capital Group
+Invesco
+State Street
+Carlyle Group
+KKR
+TPG
+Apollo
+Oaktree Capital Management
+Franklin Templeton
+Sequoia Capital
+Bain Capital
+EQT
+Citadel
+Bridgewater Associates
+Elliott Management
+MBK 파트너스
+</div>
