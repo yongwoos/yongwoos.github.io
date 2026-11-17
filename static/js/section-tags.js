@@ -7,7 +7,7 @@ document.querySelectorAll(".section-tags").forEach((container) => {
   const links = queries.map((query) => {
     const link = document.createElement("a");
     link.className = "section-tag";
-    link.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    link.href = `https://www.google.com/search?q=${encodeURIComponent(query)}&tbm=nws`;
     link.target = "_blank";
     link.rel = "noreferrer";
     link.textContent = `#${query}`;
