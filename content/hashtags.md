@@ -22,7 +22,100 @@ AI금융경제추진단
 금융위
 한국벤처투자
 한국성장금융
-chainlink
-layerzero
-securitize
+</div>
+
+---
+
+<div class="section-tags">
+CME Group
+CBOE
+NASDAQ
+ICE
+NYSE
+DTCC
+SEC
+CFTC
+한국은행
+금융위원회
+예탁결제원
+한국거래소
+금융투자협회
+생활법령정보
+</div>
+
+---
+
+<div class="section-tags">
+Ethereum
+Solidity
+Tron
+Solana
+Ripple
+Litecoin
+Stellar
+Monad
+Sui
+Arc
+Cardano
+Avalanche
+Canton Network
+ZCash
+Monero
+NEAR
+Arbitrum
+Optimism
+Base
+Polygon
+Cosmos
+Mantle
+</div>
+
+---
+
+<div class="section-tags">
+Binance
+OKX
+Kraken
+Coinbase
+Anchorage Digital
+Strive
+Strategy
+Metaplanet
+Bitmine
+Circle
+Tether
+Ankr
+Fireblocks
+Bitgo
+Consensys
+Superstate
+Ondo
+Centrifuge
+Maple Finance
+Backed Finance
+Alchemy
+Infura
+</div>
+
+---
+
+<div class="section-tags">
+Derive
+Hyperliquid
+Thorchain
+Polymarket
+Kalshi
+Morpho
+Aave
+Ethena
+Pendle
+Compound
+Sky
+Uniswap
+Lido
+Curve Finance
+Yearn Finance
+1inch
+dYdX
+Perpetual Protocol
 </div>
