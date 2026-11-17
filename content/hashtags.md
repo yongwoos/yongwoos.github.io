@@ -146,3 +146,18 @@ Bridgewater Associates
 Elliott Management
 MBK 파트너스
 </div>
+
+---
+
+<div class="section-tags">
+IREN
+Mara
+Riot Platforms
+HIVE Blockchain
+TeraWulf
+Core Scientific
+Cipher Digital
+Bitdeer
+Hut 8
+CleanSpark
+</div>
