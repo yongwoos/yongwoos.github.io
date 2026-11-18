@@ -35,6 +35,7 @@ weight: 1
   {{< section-tag link="https://tossinsight.im/reports?category=all" title="토스 인사이트" >}}
   {{< section-tag link="http://snusmic.com/research/" title="SMIC 리서치" >}}
   {{< section-tag link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
+  {{< section-tag link="https://www.ai-dc.co.kr/columns" title="aidc 칼럼" >}}
   {{< section-tag link="https://maily.so/welaunch" title="Welaunch" >}}
   {{< section-tag link="https://www.blackrock.com/us/individual/insights#" title="BlackRock Insights" >}}
   {{< section-tag link="https://www.bny.com/corporate/global/en/insights.html" title="BNY Insights" >}}

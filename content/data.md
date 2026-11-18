@@ -32,6 +32,7 @@ weight: 4
   {{< section-tag link="https://fine.fss.or.kr/" title="금융감독원 소비자 정보포털 파인" >}}
   {{< section-tag link="https://portal.kfb.or.kr/" title="은행연합회 소비자포털" >}}
   {{< section-tag link="https://www.indexergo.com/" title="인덱서고" >}}
+  {{< section-tag link="https://www.courtauction.go.kr/" title="법원경매정보" >}}
   {{< section-tag link="https://www.kofr.kr/" title="KOFR" >}}
   {{< section-tag link="https://spectrummap.kr/" title="전파누리" >}}
   {{< section-tag link="https://mods.go.kr/cpi/" title="소비자물가지수" >}}
