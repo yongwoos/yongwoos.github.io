@@ -5,12 +5,12 @@ weight: 1
 
 <div class="section-tags">
   {{< section-tag link="https://news.einfomax.co.kr" title="연합인포맥스" >}}
+  {{< section-tag link="http://www.economy21.co.kr/" title="이코노미21" >}}
   {{< section-tag link="https://bloter.net" title="블로터" >}}
   {{< section-tag link="https://investchosun.com/" title="인베스트조선" >}}
   {{< section-tag link="https://www.thebell.co.kr/" title="더 벨" >}}
   {{< section-tag link="https://www.numbers.co.kr/" title="넘버스" >}}
   {{< section-tag link="https://dealsite.co.kr/" title="딜사이트" >}}
-  {{< section-tag link="http://economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21" >}}
   {{< section-tag link="https://www.wsj.com/" title="WSJ" >}}
   {{< section-tag link="https://bloomberg.com/" title="Bloomberg" >}}
   {{< section-tag link="https://ft.com/" title="FT" >}}
@@ -36,6 +36,7 @@ weight: 1
   {{< section-tag link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
   {{< section-tag link="https://www.ai-dc.co.kr/columns" title="aidc 칼럼" >}}
   {{< section-tag link="https://maily.so/welaunch" title="위런치" >}}
+  {{< section-tag link="http://www.economy21.co.kr/news/articleList.html?sc_area=I&sc_word=ecoego" title="이코노미21-양영빈" >}}
   {{< section-tag link="https://www.breakingviews.com/" title="Breakingviews" >}}
   {{< section-tag link="https://www.bloomberg.com/businessweek" title="Bloomberg Businessweek" >}}
   {{< section-tag link="https://libertystreeteconomics.newyorkfed.org/" title="Liberty Street Economics" >}}
