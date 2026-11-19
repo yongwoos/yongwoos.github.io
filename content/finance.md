@@ -14,7 +14,6 @@ weight: 1
   {{< section-tag link="https://www.wsj.com/" title="WSJ" >}}
   {{< section-tag link="https://bloomberg.com/" title="Bloomberg" >}}
   {{< section-tag link="https://ft.com/" title="FT" >}}
-  {{< section-tag link="https://www.breakingviews.com/" title="Breakingviews" >}}
   {{< section-tag link="https://kcgf.kr/" title="한국기업거버넌스포럼" >}}
   {{< section-tag link="https://www.newswatch.kr/" title="뉴스워치" >}}
   {{< section-tag link="https://marketin.edaily.co.kr/" title="마켓인" >}}
@@ -36,20 +35,16 @@ weight: 1
   {{< section-tag link="http://snusmic.com/research/" title="SMIC 리서치" >}}
   {{< section-tag link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
   {{< section-tag link="https://www.ai-dc.co.kr/columns" title="aidc 칼럼" >}}
-  {{< section-tag link="https://maily.so/welaunch" title="Welaunch" >}}
-  {{< section-tag link="https://www.blackrock.com/us/individual/insights#" title="BlackRock Insights" >}}
-  {{< section-tag link="https://www.bny.com/corporate/global/en/insights.html" title="BNY Insights" >}}
-  {{< section-tag link="https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/" title="JPMorgan Market Insights" >}}
+  {{< section-tag link="https://maily.so/welaunch" title="위런치" >}}
+  {{< section-tag link="https://www.breakingviews.com/" title="Breakingviews" >}}
+  {{< section-tag link="https://www.bloomberg.com/businessweek" title="Bloomberg Businessweek" >}}
   {{< section-tag link="https://libertystreeteconomics.newyorkfed.org/" title="Liberty Street Economics" >}}
   {{< section-tag link="https://www.apolloacademy.com/investment-knowledge/" title="Apollo" >}}
-  {{< section-tag link="https://www.pimco.com/us/en/insights?utm_source=chatgpt.com#sort=%40publishz32xdate%20descending" title="Pimco Insights" >}}
   {{< section-tag link="https://ria.disciplinefunds.com/category/discipline-alerts/" title="Discipline Alerts" >}}
   {{< section-tag link="https://www.pragcap.com/blog/" title="Pragmatic Capital" >}}
   {{< section-tag link="https://www.lynalden.com/" title="Lyn Alden" >}}
   {{< section-tag link="https://themacrocompass.substack.com/" title="The Macro Compass" >}}
   {{< section-tag link="https://aswathdamodaran.blogspot.com/?m=1" title="Musings on Markets" >}}
-  {{< section-tag link="https://www.morganstanley.com/insights" title="Morgan Stanley Insights" >}}
-  {{< section-tag link="https://www.goldmansachs.com/insights" title="Goldman Sachs Insights" >}}
   {{< section-tag link="https://www.bcaresearch.com/marketing/insights?type=marketing_insight" title="BCA Research" >}}
   {{< section-tag link="https://www.capitaleconomics.com/resources?f%5B0%5D=marketing_content_type%3Aarticle" title="Capital Economics" >}}
 </div>
