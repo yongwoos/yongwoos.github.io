@@ -40,7 +40,6 @@ weight: 1
   {{< section-tag link="https://www.breakingviews.com/" title="Breakingviews" >}}
   {{< section-tag link="https://www.bloomberg.com/businessweek" title="Bloomberg Businessweek" >}}
   {{< section-tag link="https://libertystreeteconomics.newyorkfed.org/" title="Liberty Street Economics" >}}
-  {{< section-tag link="https://www.apolloacademy.com/investment-knowledge/" title="Apollo" >}}
   {{< section-tag link="https://ria.disciplinefunds.com/category/discipline-alerts/" title="Discipline Alerts" >}}
   {{< section-tag link="https://www.pragcap.com/blog/" title="Pragmatic Capital" >}}
   {{< section-tag link="https://www.lynalden.com/" title="Lyn Alden" >}}
