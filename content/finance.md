@@ -30,9 +30,13 @@ weight: 1
   {{< section-tag link="https://dl.bok.or.kr/" title="한국은행 전자도서관" >}}
   {{< section-tag link="https://www.kcmi.re.kr/" title="자본시장연구원" >}}
   {{< section-tag link="https://www.kif.re.kr/kif4/main/" title="한국금융연구원" >}}
-  {{< section-tag link="https://www.cushmanwakefield.com/ko-kr/south-korea/insights" title="쿠시먼드앤웨이크필드" >}}
   {{< section-tag link="https://tossinsight.im/reports?category=all" title="토스 인사이트" >}}
   {{< section-tag link="http://snusmic.com/research/" title="SMIC 리서치" >}}
+  {{< section-tag link="https://thehdv.com/insights" title="HDV 인사이트" >}}
+  {{< section-tag link="https://www.cushmanwakefield.com/ko-kr/south-korea/insights" title="쿠시먼드앤웨이크필드" >}}
+  {{< section-tag link="https://www.jll.com/ko-kr/insights" title="JLL 인사이트" >}}
+  {{< section-tag link="https://www.cbrekorea.com/insights" title="CBRE 인사이트" >}}
+  {{< section-tag link="https://www.savills.co.kr/insight-and-opinion/" title="세빌스" >}}
   {{< section-tag link="https://www.yanolja-research.com/" title="야놀자 리서치" >}}
   {{< section-tag link="https://www.ai-dc.co.kr/columns" title="aidc 칼럼" >}}
   {{< section-tag link="https://maily.so/welaunch" title="위런치" >}}
