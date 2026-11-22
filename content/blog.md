@@ -78,4 +78,5 @@ weight: 3
   {{< section-tag link="https://blog.naver.com/dulri0000" title="고니파더" >}}
   {{< section-tag link="https://brunch.co.kr/@5efb803997f549b?tab=works" title="고니파더 브런치" >}}
   {{< section-tag link="https://brunch.co.kr/@tommyhslee" title="Tommyhslee 브런치" >}}
+  {{< section-tag link="https://blog.naver.com/PostList.naver?blogId=som26&categoryName=감정적인%20평가이야기&categoryNo=34&logCode=0" title="감정적인 평가이야기" >}}
 </div>
