@@ -3,7 +3,10 @@ document.querySelectorAll(".section-tags").forEach((container) => {
     return;
   }
 
-  const queries = container.textContent.trim().split(/\s+/).filter(Boolean);
+  const queries = container.textContent
+    .split(/\r?\n/)
+    .map((query) => query.trim())
+    .filter(Boolean);
   const links = queries.map((query) => {
     const link = document.createElement("a");
     link.className = "section-tag";
