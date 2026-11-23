@@ -126,7 +126,7 @@ Perpetual Protocol
 블랙스톤
 브룩필드
 Fidelity
-Blue Owl
+Blue Owl Capital
 Pimco
 Federated Hermes
 Capital Group
