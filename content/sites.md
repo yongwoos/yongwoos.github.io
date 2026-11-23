@@ -24,6 +24,8 @@ weight: 6
 ---
 
 <div class="section-tags">
+  {{< section-tag link="https://bitcoin.org/ko/" title="Bitcoin.org" >}}
+  {{< section-tag link="https://developer.bitcoin.org/index.html" title="Bitcoin Developer" >}}
   {{< section-tag link="https://ercs.ethereum.org/" title="Ethereum Improvement Proposals" >}}
   {{< section-tag link="https://ethereum.org/ko/" title="Ethereum" >}}
   {{< section-tag link="https://www.soliditylang.org/" title="Solidity" >}}
