@@ -13,7 +13,7 @@ weight: 1
   {{< section-tag link="https://dealsite.co.kr/" title="딜사이트" >}}
   {{< section-tag link="https://www.wsj.com/" title="WSJ" >}}
   {{< section-tag link="https://bloomberg.com/" title="Bloomberg" >}}
-  {{< section-tag link="https://ft.com/" title="FT" >}}
+  {{< section-tag link="https://app.ft.com/stream/home" title="FT" >}}
   {{< section-tag link="https://kcgf.kr/" title="한국기업거버넌스포럼" >}}
   {{< section-tag link="https://www.newswatch.kr/" title="뉴스워치" >}}
   {{< section-tag link="https://marketin.edaily.co.kr/" title="마켓인" >}}
