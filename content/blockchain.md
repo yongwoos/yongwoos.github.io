@@ -11,6 +11,9 @@ weight: 2
   {{< section-tag link="https://www.digitalasset.works/" title="디지털 애셋" >}}
   {{< section-tag link="https://www.dlnews.com/" title="DLNews" >}}
   {{< section-tag link="http://www.opinionnews.co.kr/news/articleList.html?sc_section_code=S1N22&view_type=sm" title="오피니언뉴스-블록체인" >}}
+  {{< section-tag link="https://dealsite.co.kr/issue/?ISSUELIKE=코인" title="딜사이트 이슈-코인" >}}
+  {{< section-tag link="https://www.numbers.co.kr/news/articleList.html?sc_serial_code=SRN82&view_type=sm" title="넘버스-스테이블코인 확장" >}}
+  {{< section-tag link="https://www.numbers.co.kr/news/articleList.html?sc_serial_code=SRN81&view_type=sm" title="넘버스-AI인프라 전쟁" >}}
   {{< section-tag link="https://hyper-liquid.co.kr/news/" title="하이퍼리퀴드 뉴스" >}}
   {{< section-tag link="https://www.blockmedia.co.kr/archives/category/research?rsrch_q=에디터" title="블록미디어 리서치-에디터" >}}
   {{< section-tag link="https://www.blockmedia.co.kr/archives/category/research?rsrch_q=기자" title="블록미디어 리서치-기자" >}}
